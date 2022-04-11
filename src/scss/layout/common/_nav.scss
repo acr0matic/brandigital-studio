@@ -4,11 +4,44 @@
 
 .nav {
   &__list {
+    display: flex;
   }
 
   &__item {
   }
 
   &__link {
+  }
+
+  &--header {
+    .nav__list {
+      align-items: center;
+    }
+
+    .nav__item {
+      &:not(:last-child) {
+        @include breakpoint($breakpoint-laptop--medium) {
+          margin-right: 32px;
+        }
+
+        margin-right: 40px;
+      }
+    }
+
+    .nav__link {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $font-size__text--regular;
+      }
+
+      color: $color-text__white;
+
+      font-weight: $weight-Medium;
+      font-size: $font-size__text--big;
+      text-transform: uppercase;
+
+      white-space: nowrap;
+
+      cursor: pointer;
+    }
   }
 }

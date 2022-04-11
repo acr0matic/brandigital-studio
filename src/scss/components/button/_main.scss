@@ -3,4 +3,9 @@
 // и подключение дополнительных вариаций
 // -----------------------------------------------------------------------------
 
+$button-primary__bg: #ff8025;
+$button-primary__hover: 2px 5px 15px #ff8025;
+
 @import "button";
+@import "button-primary";
+@import "button-outline";

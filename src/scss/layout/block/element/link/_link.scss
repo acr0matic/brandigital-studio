@@ -5,4 +5,12 @@
     &:hover {
     }
   }
+
+  &--medium {
+    font-weight: $weight-Medium;
+  }
+
+  &--bold {
+    font-weight: $weight-Bold;
+  }
 }
