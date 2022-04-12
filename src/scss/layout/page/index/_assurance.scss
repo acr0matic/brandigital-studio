@@ -1,0 +1,169 @@
+#assurance {
+  text-align: center;
+}
+
+.assurance {
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    @include breakpoint($breakpoint-laptop--medium) {
+      padding: 50px 15px;
+    }
+
+    position: relative;
+    z-index: 2;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 50px 60px;
+
+    background: $palette-white;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 100;
+      top: 50%;
+
+      width: 150px;
+      height: 110%;
+
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      left: -150px;
+
+      background: linear-gradient(
+        270deg,
+        rgba(#ffffff, 1) 20%,
+        rgba(#ffffff, 0) 100%
+      );
+    }
+
+    &::before {
+      right: -150px;
+
+      background: linear-gradient(
+        90deg,
+        rgba(#ffffff, 1) 20%,
+        rgba(#ffffff, 0) 100%
+      );
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__button {
+  }
+
+  &__bg {
+    position: absolute;
+    top: 5%;
+    left: 0;
+  }
+
+  &__infinite {
+    display: flex;
+
+    &:nth-child(2) {
+      .assurance__partners {
+        @include breakpoint($breakpoint-mobile--large) {
+          animation-delay: 1s;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &:last-child {
+      @include breakpoint($breakpoint-mobile--large) {
+        display: none;
+      }
+    }
+  }
+
+  &__partners {
+    display: flex;
+    flex-shrink: 0;
+    animation: 20s linear infinite alternate-reverse marquee;
+  }
+
+  &__partner {
+    @include breakpoint($breakpoint-laptop--large) {
+      width: 80px;
+      height: 80px;
+    }
+
+    width: 90px;
+    height: 90px;
+
+    margin-right: 35px;
+  }
+
+  &__fade {
+    &::before,
+    &::after {
+      @include breakpoint($breakpoint-laptop--medium) {
+        width: 50px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        top: 80%;
+        height: 50%;
+      }
+
+      content: "";
+      position: absolute;
+      z-index: 15;
+      top: 50%;
+
+      width: 150px;
+      height: 100%;
+
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      left: 0;
+
+      background: linear-gradient(
+        90deg,
+        rgba(#ffffff, 1) 20%,
+        rgba(#ffffff, 0) 100%
+      );
+    }
+
+    &::before {
+      right: 0;
+
+      background: linear-gradient(
+        270deg,
+        rgba(#ffffff, 1) 20%,
+        rgba(#ffffff, 0) 100%
+      );
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
