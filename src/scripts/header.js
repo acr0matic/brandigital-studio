@@ -1,5 +1,7 @@
 
 const header = document.querySelector('#header');
+const headerHeight = header.offsetHeight;
+
 const headerDropdown = header.querySelectorAll('.nav__list .dropdown__header');
 
 let scrollPosition = window.pageYOffset;
@@ -22,18 +24,18 @@ _.forEach(headerDropdown, (dropdown) => {
 
 
 // Смена цветовой гаммы хедера
+const heroBlock = document.querySelector('[data-hero]')
+const heroHeight = heroBlock ? heroBlock.offsetHeight : null;
+
 window.addEventListener('scroll',
   () => {
-    const heroBlock = document.querySelector('[data-hero]')
-    const heroHeight = heroBlock ? heroBlock.offsetHeight : null;
-
     if (heroHeight) {
-      if (window.scrollY >= heroHeight) header.classList.add(StyleСlass.header.inverted);
+      if (window.scrollY >= heroHeight + headerHeight) header.classList.add(StyleСlass.header.inverted);
       else header.classList.remove(StyleСlass.header.inverted)
     }
 
     else {
-      if (window.scrollY >= header.offsetHeight + 50) header.classList.add(StyleСlass.header.inverted);
+      if (window.scrollY >= headerHeight + 50) header.classList.add(StyleСlass.header.inverted);
       else header.classList.remove(StyleСlass.header.inverted)
     }
   });

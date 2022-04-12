@@ -1,11 +1,15 @@
 .lazy {
-  transition: $transition ease;
-}
+  position: relative;
 
-.loading {
-  opacity: 0;
+  &__item {
+    opacity: 0;
+    visibility: hidden;
+
+    transition: $transition ease;
+  }
 }
 
 .loaded {
-  visibility: visible !important;
+  opacity: 1;
+  visibility: visible;
 }
