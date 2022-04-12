@@ -1,0 +1,15 @@
+.form-callback {
+  .form__button {
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 100%;
+    }
+  }
+
+  .input__field {
+    @include breakpoint($breakpoint-laptop--medium) {
+      width: 275px;
+    }
+
+    width: 315px;
+  }
+}

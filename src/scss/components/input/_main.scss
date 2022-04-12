@@ -3,5 +3,9 @@
 // и подключение дополнительных вариаций
 // -----------------------------------------------------------------------------
 
+$input__border: 2px solid #282828;
+$input__border--required: 2px solid $palette-orange;
+$input__border--error: #ff0000;
+
 @import "input";
 @import "checkbox";
