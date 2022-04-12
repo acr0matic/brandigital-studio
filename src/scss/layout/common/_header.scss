@@ -95,6 +95,12 @@
 
       color: $color-text__orange;
       font-size: $font-size__text--large;
+
+      @media (hover: hover) {
+        &:hover {
+          transform: translateX(5px);
+        }
+      }
     }
   }
 
