@@ -1,0 +1,107 @@
+// -----------------------------------------------------------------------------
+// Фрагмент стилизации какой-то секции
+// -----------------------------------------------------------------------------
+
+#hero {
+  @include breakpoint($breakpoint-laptop--medium) {
+    padding-top: 55px;
+  }
+
+  padding-top: 85px;
+  background-color: $palette-black;
+}
+
+.hero {
+  &__row {
+    &--main {
+      background-image: url("../img/page/index/hero/background.png");
+      background-position-x: right;
+      background-position-y: bottom;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &--inverted {
+      @include breakpoint($breakpoint-laptop--medium) {
+        padding-bottom: 110px;
+      }
+
+      position: relative;
+      padding-bottom: 150px;
+      background-color: $palette-white;
+    }
+  }
+
+  &__content {
+    color: $color-text__white;
+  }
+
+  &__title {
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin-bottom: 20px;
+    }
+
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin-bottom: 30px;
+    }
+
+    margin-bottom: 50px;
+  }
+
+  &__action {
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin-bottom: 70px;
+    }
+
+    margin-bottom: 110px;
+
+    .button {
+      @include breakpoint($breakpoint-laptop--medium) {
+        min-width: 180px;
+        font-size: $font-size__text--big;
+      }
+
+      min-width: 210px;
+    }
+  }
+
+  &__special {
+    @include breakpoint($breakpoint-laptop--medium) {
+      padding-bottom: 20px;
+    }
+
+    padding-bottom: 25px;
+
+    .link {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $font-size__text--big;
+      }
+
+      color: $color-text__orange;
+      font-size: $font-size__text--large;
+    }
+  }
+
+  &__motion {
+    @include breakpoint($breakpoint-laptop--medium) {
+      right: 30px;
+      width: 820px;
+    }
+
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+
+    width: 1050px;
+  }
+
+  &__video {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+}

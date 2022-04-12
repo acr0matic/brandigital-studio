@@ -1,2 +1,9 @@
 .section {
+  &__title {
+    font-size: $font-size__title--medium;
+
+    span {
+      color: $color-text__orange;
+    }
+  }
 }
