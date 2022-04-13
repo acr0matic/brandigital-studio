@@ -1,6 +1,10 @@
 .section {
   margin-top: 80px;
 
+  &__header {
+    margin-bottom: 30px;
+  }
+
   &__title {
     @include breakpoint($breakpoint-laptop--medium) {
       font-size: $font-size__title--medium - 3;

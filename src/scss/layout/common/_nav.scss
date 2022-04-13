@@ -70,20 +70,6 @@
         font-size: $font-size__text--large;
         line-height: 140%;
 
-        &::after {
-          content: url("../img/icons/component/nav/arrow__right.svg");
-          position: absolute;
-          top: 43%;
-          right: -15px;
-
-          transform: translateY(-50%);
-
-          visibility: hidden;
-          opacity: 0;
-
-          transition: 0.15s ease;
-        }
-
         @media (hover: hover) {
           &:hover {
             color: $color-text__white;
@@ -95,6 +81,19 @@
               visibility: visible;
             }
           }
+        }
+
+        &::after {
+          content: url("../img/icons/component/nav/arrow__right.svg");
+          position: absolute;
+          top: 43%;
+          right: -15px;
+
+          opacity: 0;
+          visibility: hidden;
+
+          transform: translateY(-50%);
+          transition: 0.15s ease;
         }
       }
     }

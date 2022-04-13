@@ -1,0 +1,138 @@
+.promotion-item {
+  @include breakpoint($breakpoint-laptop--medium) {
+    height: 210px;
+    padding: 25px 20px;
+  }
+
+  position: relative;
+
+  height: 270px;
+  padding: 30px 25px;
+
+  border-radius: 25px;
+
+  color: $color-text__white;
+
+  cursor: pointer;
+  transition: 0.15s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+
+  &--black {
+    background: linear-gradient(180deg, #3a3a3a 0%, #000000 67.94%);
+
+    &::after {
+      background-color: $palette-orange;
+    }
+  }
+
+  &--orange {
+    background: linear-gradient(106.13deg, #ff8025 0.75%, #ed6300 98.98%);
+
+    &::after {
+      background-color: $palette-black;
+    }
+  }
+
+  &--big {
+    min-height: 280px !important;
+    cursor: default;
+
+    &:hover {
+      transform: none !important;
+    }
+
+    .promotion-item__title {
+      font-size: 50px;
+    }
+
+    .promotion-item__description {
+      font-weight: $weight-Bold;
+      font-size: 32px;
+    }
+
+    .promotion-item__info {
+      font-size: 20px;
+    }
+  }
+
+  &--new {
+    &::after {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $font-size__text--large;
+      }
+
+      content: "NEW";
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      right: -0;
+
+      padding: 5px 20px;
+      border-top-right-radius: $border-radius--large;
+      border-bottom-left-radius: $border-radius--large;
+
+      font-weight: $weight-Bold;
+      font-size: $font-size__title--small;
+
+      letter-spacing: 3px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__background {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__title,
+  &__subtitle {
+    font-weight: $weight-Bold;
+  }
+
+  &__title {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: 27px;
+    }
+
+    margin-bottom: 8px;
+
+    font-weight: $weight-Bold;
+    font-size: $font-size__title--medium;
+  }
+
+  &__subtitle {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: 20px;
+    }
+
+    font-size: 25px;
+  }
+
+  &__info {
+    margin-top: auto;
+
+    font-weight: $weight-Bold;
+    font-size: $font-size__text--regular;
+  }
+
+  &__hide {
+    display: none;
+  }
+}
