@@ -3,17 +3,18 @@
 // -----------------------------------------------------------------------------
 
 #hero {
-  @include breakpoint($breakpoint-laptop--medium) {
-    padding-top: 55px;
-  }
-
-  padding-top: 85px;
   background-color: $palette-black;
 }
 
 .hero {
   &__row {
     &--main {
+      @include breakpoint($breakpoint-laptop--medium) {
+        padding-top: 55px;
+      }
+
+      padding-top: 85px;
+
       background-image: url("../img/page/index/hero/background.png");
       background-position-x: right;
       background-position-y: bottom;

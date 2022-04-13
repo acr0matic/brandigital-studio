@@ -113,6 +113,11 @@
   }
 
   &__icon {
+    @include breakpoint($breakpoint-laptop--large) {
+      width: 24px;
+      height: 24px;
+    }
+
     position: relative;
     bottom: -2px;
 
@@ -123,11 +128,6 @@
 
     path {
       transition: 0.2s ease;
-    }
-
-    @include breakpoint($breakpoint-laptop--large) {
-      width: 24px;
-      height: 24px;
     }
   }
 
