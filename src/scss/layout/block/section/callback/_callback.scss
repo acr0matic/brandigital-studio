@@ -1,29 +1,17 @@
 #callback {
-  margin-top: 70px;
-
-  padding-top: 50px;
-  padding-bottom: 100px;
-
-  background:
-    url("../img/section/callback/background.svg") no-repeat
-    calc(50% + 500px) bottom;
-
-  background-size: 700px;
-
-  @include breakpoint($breakpoint-laptop--large) {
+  @include breakpoint($breakpoint-laptop--medium) {
     background-position-x: calc(50% + 350px);
     background-size: 575px;
   }
 
-  @include breakpoint($breakpoint-tablet--large) {
-    background-position-x: calc(50% + 220px);
-    background-size: 460px;
-  }
+  margin-top: 70px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 
-  @include breakpoint($breakpoint-mobile--large) {
-    padding-bottom: 30px;
-    background: none !important;
-  }
+  background: url("../img/section/callback/background.svg") no-repeat
+    calc(50% + 500px) bottom;
+
+  background-size: 700px;
 }
 
 .callback {
