@@ -71,4 +71,47 @@ if (header) {
     heroHeight = getHeight(heroBlock);
     headerHeight = getHeight(header);
   });
+
+
+
+  /*
+  --------------------------------------------------------
+                СКРИПТ БОКОВОГО МЕНЮ
+  --------------------------------------------------------
+  */
+
+  const headerBurger = header.querySelector('.header__burger');
+
+  const sideMenu = document.getElementById('side-menu');
+  const sideMenuOverlay = sideMenu.querySelector('.side-menu__overlay');
+  const sideMenuClose = sideMenu.querySelector('.side-menu__close');
+
+  sideMenuOverlay.addEventListener('click', () => Menu('side', 'close'));
+  sideMenuClose.addEventListener('click', () => Menu('side', 'close'));
+
+  headerBurger.addEventListener('click', () => {
+    if (window.matchMedia('(min-width: 991px)').matches) Menu('side', 'open');
+    else Menu('mobile', 'toggle');
+  });
+
+  function Menu(menu, state) {
+    if (state === 'open') {
+      document.body.classList.add('body-scroll--disabled');
+
+      if (menu === 'side') sideMenu.classList.add('side-menu--open');
+      else if (menu === 'mobile') mobileMenu.classList.add('side-menu--open');
+    }
+
+    else if (state === 'close') {
+      document.body.classList.remove('body-scroll--disabled');
+      if (menu === 'side') sideMenu.classList.remove('side-menu--open');
+    }
+
+    else if (state === 'toggle') {
+      header.classList.toggle('header-mobile');
+      document.body.classList.toggle('body-scroll--disabled');
+      if (menu === 'mobile') mobileMenu.classList.toggle('mobile-menu--open');
+    }
+  }
+
 }
