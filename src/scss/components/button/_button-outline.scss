@@ -5,6 +5,7 @@
     &:hover {
       border-color: #3d3d3d;
       background-color: #3d3d3d;
+      color: $color-text__white;
     }
   }
 
@@ -21,11 +22,5 @@
     color: #353535;
 
     font-weight: $weight-Bold;
-
-    @media (hover: hover) {
-      &:hover {
-        color: $color-text__white;
-      }
-    }
   }
 }

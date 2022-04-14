@@ -18,8 +18,12 @@
 
   &--page {
     &::-webkit-scrollbar {
-      width: 12px;
+      width: 16px;
       height: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-width: 4px;
     }
   }
 }

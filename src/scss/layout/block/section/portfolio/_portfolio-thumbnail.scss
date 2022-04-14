@@ -1,0 +1,29 @@
+.portfolio-thumbnail {
+  padding: 10px;
+  border-radius: 8px;
+
+  transition: $transition ease;
+
+  &__picture {
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    font-size: $font-size__text--large;
+  }
+
+  &__deadline {
+    color: $color-text__gray;
+
+    font-weight: $weight-Medium;
+    font-size: $font-size__text--regular;
+
+    span {
+      color: $color-text__orange;
+      font-weight: $weight-Bold;
+    }
+  }
+}

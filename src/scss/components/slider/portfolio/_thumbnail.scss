@@ -1,0 +1,12 @@
+#portfolio .thumbnail__slider {
+  overflow: visible;
+
+  .swiper-slide {
+    width: 270px;
+
+    &-thumb-active .portfolio-thumbnail {
+      box-shadow: -2px 3px 5px rgba($color: #000000, $alpha: 0.25);
+      transform: translateY(-25px);
+    }
+  }
+}

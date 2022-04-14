@@ -1,2 +1,25 @@
-.slider {
+.swiper-fade {
+  & > .swiper-wrapper > .swiper-slide-active {
+    z-index: 5;
+  }
+}
+
+.swiper {
+  &-button {
+    &-prev,
+    &-next {
+      outline: none;
+      transition: all 0.15s ease;
+
+      @media (hover: hover) {
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+
+      &::after {
+        content: "";
+      }
+    }
+  }
 }

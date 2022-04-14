@@ -9,4 +9,15 @@
   &--contain {
     object-fit: contain;
   }
+
+  &--clickable {
+    cursor: pointer;
+    transition: $transition ease;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
 }

@@ -1,4 +1,26 @@
 .list {
+  &--info {
+    .list__item {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $font-size__text--big;
+      }
+
+      color: $color-text__gray;
+
+      font-weight: $weight-Medium;
+      font-size: $font-size__text--large;
+
+      span {
+        color: $color-text__orange;
+        font-weight: $weight-Bold;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
   &__item {
   }
 }

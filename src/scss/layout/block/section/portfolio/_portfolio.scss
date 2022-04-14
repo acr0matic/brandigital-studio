@@ -1,0 +1,17 @@
+#portfolio {
+  .tab__slider {
+
+  }
+
+  .inner__slider {
+
+  }
+}
+
+.portfolio {
+  &__tab {
+    position: relative;
+    overflow: auto;
+    text-align: center;
+  }
+}
