@@ -11,14 +11,16 @@
     &--main {
       @include breakpoint($breakpoint-laptop--medium) {
         padding-top: 55px;
+        background-size: 900px;
+        background-position-x: calc(50% + 220px);
       }
 
       padding-top: 85px;
 
       background-image: url("../img/page/index/hero/background.png");
-      background-position-x: right;
+      background-position-x: calc(50% + 300px);
       background-position-y: bottom;
-      background-size: contain;
+      background-size: 1150px;
       background-repeat: no-repeat;
     }
 
@@ -63,10 +65,17 @@
     .button {
       @include breakpoint($breakpoint-laptop--medium) {
         min-width: 180px;
+
+        padding-right: 25px;
+        padding-left: 25px;
+
         font-size: $font-size__text--big;
       }
 
       min-width: 210px;
+
+      padding-right: 50px;
+      padding-left: 50px;
     }
   }
 
@@ -89,13 +98,14 @@
 
   &__motion {
     @include breakpoint($breakpoint-laptop--medium) {
-      right: 30px;
-      width: 820px;
+      right: -30px;
+      bottom: -110px;
+      width: 800px;
     }
 
     position: absolute;
-    right: 5%;
-    bottom: 0;
+    right: -80px;
+    bottom: -150px;
 
     width: 1050px;
   }
