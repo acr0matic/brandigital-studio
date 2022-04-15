@@ -132,6 +132,7 @@
     }
 
     @include breakpoint($breakpoint-laptop) {
+      bottom: -90px;
       width: 625px;
     }
 

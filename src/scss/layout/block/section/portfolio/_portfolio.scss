@@ -2,11 +2,9 @@
   overflow: hidden;
 
   .tab__slider {
-
   }
 
   .inner__slider {
-
   }
 }
 
@@ -15,5 +13,20 @@
     position: relative;
     overflow: auto;
     text-align: center;
+  }
+
+  &__slider {
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin-bottom: 25px;
+    }
+
+    margin-bottom: 45px;
+  }
+
+  &__action {
+    text-align: center;
+  }
+
+  &__button {
   }
 }
