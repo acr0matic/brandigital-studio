@@ -7,6 +7,11 @@
 }
 
 .footer {
+  @include breakpoint($breakpoint-laptop) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   display: flex;
   justify-content: space-between;
 
@@ -28,6 +33,10 @@
       font-size: $font-size__text--big;
     }
 
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--regular;
+    }
+
     font-size: $font-size__text--large;
   }
 
@@ -41,6 +50,10 @@
   &__logo {
     @include breakpoint($breakpoint-laptop--medium) {
       width: 250px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      width: 200px;
     }
 
     width: 300px;
@@ -101,6 +114,11 @@
     &--main {
       @include breakpoint($breakpoint-laptop--medium) {
         margin-bottom: 30px;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        margin-bottom: 20px;
+        font-size: 22px;
       }
 
       margin-bottom: 40px;

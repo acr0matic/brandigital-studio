@@ -20,6 +20,10 @@
       margin-left: 8px;
     }
 
+    @include breakpoint($breakpoint-laptop) {
+      width: 10px;
+    }
+
     width: 16px;
     margin-left: 15px;
 
@@ -47,8 +51,7 @@
 
     opacity: 0;
     visibility: hidden;
-    filter:
-      drop-shadow(-2px 0 5px rgba($color: #000000, $alpha: 0.15))
+    filter: drop-shadow(-2px 0 5px rgba($color: #000000, $alpha: 0.15))
       drop-shadow(2px 3px 5px rgba($color: #000000, $alpha: 0.15));
 
     transition: 0.15s ease;

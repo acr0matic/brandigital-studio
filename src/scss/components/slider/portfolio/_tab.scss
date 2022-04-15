@@ -21,6 +21,11 @@
         font-size: 22px;
       }
 
+      @include breakpoint($breakpoint-laptop) {
+        padding: 0 20px 8px;
+        font-size: $font-size__text--big;
+      }
+
       display: flex;
       align-items: center;
       justify-content: center;

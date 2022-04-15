@@ -5,6 +5,10 @@
         font-size: $font-size__text--big;
       }
 
+      @include breakpoint($breakpoint-laptop) {
+        font-size: $font-size__text--regular;
+      }
+
       color: $color-text__gray;
 
       font-weight: $weight-Medium;
@@ -16,6 +20,10 @@
       }
 
       &:not(:last-child) {
+        @include breakpoint($breakpoint-laptop) {
+          margin-bottom: 6px;
+        }
+
         margin-bottom: 10px;
       }
     }

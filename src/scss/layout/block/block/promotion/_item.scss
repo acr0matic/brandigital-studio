@@ -4,6 +4,13 @@
     padding: 25px 20px;
   }
 
+  @include breakpoint($breakpoint-laptop) {
+    height: 170px;
+    padding: 18px 15px 10px;
+
+    border-radius: 15px;
+  }
+
   position: relative;
 
   height: 270px;
@@ -63,7 +70,15 @@
   &--new {
     &::after {
       @include breakpoint($breakpoint-laptop--medium) {
+        border-top-right-radius: $border-radius--medium;
+        border-bottom-left-radius: $border-radius--medium;
+
         font-size: $font-size__text--large;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        padding: 5px 15px;
+        font-size: $font-size__text--big;
       }
 
       content: "NEW";
@@ -111,6 +126,10 @@
       font-size: 27px;
     }
 
+    @include breakpoint($breakpoint-laptop) {
+      font-size: 22px;
+    }
+
     margin-bottom: 8px;
 
     font-weight: $weight-Bold;
@@ -122,10 +141,18 @@
       font-size: 20px;
     }
 
+    @include breakpoint($breakpoint-laptop) {
+      font-size: 16px;
+    }
+
     font-size: 25px;
   }
 
   &__info {
+    @include breakpoint($breakpoint-laptop) {
+      font-size: 14px;
+    }
+
     margin-top: auto;
 
     font-weight: $weight-Bold;

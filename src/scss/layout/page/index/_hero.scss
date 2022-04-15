@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 
 #hero {
+  overflow: hidden;
   background-color: $palette-black;
 }
 
@@ -11,8 +12,14 @@
     &--main {
       @include breakpoint($breakpoint-laptop--medium) {
         padding-top: 55px;
-        background-size: 900px;
+
         background-position-x: calc(50% + 220px);
+        background-size: 900px;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        background-position-x: calc(50% + 200px);
+        background-size: 700px;
       }
 
       padding-top: 85px;
@@ -44,6 +51,10 @@
       margin-bottom: 20px;
     }
 
+    @include breakpoint($breakpoint-laptop) {
+      margin-bottom: 15px;
+    }
+
     margin-bottom: 30px;
   }
 
@@ -52,12 +63,20 @@
       margin-bottom: 30px;
     }
 
+    @include breakpoint($breakpoint-laptop) {
+      margin-bottom: 20px;
+    }
+
     margin-bottom: 50px;
   }
 
   &__action {
     @include breakpoint($breakpoint-laptop--medium) {
       margin-bottom: 70px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      margin-bottom: 50px;
     }
 
     margin-bottom: 110px;
@@ -70,6 +89,15 @@
         padding-left: 25px;
 
         font-size: $font-size__text--big;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        min-width: 170px;
+
+        padding-right: 20px;
+        padding-left: 20px;
+
+        font-size: $font-size__text--regular;
       }
 
       min-width: 210px;
@@ -101,6 +129,10 @@
       right: -30px;
       bottom: -110px;
       width: 800px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      width: 625px;
     }
 
     position: absolute;

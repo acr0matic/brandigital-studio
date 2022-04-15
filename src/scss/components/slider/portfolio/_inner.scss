@@ -1,4 +1,8 @@
 #portfolio .inner__slider {
+  @include breakpoint($breakpoint-laptop) {
+    margin-bottom: 55px;
+  }
+
   position: static;
   width: 85%;
 

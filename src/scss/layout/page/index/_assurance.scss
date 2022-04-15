@@ -11,6 +11,10 @@
       padding: 50px 15px;
     }
 
+    @include breakpoint($breakpoint-laptop) {
+      padding: 20px 15px;
+    }
+
     position: relative;
     z-index: 2;
 
@@ -57,10 +61,18 @@
   }
 
   &__title {
+    @include breakpoint($breakpoint-laptop) {
+      margin-bottom: 15px;
+    }
+
     margin-bottom: 20px;
   }
 
   &__text {
+    @include breakpoint($breakpoint-laptop) {
+      margin-bottom: 15px;
+    }
+
     margin-bottom: 30px;
   }
 
@@ -105,6 +117,11 @@
     @include breakpoint($breakpoint-laptop--large) {
       width: 80px;
       height: 80px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      width: 60px;
+      height: 60px;
     }
 
     width: 90px;

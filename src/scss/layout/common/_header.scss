@@ -67,17 +67,30 @@
       margin-right: 75px;
     }
 
+    @include breakpoint($breakpoint-laptop) {
+      width: 85px;
+      margin-right: 30px;
+    }
+
     width: 115px;
     margin-right: 110px;
   }
 
   &__nav {
+    @include breakpoint($breakpoint-laptop) {
+      margin-right: 30px;
+    }
+
     margin-right: 50px;
   }
 
   &__callback {
     @include breakpoint($breakpoint-laptop--medium) {
       margin-right: 25px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      margin-right: 10px;
     }
 
     display: flex;
@@ -91,6 +104,10 @@
     .link {
       @include breakpoint($breakpoint-laptop--medium) {
         font-size: $font-size__text--regular;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        font-size: $font-size__text--small;
       }
 
       color: $color-text__orange;
@@ -109,6 +126,10 @@
       margin-right: 25px;
     }
 
+    @include breakpoint($breakpoint-laptop) {
+      margin-right: 10px;
+    }
+
     @include breakpoint($breakpoint-tablet--large) {
       display: none;
     }
@@ -122,10 +143,29 @@
       padding-left: 22px;
     }
 
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--small;
+    }
+
     padding-right: 30px;
     padding-left: 30px;
   }
 
   &__burger {
+    @include breakpoint($breakpoint-laptop) {
+      .hamburger-box {
+        width: 30px;
+      }
+
+      .hamburger-inner {
+        &::before {
+          top: -8px;
+        }
+
+        &::after {
+          bottom: -8px;
+        }
+      }
+    }
   }
 }

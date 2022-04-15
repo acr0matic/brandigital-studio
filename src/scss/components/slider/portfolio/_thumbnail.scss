@@ -2,6 +2,10 @@
   overflow: visible;
 
   .swiper-slide {
+    @include breakpoint($breakpoint-laptop) {
+      width: 200px;
+    }
+
     width: 270px;
 
     &-thumb-active .portfolio-thumbnail {

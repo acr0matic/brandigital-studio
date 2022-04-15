@@ -109,6 +109,10 @@
     @include breakpoint($breakpoint-laptop--medium) {
       width: 32px;
     }
+
+    @include breakpoint($breakpoint-laptop) {
+      width: 27px;
+    }
   }
 
   &__social {

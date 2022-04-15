@@ -1,4 +1,8 @@
 .section {
+  @include breakpoint($breakpoint-laptop) {
+    margin-top: 50px;
+  }
+
   margin-top: 80px;
 
   &__header {
@@ -10,9 +14,17 @@
       font-size: $font-size__title--medium - 3;
     }
 
+    @include breakpoint($breakpoint-laptop) {
+      font-size: 25px;
+    }
+
     font-size: $font-size__title--medium;
 
     span {
+      color: $color-text__orange;
+    }
+
+    &--orange {
       color: $color-text__orange;
     }
   }
@@ -20,6 +32,10 @@
   &__text {
     @include breakpoint($breakpoint-laptop--medium) {
       font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--regular;
     }
 
     font-size: $font-size__text--large;

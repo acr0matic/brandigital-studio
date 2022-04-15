@@ -3,6 +3,10 @@
     height: 265px;
   }
 
+  @include breakpoint($breakpoint-laptop) {
+    height: 210px;
+  }
+
   position: relative;
   overflow: hidden;
 
@@ -32,6 +36,10 @@
   }
 
   &__wrapper {
+    @include breakpoint($breakpoint-laptop) {
+      padding: 25px;
+    }
+
     position: relative;
     z-index: 2;
     display: flex;
@@ -47,12 +55,20 @@
       font-size: $font-size__title--small - 3;
     }
 
+    @include breakpoint($breakpoint-laptop) {
+      font-size: 22px;
+    }
+
     font-size: $font-size__title--small;
   }
 
   &__price {
     @include breakpoint($breakpoint-laptop--medium) {
       font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--regular;
     }
 
     margin-top: auto;

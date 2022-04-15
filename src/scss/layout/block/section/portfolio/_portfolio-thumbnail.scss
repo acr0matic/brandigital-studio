@@ -11,11 +11,19 @@
   }
 
   &__title {
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--regular;
+    }
+
     margin-bottom: 5px;
     font-size: $font-size__text--large;
   }
 
   &__deadline {
+    @include breakpoint($breakpoint-laptop) {
+      font-size: 13px;
+    }
+
     color: $color-text__gray;
 
     font-weight: $weight-Medium;

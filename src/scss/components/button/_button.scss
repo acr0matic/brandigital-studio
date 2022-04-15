@@ -4,6 +4,10 @@
     font-size: $font-size__text--regular;
   }
 
+  @include breakpoint($breakpoint-laptop) {
+    padding: 10px 22px;
+  }
+
   padding: 15px 65px;
 
   border: 2px solid transparent;

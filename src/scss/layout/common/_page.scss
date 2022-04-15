@@ -8,6 +8,10 @@
       font-size: $font-size__title--large - 5;
     }
 
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__title--small;
+    }
+
     font-weight: $weight-Black;
     font-size: $font-size__title--large;
   }
@@ -15,6 +19,10 @@
   &__description {
     @include breakpoint($breakpoint-laptop--medium) {
       font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--regular;
     }
 
     font-size: $font-size__text--large;

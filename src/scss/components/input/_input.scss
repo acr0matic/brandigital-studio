@@ -31,6 +31,11 @@
       font-size: 22px;
     }
 
+    @include breakpoint($breakpoint-laptop) {
+      min-height: 43px;
+      font-size: 16px;
+    }
+
     width: 100%;
 
     padding: 15px 30px;
@@ -78,8 +83,6 @@
     top: 50%;
     left: 30px;
 
-    transform: translateY(-50%);
-
     color: $color-text__gray;
     letter-spacing: 2px;
 
@@ -87,6 +90,7 @@
     visibility: hidden;
 
     pointer-events: none;
+    transform: translateY(-50%);
     transition: 0.15s ease;
 
     span {

@@ -117,7 +117,10 @@ $hamburger-types: (
 // ==================================================
 .hamburger {
   padding: $hamburger-padding-y $hamburger-padding-x;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   cursor: pointer;
 
   transition-property: opacity, filter;
@@ -175,7 +178,7 @@ $hamburger-types: (
   &,
   &::before,
   &::after {
-    width: $hamburger-layer-width;
+    width: 100%;
     height: $hamburger-layer-height;
     background-color: $hamburger-layer-color;
     border-radius: $hamburger-layer-border-radius;

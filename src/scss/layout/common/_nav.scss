@@ -24,6 +24,10 @@
           margin-right: 32px;
         }
 
+        @include breakpoint($breakpoint-laptop) {
+          margin-right: 20px;
+        }
+
         margin-right: 40px;
       }
     }
@@ -32,6 +36,13 @@
       @include breakpoint($breakpoint-laptop--medium) {
         font-size: $font-size__text--regular;
       }
+
+      @include breakpoint($breakpoint-laptop) {
+        font-size: $font-size__text--small;
+      }
+
+      display: flex;
+      align-items: center;
 
       color: $color-text__white;
 
@@ -54,11 +65,19 @@
 
       &__item {
         &:not(:last-child) {
+          @include breakpoint($breakpoint-laptop--medium) {
+            margin-bottom: 25px;
+          }
+
           margin-bottom: 30px;
         }
       }
 
       &__link {
+        @include breakpoint($breakpoint-laptop) {
+          font-size: 22px;
+        }
+
         color: $color-text__white;
 
         font-weight: $weight-Medium;

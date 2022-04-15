@@ -8,6 +8,10 @@
   &-button {
     &-prev,
     &-next {
+      @include breakpoint($breakpoint-laptop) {
+        width: 20px;
+      }
+
       outline: none;
       transition: all 0.15s ease;
 
