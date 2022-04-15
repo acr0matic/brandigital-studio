@@ -54,6 +54,10 @@
     height: 100px;
   }
 
+  @include breakpoint($breakpoint-tablet--large) {
+    height: 60px;
+  }
+
   display: flex;
   align-items: center;
 
@@ -72,6 +76,10 @@
       margin-right: 30px;
     }
 
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 65px;
+    }
+
     width: 115px;
     margin-right: 110px;
   }
@@ -79,6 +87,10 @@
   &__nav {
     @include breakpoint($breakpoint-laptop) {
       margin-right: 30px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      display: none;
     }
 
     margin-right: 50px;
@@ -91,6 +103,10 @@
 
     @include breakpoint($breakpoint-laptop) {
       margin-right: 10px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-right: 20px;
     }
 
     display: flex;
@@ -131,7 +147,7 @@
     }
 
     @include breakpoint($breakpoint-tablet--large) {
-      display: none;
+      margin-right: 20px;
     }
 
     margin-right: 40px;
@@ -145,6 +161,10 @@
 
     @include breakpoint($breakpoint-laptop) {
       font-size: $font-size__text--small;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      padding: 6px 15px;
     }
 
     padding-right: 30px;

@@ -1,4 +1,9 @@
 #assurance {
+  @include breakpoint($breakpoint-tablet--large) {
+    margin-top: 40px;
+    margin-bottom: -10px;
+  }
+
   text-align: center;
 }
 
@@ -65,12 +70,20 @@
       margin-bottom: 15px;
     }
 
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 10px;
+    }
+
     margin-bottom: 20px;
   }
 
   &__text {
     @include breakpoint($breakpoint-laptop) {
       margin-bottom: 15px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 10px;
     }
 
     margin-bottom: 30px;
@@ -97,6 +110,10 @@
     }
 
     &:not(:last-child) {
+      @include breakpoint($breakpoint-tablet--large) {
+        margin-bottom: 5px;
+      }
+
       margin-bottom: 15px;
     }
 
@@ -122,6 +139,11 @@
     @include breakpoint($breakpoint-laptop) {
       width: 60px;
       height: 60px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 50px;
+      height: 50px;
     }
 
     width: 90px;

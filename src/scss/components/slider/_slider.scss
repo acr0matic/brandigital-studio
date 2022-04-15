@@ -12,6 +12,10 @@
         width: 20px;
       }
 
+      @include breakpoint($breakpoint-tablet--large) {
+        width: 15px;
+      }
+
       outline: none;
       transition: all 0.15s ease;
 

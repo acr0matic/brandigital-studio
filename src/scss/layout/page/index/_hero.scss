@@ -22,6 +22,13 @@
         background-size: 700px;
       }
 
+      @include breakpoint($breakpoint-tablet--large) {
+        padding-top: 20px;
+
+        background-position-x: calc(50% + 180px);
+        background-size: 520px;
+      }
+
       padding-top: 85px;
 
       background-image: url("../img/page/index/hero/background.png");
@@ -34,6 +41,10 @@
     &--inverted {
       @include breakpoint($breakpoint-laptop--medium) {
         padding-bottom: 110px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        padding-bottom: 60px;
       }
 
       position: relative;
@@ -67,6 +78,7 @@
       margin-bottom: 20px;
     }
 
+    max-width: 45%;
     margin-bottom: 50px;
   }
 
@@ -77,6 +89,10 @@
 
     @include breakpoint($breakpoint-laptop) {
       margin-bottom: 50px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 30px;
     }
 
     margin-bottom: 110px;
@@ -100,6 +116,15 @@
         font-size: $font-size__text--regular;
       }
 
+      @include breakpoint($breakpoint-tablet--large) {
+        min-width: 120px;
+
+        padding-right: 30px;
+        padding-left: 30px;
+
+        font-size: $font-size__text--small;
+      }
+
       min-width: 210px;
 
       padding-right: 50px;
@@ -119,6 +144,10 @@
         font-size: $font-size__text--big;
       }
 
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: $font-size__text--small;
+      }
+
       color: $color-text__orange;
       font-size: $font-size__text--large;
     }
@@ -134,6 +163,12 @@
     @include breakpoint($breakpoint-laptop) {
       bottom: -90px;
       width: 625px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      right: -40px;
+      bottom: -60px;
+      width: 440px;
     }
 
     position: absolute;

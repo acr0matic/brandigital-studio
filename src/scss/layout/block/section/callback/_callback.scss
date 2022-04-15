@@ -12,6 +12,10 @@
     background-size: 425px;
   }
 
+  @include breakpoint($breakpoint-tablet--large) {
+    background-size: 360px;
+  }
+
   margin-top: 70px;
   padding-top: 50px;
   padding-bottom: 100px;
@@ -36,7 +40,12 @@
     }
 
     @include breakpoint($breakpoint-laptop) {
-      font-size: 18px;
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-weight: $weight-Bold;
+      font-size: $font-size__text--regular;
     }
 
     display: inline-block;

@@ -8,6 +8,11 @@
       height: 280px;
     }
 
+    @include breakpoint($breakpoint-tablet--large) {
+      height: 220px;
+      border-radius: 12px;
+    }
+
     overflow: hidden;
     height: 490px;
 
@@ -23,11 +28,19 @@
       padding-top: 25px;
     }
 
+    @include breakpoint($breakpoint-tablet--large) {
+      padding-top: 20px;
+    }
+
     padding-top: 90px;
 
     & > *:not(:last-child) {
       @include breakpoint($breakpoint-laptop) {
         margin-bottom: 20px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        margin-bottom: 10px;
       }
 
       margin-bottom: 25px;
@@ -43,6 +56,10 @@
       font-size: 22px;
     }
 
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--regular;
+    }
+
     font-size: $font-size__title--small;
   }
 
@@ -53,6 +70,10 @@
 
     @include breakpoint($breakpoint-laptop) {
       font-size: $font-size__text--regular;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--small;
     }
 
     font-size: $font-size__text--large;

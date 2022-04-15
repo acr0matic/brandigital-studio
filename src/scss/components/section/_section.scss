@@ -6,6 +6,10 @@
   margin-top: 80px;
 
   &__header {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 20px;
+    }
+
     margin-bottom: 30px;
   }
 
@@ -16,6 +20,10 @@
 
     @include breakpoint($breakpoint-laptop) {
       font-size: 25px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--big;
     }
 
     font-size: $font-size__title--medium;
@@ -36,6 +44,10 @@
 
     @include breakpoint($breakpoint-laptop) {
       font-size: $font-size__text--regular;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--small;
     }
 
     font-size: $font-size__text--large;

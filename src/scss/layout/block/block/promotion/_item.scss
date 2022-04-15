@@ -11,6 +11,11 @@
     border-radius: 15px;
   }
 
+  @include breakpoint($breakpoint-tablet--large) {
+    height: 125px;
+    padding: 14px 12px;
+  }
+
   position: relative;
 
   height: 270px;
@@ -81,6 +86,10 @@
         font-size: $font-size__text--big;
       }
 
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: 12px;
+      }
+
       content: "NEW";
       position: absolute;
       z-index: 3;
@@ -130,6 +139,11 @@
       font-size: 22px;
     }
 
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 5px;
+      font-size: $font-size__text--regular;
+    }
+
     margin-bottom: 8px;
 
     font-weight: $weight-Bold;
@@ -145,12 +159,20 @@
       font-size: 16px;
     }
 
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--small;
+    }
+
     font-size: 25px;
   }
 
   &__info {
     @include breakpoint($breakpoint-laptop) {
       font-size: 14px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: 10px;
     }
 
     margin-top: auto;

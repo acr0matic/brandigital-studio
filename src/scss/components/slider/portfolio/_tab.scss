@@ -26,6 +26,11 @@
         font-size: $font-size__text--big;
       }
 
+      @include breakpoint($breakpoint-tablet--large) {
+        padding: 0 20px 4px;
+        font-size: $font-size__text--regular - 2;
+      }
+
       display: flex;
       align-items: center;
       justify-content: center;

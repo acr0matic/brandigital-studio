@@ -5,6 +5,12 @@
   background-color: #ffffff;
   background-size: cover;
 
+  .section__header {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 10px;
+    }
+  }
+
   .section__text {
     @include breakpoint($breakpoint-laptop--medium) {
       br {
@@ -34,6 +40,11 @@
 
     @include breakpoint($breakpoint-laptop) {
       height: 270px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      height: 205px;
+      border-radius: 6px;
     }
 
     overflow: hidden;

@@ -37,6 +37,10 @@
       font-size: $font-size__text--regular;
     }
 
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--small;
+    }
+
     font-size: $font-size__text--large;
   }
 
@@ -56,6 +60,11 @@
       width: 200px;
     }
 
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
     width: 300px;
     margin-bottom: 40px;
 
@@ -67,6 +76,10 @@
 
   &__index,
   &__company {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 15px;
+    }
+
     margin-bottom: 20px;
   }
 
@@ -119,6 +132,11 @@
       @include breakpoint($breakpoint-laptop) {
         margin-bottom: 20px;
         font-size: 22px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        margin-bottom: 15px;
+        font-size: $font-size__text--regular;
       }
 
       margin-bottom: 40px;

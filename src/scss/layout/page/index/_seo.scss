@@ -11,6 +11,10 @@
       font-size: 22px;
     }
 
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--big;
+    }
+
     font-size: $font-size__title--small;
   }
 
@@ -18,6 +22,10 @@
     @include breakpoint($breakpoint-laptop) {
       margin-bottom: 20px;
       font-size: $font-size__text--regular;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--small;
     }
 
     margin-bottom: 30px;
@@ -30,6 +38,10 @@
         margin-bottom: 20px;
       }
 
+      @include breakpoint($breakpoint-tablet--large) {
+        margin-bottom: 15px;
+      }
+
       margin-bottom: 30px;
     }
 
@@ -40,6 +52,10 @@
 
       @include breakpoint($breakpoint-laptop) {
         font-size: $font-size__text--regular;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: $font-size__text--small;
       }
 
       font-weight: $weight-Medium;
@@ -60,6 +76,10 @@
 
       @include breakpoint($breakpoint-laptop) {
         font-size: $font-size__text--regular;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: $font-size__text--small;
       }
 
       font-size: $font-size__text--large;
@@ -87,6 +107,10 @@
   &__link {
     @include breakpoint($breakpoint-laptop) {
       font-size: $font-size__text--regular;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--small;
     }
 
     display: inline-flex;

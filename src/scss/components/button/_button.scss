@@ -5,7 +5,12 @@
   }
 
   @include breakpoint($breakpoint-laptop) {
-    padding: 10px 22px;
+    padding: 10px 25px;
+  }
+
+  @include breakpoint($breakpoint-tablet--large) {
+    border-width: 1px;
+    font-size: $font-size__text--small;
   }
 
   padding: 15px 65px;
