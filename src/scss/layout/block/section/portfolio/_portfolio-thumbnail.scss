@@ -1,4 +1,8 @@
 .portfolio-thumbnail {
+  @include breakpoint($breakpoint-tablet) {
+    padding: 0;
+  }
+
   padding: 10px;
   border-radius: 8px;
 

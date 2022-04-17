@@ -13,6 +13,11 @@
     font-size: $font-size__text--small;
   }
 
+  @include breakpoint($breakpoint-tablet) {
+    padding: 15px 65px;
+    font-size: $font-size__text--regular;
+  }
+
   padding: 15px 65px;
 
   border: 2px solid transparent;

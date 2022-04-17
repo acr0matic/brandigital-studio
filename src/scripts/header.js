@@ -108,7 +108,7 @@ if (header) {
     }
 
     else if (state === 'toggle') {
-      header.classList.toggle('header-mobile');
+      header.classList.toggle(StyleСlass.header.inverted);
       document.body.classList.toggle('body-scroll--disabled');
       if (menu === 'mobile') mobileMenu.classList.toggle('mobile-menu--open');
     }

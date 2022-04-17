@@ -5,6 +5,9 @@
   }
 
   .inner__slider {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
   }
 }
 

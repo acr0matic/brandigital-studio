@@ -1,4 +1,8 @@
 #about {
+  @include breakpoint($breakpoint-tablet) {
+    display: none;
+  }
+
   padding: 45px 0;
 
   background: url("../img/page/index/about/background.svg") no-repeat;

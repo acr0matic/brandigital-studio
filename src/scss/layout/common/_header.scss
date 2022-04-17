@@ -36,19 +36,6 @@
   }
 }
 
-.header-mobile {
-  background-color: $palette-white !important;
-  box-shadow: none;
-
-  .header__logo .invert {
-    fill: $palette-black;
-  }
-
-  .header__callback a {
-    color: $color-text__black;
-  }
-}
-
 .header {
   @include breakpoint($breakpoint-laptop--medium) {
     height: 100px;
@@ -56,6 +43,10 @@
 
   @include breakpoint($breakpoint-tablet--large) {
     height: 60px;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    height: 70px;
   }
 
   display: flex;
@@ -78,6 +69,10 @@
 
     @include breakpoint($breakpoint-tablet--large) {
       width: 65px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      width: 80px;
     }
 
     width: 115px;
@@ -150,6 +145,10 @@
       margin-right: 20px;
     }
 
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
+
     margin-right: 40px;
   }
 
@@ -184,6 +183,22 @@
 
         &::after {
           bottom: -8px;
+        }
+      }
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      .hamburger-box {
+        width: 35px;
+      }
+
+      .hamburger-inner {
+        &::before {
+          top: -11px;
+        }
+
+        &::after {
+          bottom: -11px;
         }
       }
     }

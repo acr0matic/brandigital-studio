@@ -16,6 +16,10 @@
       font-size: 22px;
     }
 
+    @include breakpoint($breakpoint-tablet) {
+      font-size: 24px;
+    }
+
     font-weight: $weight-Black;
     font-size: $font-size__title--large;
   }
@@ -31,6 +35,10 @@
 
     @include breakpoint($breakpoint-tablet--large) {
       font-size: $font-size__text--small;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--regular;
     }
 
     font-size: $font-size__text--large;

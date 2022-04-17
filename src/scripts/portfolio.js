@@ -36,48 +36,50 @@ if (portfolio) {
     },
   });
 
-  _.forEach(sliderItems, (item) => {
-    const inner = item.querySelector('.inner__slider');
-    const thumbnail = item.querySelector('.thumbnail__slider');
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    _.forEach(sliderItems, (item) => {
+      const inner = item.querySelector('.inner__slider');
+      const thumbnail = item.querySelector('.thumbnail__slider');
 
-    const thumbnailSlider = new Swiper(thumbnail, {
-      allowTouchMove: false,
+      const thumbnailSlider = new Swiper(thumbnail, {
+        allowTouchMove: false,
 
-      spaceBetween: 30,
-      slidesPerView: 'auto',
+        spaceBetween: 10,
+        slidesPerView: 'auto',
 
-      nested: true,
-      slideToClickedSlide: true,
+        nested: true,
+        slideToClickedSlide: true,
 
-      speed: 500,
+        speed: 500,
 
-      a11y: {
-        enabled: false,
-      },
+        a11y: {
+          enabled: false,
+        },
+      });
+
+      const innerSlider = new Swiper(inner, {
+        simulateTouch: false,
+        allowTouchMove: false,
+
+        spaceBetween: 30,
+
+        nested: true,
+        speed: 500,
+
+        a11y: {
+          enabled: false,
+        },
+
+        navigation: {
+          nextEl: inner.querySelector('.portfolio__next'),
+          prevEl: inner.querySelector('.portfolio__prev'),
+        },
+
+        thumbs: {
+          swiper: thumbnailSlider,
+          autoScrollOffset: 1,
+        },
+      });
     });
-
-    const innerSlider = new Swiper(inner, {
-      simulateTouch: false,
-      allowTouchMove: false,
-
-      spaceBetween: 30,
-
-      nested: true,
-      speed: 500,
-
-      a11y: {
-        enabled: false,
-      },
-
-      navigation: {
-        nextEl: inner.querySelector('.portfolio__next'),
-        prevEl: inner.querySelector('.portfolio__prev'),
-      },
-
-      thumbs: {
-        swiper: thumbnailSlider,
-        autoScrollOffset: 1,
-      },
-    });
-  });
+  }
 }

@@ -16,11 +16,19 @@
     background-size: 360px;
   }
 
+  @include breakpoint($breakpoint-tablet) {
+    margin-top: 40px;
+
+    background: none;
+    text-align: center;
+  }
+
   margin-top: 70px;
   padding-top: 50px;
   padding-bottom: 100px;
 
-  background: url("../img/section/callback/background.svg") no-repeat
+  background:
+    url("../img/section/callback/background.svg") no-repeat
     calc(50% + 500px) bottom;
 
   background-size: 700px;
@@ -48,6 +56,10 @@
       font-size: $font-size__text--regular;
     }
 
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--large;
+    }
+
     display: inline-block;
     margin: 15px 0 25px;
 
@@ -59,6 +71,15 @@
     margin-top: 15px;
 
     .form__wrapper {
+      @include breakpoint($breakpoint-tablet) {
+        display: flex;
+        flex-direction: column;
+
+        & > * {
+          width: 275px;
+        }
+      }
+
       display: inline-flex;
       align-items: center;
     }

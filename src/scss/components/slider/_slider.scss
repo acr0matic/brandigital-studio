@@ -5,6 +5,15 @@
 }
 
 .swiper {
+  .row {
+    @include breakpoint($breakpoint-tablet) {
+      flex-wrap: wrap;
+    }
+
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+
   &-button {
     &-prev,
     &-next {

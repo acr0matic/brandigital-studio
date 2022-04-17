@@ -97,7 +97,7 @@
   &--footer {
     .nav {
       &__list {
-        @include breakpoint($breakpoint-mobile--large) {
+        @include breakpoint($breakpoint-tablet) {
           align-items: center;
         }
 
@@ -112,6 +112,10 @@
 
         @include breakpoint($breakpoint-tablet--large) {
           font-size: $font-size__text--small;
+        }
+
+        @include breakpoint($breakpoint-tablet) {
+          font-size: $font-size__text--big;
         }
 
         position: relative;

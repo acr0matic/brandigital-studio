@@ -3,6 +3,10 @@
     margin-top: 50px;
   }
 
+  @include breakpoint($breakpoint-tablet) {
+    margin-top: 40px;
+  }
+
   margin-top: 80px;
 
   &__header {
@@ -24,6 +28,10 @@
 
     @include breakpoint($breakpoint-tablet--large) {
       font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--large;
     }
 
     font-size: $font-size__title--medium;
@@ -48,6 +56,10 @@
 
     @include breakpoint($breakpoint-tablet--large) {
       font-size: $font-size__text--small;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--regular;
     }
 
     font-size: $font-size__text--large;
