@@ -9,10 +9,11 @@
 
   @include breakpoint($breakpoint-tablet--large) {
     height: 160px;
+    border-radius: 14px;
   }
 
-  @include breakpoint($breakpoint-tablet--large) {
-    border-radius: 14px;
+  @include breakpoint($breakpoint-mobile--large) {
+    height: 140px;
   }
 
   position: relative;
@@ -110,6 +111,10 @@
       transform: translateX(10%);
     }
 
+    @include breakpoint($breakpoint-mobile--large) {
+      transform: none;
+    }
+
     position: absolute;
     z-index: 1;
     right: 0;
@@ -121,6 +126,15 @@
     .preloader {
       right: 15%;
       left: initial;
+    }
+  }
+
+  &__image {
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 330px;
+      margin-left: auto;
+
+      object-fit: cover;
     }
   }
 }

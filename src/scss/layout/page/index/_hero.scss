@@ -34,6 +34,10 @@
         background-size: 430px;
       }
 
+      @include breakpoint($breakpoint-mobile--large) {
+        background-image: none;
+      }
+
       padding-top: 85px;
 
       background-image: url("../img/page/index/hero/background.png");
@@ -43,6 +47,12 @@
       background-repeat: no-repeat;
 
       .hero__action {
+        @include breakpoint($breakpoint-tablet) {
+          display: none;
+        }
+      }
+
+      .hero__special {
         @include breakpoint($breakpoint-tablet) {
           display: none;
         }
@@ -65,6 +75,22 @@
       position: relative;
       padding-bottom: 150px;
       background-color: $palette-white;
+
+      .hero__action {
+        @include breakpoint($breakpoint-tablet) {
+          display: flex;
+        }
+
+        display: none;
+      }
+
+      .hero__special {
+        @include breakpoint($breakpoint-mobile--large) {
+          display: block;
+        }
+
+        display: none;
+      }
     }
   }
 
@@ -99,6 +125,11 @@
       }
     }
 
+    @include breakpoint($breakpoint-mobile--large) {
+      max-width: 85%;
+      margin-bottom: 130px;
+    }
+
     max-width: 45%;
     margin-bottom: 50px;
   }
@@ -123,6 +154,10 @@
 
       margin-bottom: 0;
       padding-top: 65px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      padding-top: 120px;
     }
 
     margin-bottom: 110px;
@@ -174,6 +209,12 @@
       padding-bottom: 20px;
     }
 
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-top: 20px;
+      padding-bottom: 0;
+      text-align: center;
+    }
+
     padding-bottom: 25px;
 
     .link {
@@ -187,6 +228,10 @@
 
       @include breakpoint($breakpoint-tablet) {
         font-size: $font-size__text--regular;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $font-size__text--big;
       }
 
       color: $color-text__orange;
@@ -216,6 +261,14 @@
       top: -155px;
       bottom: initial;
       width: 340px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      top: -120px;
+      right: 50%;
+      width: 360px;
+
+      transform: translateX(50%);
     }
 
     position: absolute;
