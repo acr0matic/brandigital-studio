@@ -76,7 +76,7 @@ if (header) {
 
   /*
   --------------------------------------------------------
-                СКРИПТ БОКОВОГО МЕНЮ
+                СКРИПТ МЕНЮ
   --------------------------------------------------------
   */
 
@@ -90,28 +90,27 @@ if (header) {
   sideMenuClose.addEventListener('click', () => Menu('side', 'close'));
 
   headerBurger.addEventListener('click', () => {
-    if (window.matchMedia('(min-width: 991px)').matches) Menu('side', 'open');
+    if (window.matchMedia('(min-width: 540px)').matches) Menu('side', 'open');
     else Menu('mobile', 'toggle');
   });
 
   function Menu(menu, state) {
     if (state === 'open') {
-      document.body.classList.add('body-scroll--disabled');
+      document.body.classList.add(StyleСlass.body.overflow);
 
-      if (menu === 'side') sideMenu.classList.add('side-menu--open');
-      else if (menu === 'mobile') mobileMenu.classList.add('side-menu--open');
+      if (menu === 'side') sideMenu.classList.add(StyleСlass.side.open);
+      else if (menu === 'mobile') mobileMenu.classList.add(StyleСlass.mobile.open);
     }
 
     else if (state === 'close') {
-      document.body.classList.remove('body-scroll--disabled');
-      if (menu === 'side') sideMenu.classList.remove('side-menu--open');
+      document.body.classList.remove(StyleСlass.body.overflow);
+      if (menu === 'side') sideMenu.classList.remove(StyleСlass.side.open);
     }
 
     else if (state === 'toggle') {
       header.classList.toggle(StyleСlass.header.inverted);
-      document.body.classList.toggle('body-scroll--disabled');
-      if (menu === 'mobile') mobileMenu.classList.toggle('mobile-menu--open');
+      document.body.classList.toggle(StyleСlass.body.overflow);
+      if (menu === 'mobile') mobileMenu.classList.toggle(StyleСlass.mobile.open);
     }
   }
-
 }

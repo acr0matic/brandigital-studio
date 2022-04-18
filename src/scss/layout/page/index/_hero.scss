@@ -53,7 +53,7 @@
       }
 
       .hero__special {
-        @include breakpoint($breakpoint-tablet) {
+        @include breakpoint($breakpoint-mobile--large) {
           display: none;
         }
       }
@@ -156,7 +156,7 @@
       padding-top: 65px;
     }
 
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-mobile--large) {
       padding-top: 120px;
     }
 

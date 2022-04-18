@@ -44,7 +44,7 @@ if (portfolio) {
       const thumbnailSlider = new Swiper(thumbnail, {
         allowTouchMove: false,
 
-        spaceBetween: 10,
+        spaceBetween: 20,
         slidesPerView: 'auto',
 
         nested: true,
