@@ -119,8 +119,8 @@
           <nav class="nav nav--header">
             <ul class="nav__list">
               <li class="nav__item dropdown">
-                <span class="dropdown__header nav__link link">
-                  УСЛУГИ
+                <span class="dropdown__header">
+                  <span class="nav__link link">Услуги</span>
                   <img class="dropdown__icon" src="img/icons/component/dropdown/arrow__dropdown.svg" alt="">
                 </span>
 
@@ -136,8 +136,8 @@
               </li>
 
               <li class="nav__item dropdown">
-                <span class="dropdown__header nav__link link">
-                  ПОРТФОЛИО
+                <span class="dropdown__header">
+                  <span class="nav__link link">Портфолио</span>
                   <img class="dropdown__icon" src="img/icons/component/dropdown/arrow__dropdown.svg" alt="">
                 </span>
 
@@ -154,14 +154,12 @@
               </li>
 
               <li class="nav__item">
-                <a href="" class="nav__link link">
-                  Цены и акции
-                </a>
+                <a href="" class="nav__link link">Цены и акции</a>
               </li>
 
               <li class="nav__item dropdown">
-                <span class="dropdown__header nav__link link">
-                  НАШИ ПРОЦЕССЫ
+                <span class="dropdown__header">
+                  <span class="nav__link link">Наши процессы</span>
                   <img class="dropdown__icon" src="img/icons/component/dropdown/arrow__dropdown.svg" alt="">
                 </span>
 
@@ -218,7 +216,7 @@
         </div>
         <!-- /.side-menu__action -->
 
-        <nav class="side-menu__nav nav nav--side">
+        <nav class="side-menu__nav nav nav--side custom-scrollbar custom-scrollbar--white">
           <ul class="nav__list">
             <li class="nav__item"><a href="" class="nav__link">Главная страница</a></li>
             <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
@@ -226,6 +224,8 @@
             <li class="nav__item"><a href="" class="nav__link">FAQ</a></li>
           </ul>
         </nav>
+
+        <button data-micromodal-trigger="modal-callback" class="side-menu__button button button-outline">Связаться с нами</button>
 
         <div class="side-menu__social social">
           <a href="" class="side-menu__link social__link"><img src="img/icons/social/vk.svg" alt="" class="side-menu__icon"></a>
@@ -3416,6 +3416,7 @@
   <script src="scripts/libraries/lodash.js"></script>
   <script src="scripts/libraries/swiper.js"></script>
   <script src="scripts/libraries/fslightbox.js"></script>
+  <script src="scripts/libraries/handorgel.js"></script>
 
   <script src="scripts/base.js"></script>
   <script src="scripts/init.js"></script>

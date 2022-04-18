@@ -18,3 +18,6 @@ const StyleСlass = {
     'overflow': 'scroll-disabled',
   },
 }
+
+const isMobile = window.matchMedia('(max-width: 576px)').matches;
+const isTablet = window.matchMedia('(max-width: 992px)').matches;

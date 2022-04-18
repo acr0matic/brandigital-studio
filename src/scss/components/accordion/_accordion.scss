@@ -1,0 +1,52 @@
+.accordion {
+  &--nav {
+    border: none;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    .handorgel__header {
+    }
+
+    .handorgel__header__button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0;
+
+      border: none;
+      background-color: transparent;
+    }
+
+    .handorgel__icon {
+      width: 12px;
+      margin-left: 10px;
+    }
+
+    .handorgel__content {
+      border: none;
+      background-color: transparent;
+    }
+
+    .handorgel__content__inner {
+      display: flex;
+      flex-direction: column;
+
+      padding: 15px 22px 0 0;
+
+      & > * {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  &--sidemenu {
+    .handorgel__header__button,
+    .handorgel__content {
+      text-align: right;
+    }
+  }
+}
