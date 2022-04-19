@@ -10,6 +10,10 @@
     }
 
     .handorgel__header__button {
+      @include breakpoint($breakpoint-mobile--large) {
+        justify-content: center;
+      }
+
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -20,7 +24,14 @@
     }
 
     .handorgel__icon {
+      @include breakpoint($breakpoint-mobile--large) {
+        path {
+          stroke: $palette-black;
+        }
+      }
+
       width: 12px;
+      height: 8px;
       margin-left: 10px;
     }
 
@@ -30,6 +41,10 @@
     }
 
     .handorgel__content__inner {
+      @include breakpoint($breakpoint-mobile--large) {
+        padding: 15px 0 0;
+      }
+
       display: flex;
       flex-direction: column;
 
@@ -37,6 +52,10 @@
 
       & > * {
         &:not(:last-child) {
+          @include breakpoint($breakpoint-mobile--large) {
+            margin-bottom: 10px;
+          }
+
           margin-bottom: 15px;
         }
       }

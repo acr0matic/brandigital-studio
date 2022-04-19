@@ -100,10 +100,33 @@
         }
 
         &--sub {
-          @include breakpoint($breakpoint-tablet) {
+          @include breakpoint($breakpoint-tablet--large) {
             font-weight: $weight-Regular;
             text-transform: capitalize;
           }
+        }
+      }
+    }
+  }
+
+  &--mobile {
+    .nav {
+      &__list {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &__item {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+
+      &__link {
+        font-weight: $weight-Bold;
+
+        &--sub {
+          font-weight: $weight-Regular;
         }
       }
     }

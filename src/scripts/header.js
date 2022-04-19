@@ -11,7 +11,40 @@ if (header) {
   let heroHeight, headerHeight;
   const getHeight = (block) => block ? block.clientHeight : null;
 
+  function Menu(menu, state) {
+    if (state === 'open') {
+      document.body.classList.add(StyleСlass.body.overflow);
 
+      if (menu === 'side') sideMenu.classList.add(StyleСlass.side.open);
+      else if (menu === 'mobile') mobileMenu.classList.add(StyleСlass.mobile.open);
+    }
+
+    else if (state === 'close') {
+      document.body.classList.remove(StyleСlass.body.overflow);
+      if (menu === 'side') sideMenu.classList.remove(StyleСlass.side.open);
+    }
+
+    else if (state === 'toggle') {
+      header.classList.toggle(StyleСlass.header.inverted);
+      CheckHeader();
+      headerBurger.classList.toggle('is-active');
+
+      document.body.classList.toggle(StyleСlass.body.overflow);
+      if (menu === 'mobile') mobileMenu.classList.toggle(StyleСlass.mobile.open);
+    }
+  }
+
+  function CheckHeader() {
+    if (heroHeight) {
+      if (window.scrollY >= heroHeight) header.classList.add(StyleСlass.header.inverted);
+      else header.classList.remove(StyleСlass.header.inverted)
+    }
+
+    else {
+      if (window.scrollY >= headerHeight + 50) header.classList.add(StyleСlass.header.inverted);
+      else header.classList.remove(StyleСlass.header.inverted)
+    }
+  }
 
   /*
   --------------------------------------------------------
@@ -53,18 +86,7 @@ if (header) {
   headerHeight = getHeight(header);
 
   // Смена цветовой гаммы хедера
-  window.addEventListener('scroll',
-    () => {
-      if (heroHeight) {
-        if (window.scrollY >= heroHeight) header.classList.add(StyleСlass.header.inverted);
-        else header.classList.remove(StyleСlass.header.inverted)
-      }
-
-      else {
-        if (window.scrollY >= headerHeight + 50) header.classList.add(StyleСlass.header.inverted);
-        else header.classList.remove(StyleСlass.header.inverted)
-      }
-    });
+  window.addEventListener('scroll', () => CheckHeader());
 
   // Обновление значений высот при изменении окна
   window.addEventListener('resize', () => {
@@ -76,11 +98,11 @@ if (header) {
 
   /*
   --------------------------------------------------------
-                СКРИПТ МЕНЮ
+                СКРИПТ БОКОВОГО МЕНЮ
   --------------------------------------------------------
   */
 
-  const headerBurger = header.querySelector('.header__burger');
+  const headerBurger = header.querySelector('.header__burger .hamburger');
 
   const sideMenu = document.getElementById('side-menu');
   const sideMenuOverlay = sideMenu.querySelector('.side-menu__overlay');
@@ -94,26 +116,7 @@ if (header) {
     else Menu('mobile', 'toggle');
   });
 
-  function Menu(menu, state) {
-    if (state === 'open') {
-      document.body.classList.add(StyleСlass.body.overflow);
-
-      if (menu === 'side') sideMenu.classList.add(StyleСlass.side.open);
-      else if (menu === 'mobile') mobileMenu.classList.add(StyleСlass.mobile.open);
-    }
-
-    else if (state === 'close') {
-      document.body.classList.remove(StyleСlass.body.overflow);
-      if (menu === 'side') sideMenu.classList.remove(StyleСlass.side.open);
-    }
-
-    else if (state === 'toggle') {
-      header.classList.toggle(StyleСlass.header.inverted);
-      document.body.classList.toggle(StyleСlass.body.overflow);
-      if (menu === 'mobile') mobileMenu.classList.toggle(StyleСlass.mobile.open);
-    }
-  }
-
+  // TODO ПЕРЕПИСАТЬ СКРИПТ
   if (isTablet) {
     const nav = header.querySelectorAll('.nav__item');
     const sideNav = sideMenu.querySelectorAll('.nav__item');
@@ -159,9 +162,24 @@ if (header) {
 
     });
 
-    const accordion = sideMenu.querySelectorAll('.handorgel')
+
+    // ! РЕФАКТОРИНГ ПОСЛЕ ПЕРЕПИСИ СКРИПТА
+    const accordion = document.querySelectorAll('.handorgel')
     _.forEach(accordion, instance => new handorgel(instance, {
       ariaEnabled: false,
     }));
   }
 }
+
+
+
+/*
+--------------------------------------------------------
+              СКРИПТ МОБИЛЬНОГО МЕНЮ
+--------------------------------------------------------
+*/
+
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenuOverlay = mobileMenu.querySelector('.mobile-menu__overlay');
+
+mobileMenuOverlay.addEventListener('click', () => Menu('mobile', 'toggle'));

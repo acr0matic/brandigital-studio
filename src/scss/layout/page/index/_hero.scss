@@ -127,7 +127,8 @@
 
     @include breakpoint($breakpoint-mobile--large) {
       max-width: 85%;
-      margin-bottom: 130px;
+      margin-bottom: 0;
+      padding-bottom: 130px;
     }
 
     max-width: 45%;
