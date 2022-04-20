@@ -125,7 +125,13 @@
     }
 
     @include breakpoint($breakpoint-mobile--large) {
+      width: 300px;
+      margin-left: auto;
       transform: none;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      width: 270px;
     }
 
     position: absolute;
@@ -143,11 +149,5 @@
   }
 
   &__image {
-    @include breakpoint($breakpoint-mobile--large) {
-      object-fit: cover;
-
-      width: 330px;
-      margin-left: auto;
-    }
   }
 }

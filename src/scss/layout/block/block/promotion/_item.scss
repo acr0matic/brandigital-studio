@@ -25,6 +25,11 @@
     padding: 20px 30px;
   }
 
+  @include breakpoint($breakpoint-mobile--large) {
+    height: 170px;
+    padding: 20px;
+  }
+
   position: relative;
 
   overflow: hidden;
@@ -134,12 +139,16 @@
       transform: translateX(15%);
     }
 
+    @include breakpoint($breakpoint-mobile--large) {
+      max-width: 320px;
+
+      transform: none;
+    }
+
     position: absolute;
     z-index: 1;
     top: 0;
     right: 0;
-    bottom: 0;
-    left: 0;
   }
 
   &__title,

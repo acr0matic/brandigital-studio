@@ -19,6 +19,7 @@
     font-size: $font-size__text--regular;
   }
 
+  display: inline-block;
   padding: 15px 65px;
 
   border: 2px solid transparent;
@@ -30,6 +31,7 @@
 
   font-weight: $weight-Bold;
   font-size: $font-size__text--large;
+  text-align: center;
 
   white-space: nowrap;
   cursor: pointer;
