@@ -22,6 +22,13 @@ const StyleСlass = {
   },
 }
 
+const modalParams = {
+  awaitCloseAnimation: true,
+  disableFocus: true,
+}
+
+let currentModal = null;
+
 const scrollParams = {
   speed: 500,
   speedAsDuration: true,

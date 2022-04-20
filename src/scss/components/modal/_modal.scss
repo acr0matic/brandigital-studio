@@ -1,5 +1,10 @@
 .modal {
   &__overlay {
+    @include breakpoint($breakpoint-tablet) {
+      align-items: flex-end;
+      backdrop-filter: unset;
+    }
+
     position: fixed;
     z-index: $z-index-modal;
     top: 0;
@@ -10,25 +15,127 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 
-    background: rgba(#000000, 0.7);
+    background: rgba(#000000, 0.6);
+    backdrop-filter: blur(3px);
   }
 
   &__container {
+    @include breakpoint($breakpoint-laptop) {
+      max-width: 920px;
+      border-radius: 20px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      max-width: 720px;
+      border-radius: 15px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      padding-top: 30px;
+
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      margin: 0;
+    }
+
     position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0 10px;
+
+    border-radius: 25px;
+
+    background-color: $palette-white;
   }
 
   &__header {
+    @include breakpoint($breakpoint-tablet--large) {
+      padding: 15px 60px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      padding: 0 20px;
+      background-color: $palette-white;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      padding-top: 20px;
+    }
+
+    position: relative;
+
+    margin-bottom: 15px;
+    padding: 20px 60px;
+
+    background-color: $palette-orange;
+    color: $color-text__white;
+
+    text-align: center;
   }
 
   &__title {
+    @include breakpoint($breakpoint-laptop) {
+      font-size: 22px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      color: $color-text__orange;
+      font-size: $font-size__text--large;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      font-size: $font-size__text--big;
+    }
+
+    font-weight: $weight-SemiBold;
+    font-size: 27px;
+  }
+
+  &__wrapper {
+  }
+
+  &__text {
+    @include breakpoint($breakpoint-mobile--medium) {
+      font-size: $font-size__text--small;
+    }
+
+    color: $color-text__gray;
   }
 
   &__close {
+    @include breakpoint($breakpoint-tablet) {
+      path {
+        stroke: $palette-orange;
+      }
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      top: -20px;
+      right: 10px;
+
+      transform: scale(0.7);
+    }
+
     position: absolute;
     z-index: 3;
-    top: 10px;
-    right: 5px;
+    top: 50%;
+    right: 25px;
+
+    width: 35px;
+    height: 35px;
+
+    padding: 5px;
 
     border: none;
     outline: none;
@@ -36,6 +143,7 @@
 
     cursor: pointer;
 
+    transform: translateY(-50%);
     transition: opacity 0.15s ease;
 
     @media (hover: hover) {
@@ -43,13 +151,48 @@
         opacity: 0.5;
       }
     }
-
-    &::before {
-      content: url("../img/icons/control/modal__close.svg");
-    }
   }
 
   &__content {
+    @include breakpoint($breakpoint-laptop) {
+      padding: 0 50px 30px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      padding: 0 50px 20px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      padding: 0 30px 20px;
+    }
+
+    position: relative;
+    padding: 0 80px 60px;
+  }
+
+  .input__field {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--regular;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      padding: 10px 12px;
+      font-size: $font-size__text--small;
+    }
+
+    padding: 10px 15px;
+
+    box-shadow: inset 0 0 0 1px $palette-gray;
+    font-weight: $weight-Light;
+    font-size: $font-size__text--large;
+
+    &--required {
+      box-shadow: inset 0 0 0 1px $palette-orange;
+    }
   }
 }
 
@@ -67,17 +210,34 @@
 }
 
 .micromodal-slide[aria-hidden="false"] .modal__overlay {
+  @include breakpoint($breakpoint-tablet) {
+    animation-timing-function: ease;
+  }
+
   animation: fade-in 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .micromodal-slide[aria-hidden="false"] .modal__container {
+  @include breakpoint($breakpoint-tablet) {
+    animation: slide-in-mobile 0.4s ease;
+  }
+
   animation: slide-in 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .micromodal-slide[aria-hidden="true"] .modal__overlay {
+  @include breakpoint($breakpoint-tablet) {
+    animation-timing-function: ease;
+    animation-delay: 0.2s;
+  }
+
   animation: fade-out 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .micromodal-slide[aria-hidden="true"] .modal__container {
+  @include breakpoint($breakpoint-tablet) {
+    animation: slide-out-mobile 0.4s ease;
+  }
+
   animation: slide-out 0.2s cubic-bezier(0, 0, 0.2, 1);
 }

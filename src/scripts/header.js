@@ -126,6 +126,11 @@ if (header) {
 */
 
 const mobileMenu = document.getElementById('mobile-menu');
-const mobileMenuOverlay = mobileMenu.querySelector('.mobile-menu__overlay');
+if (mobileMenu) {
+  const mobileMenuOverlay = mobileMenu.querySelector('.mobile-menu__overlay');
+  const button = mobileMenu.querySelector('.mobile-menu__button');
 
-mobileMenuOverlay.addEventListener('click', () => Menu('mobile', 'toggle'));
+  mobileMenuOverlay.addEventListener('click', () => Menu('mobile', 'toggle'));
+  button.addEventListener('click', () => Menu('mobile', 'toggle'));
+}
+

@@ -13,3 +13,9 @@ const accordion = document.querySelectorAll('.handorgel');
 _.forEach(accordion, instance => new handorgel(instance, { ariaEnabled: false, }));
 
 const scrollController = new SmoothScroll('a[href*="#"]', scrollParams);
+
+MicroModal.init(modalParams);
+const modalTrigger = document.querySelectorAll('[data-micromodal-trigger]');
+_.forEach(modalTrigger, modal => {
+  modal.addEventListener('click', () => currentModal = modal.dataset.micromodalTrigger);
+});

@@ -56,11 +56,6 @@
 
     transition: 0.2s ease;
 
-    &--modal {
-      padding: 10px 15px;
-      background-color: $palette-white;
-    }
-
     &--required {
       @include breakpoint($breakpoint-laptop) {
         box-shadow: inset 0 0 0 1px $palette-orange;

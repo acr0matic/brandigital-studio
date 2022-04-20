@@ -27,8 +27,7 @@
   padding-top: 50px;
   padding-bottom: 100px;
 
-  background:
-    url("../img/section/callback/background.svg") no-repeat
+  background: url("../img/section/callback/background.svg") no-repeat
     calc(50% + 500px) bottom;
 
   background-size: 700px;
@@ -78,6 +77,12 @@
       }
 
       display: flex;
+
+      & > * {
+        @include breakpoint($breakpoint-tablet) {
+          width: 260px;
+        }
+      }
     }
   }
 }
