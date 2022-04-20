@@ -1,0 +1,67 @@
+.modal-success {
+  .modal__container {
+    @include breakpoint($breakpoint-laptop) {
+      max-width: 650px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      max-width: 450px;
+    }
+
+    max-width: 830px;
+  }
+
+  .modal__content {
+    @include breakpoint($breakpoint-laptop) {
+      padding: 65px 45px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      padding: 0;
+      text-align: center;
+    }
+
+    padding: 65px 70px;
+  }
+
+  .modal__title {
+    @include breakpoint($breakpoint-laptop) {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+
+    margin-bottom: 25px;
+
+    color: $color-text__black;
+    font-size: 27px;
+  }
+
+  .modal__text {
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--regular;
+    }
+
+    color: $color-text__black;
+
+    font-weight: $weight-Bold;
+    font-size: $font-size__text--large;
+  }
+
+  .modal__picture {
+    @include breakpoint($breakpoint-tablet) {
+      position: static;
+      width: 80%;
+      margin: 30px auto 40px;
+      transform: none;
+    }
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    width: 50%;
+    height: 100%;
+
+    transform: translateY(-50%);
+  }
+}
