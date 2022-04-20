@@ -1,21 +1,11 @@
 .form-callback {
   .form__button {
-    @include breakpoint($breakpoint-tablet--large) {
-      width: 100%;
+    @include breakpoint($breakpoint-laptop--medium) {
+      flex-grow: 1;
     }
   }
 
   .input {
-    @include breakpoint($breakpoint-laptop--medium) {
-      width: 275px;
-    }
-
-    @include breakpoint($breakpoint-tablet--large) {
-      width: 200px;
-    }
-
-    width: 315px;
-
     &__field {
       @include breakpoint($breakpoint-tablet) {
         text-align: center;

@@ -74,14 +74,10 @@
       @include breakpoint($breakpoint-tablet) {
         display: flex;
         flex-direction: column;
-
-        & > * {
-          width: 275px;
-        }
+        align-items: center;
       }
 
-      display: inline-flex;
-      align-items: center;
+      display: flex;
     }
   }
 }

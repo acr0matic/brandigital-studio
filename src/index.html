@@ -3470,23 +3470,29 @@
         <!-- /.section__header -->
 
         <div class="callback">
-          <p class="callback__text section__text">
-            Свяжитесь с нашими менеджерами по горячей линии<br>
-            <a class="callback__link link link--orange" href="tel:+79991412480">+7 999 141-24-80</a> <br>
-            или закажите обратный звонок
-          </p>
+          <div class="row">
+            <div class="col-6 pe-5">
+              <p class="callback__text section__text">
+                Свяжитесь с нашими менеджерами по горячей линии<br>
+                <a class="callback__link link link--orange" href="tel:+79991412480">+7 999 141-24-80</a> <br>
+                или закажите обратный звонок
+              </p>
 
-          <form action="php/mail.php" class="callback__form form form-callback">
-            <div class="form__wrapper">
-              <div class="input me-md-3 mb-2 mb-md-0">
-                <input class="input__field input__field--required" placeholder="+7 XXX XXX-XX-XX" autocomplete="off" type="tel" name="user_phone">
-              </div>
-              <!-- /.input -->
+              <form action="php/mail.php" class="callback__form form form-callback">
+                <div class="form__wrapper">
+                  <div class="input me-md-3 mb-2 mb-md-0">
+                    <input class="input__field input__field--required" placeholder="+7 XXX XXX-XX-XX" autocomplete="off" type="tel" name="user_phone">
+                  </div>
+                  <!-- /.input -->
 
-              <button class="form__button button button-primary" type="submit">Заказать звонок</button>
+                  <button class="form__button button button-primary" type="submit">Заказать звонок</button>
+                </div>
+                <!-- /.form__wrapper -->
+              </form>
             </div>
-            <!-- /.form__wrapper -->
-          </form>
+            <!-- /.col-6 -->
+          </div>
+          <!-- /.row -->
         </div>
         <!-- /.callback -->
       </div>

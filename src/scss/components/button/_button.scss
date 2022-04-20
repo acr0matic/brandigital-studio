@@ -1,11 +1,12 @@
 .button {
   @include breakpoint($breakpoint-laptop--medium) {
-    padding: 12px 22px;
-    font-size: $font-size__text--regular;
+    padding: 15px 40px;
+    font-size: $font-size__text--big;
   }
 
   @include breakpoint($breakpoint-laptop) {
     padding: 10px 25px;
+    font-size: $font-size__text--regular;
   }
 
   @include breakpoint($breakpoint-tablet--large) {
