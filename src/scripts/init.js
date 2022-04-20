@@ -9,3 +9,5 @@ const lazyLoadInstance = new LazyLoad({
   },
 });
 
+const accordion = document.querySelectorAll('.handorgel');
+_.forEach(accordion, instance => new handorgel(instance, { ariaEnabled: false, }));

@@ -7,6 +7,11 @@
     }
 
     .handorgel__header {
+      &--opened {
+        .handorgel__icon {
+          transform: rotate(180deg);
+        }
+      }
     }
 
     .handorgel__header__button {
@@ -33,6 +38,8 @@
       width: 12px;
       height: 8px;
       margin-left: 10px;
+
+      transition: $transition ease;
     }
 
     .handorgel__content {

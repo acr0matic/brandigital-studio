@@ -115,60 +115,6 @@ if (header) {
     if (!isMobile) Menu('side', 'open');
     else Menu('mobile', 'toggle');
   });
-
-  // TODO ПЕРЕПИСАТЬ СКРИПТ
-  if (isTablet) {
-    const nav = header.querySelectorAll('.nav__item');
-    const sideNav = sideMenu.querySelectorAll('.nav__item');
-
-    _.forEachRight(nav, item => {
-      const title = item.querySelector('.nav__link').innerHTML;
-      const list = item.querySelectorAll('.dropdown__item');
-
-      let listTemplate = '';
-      _.forEach(list, link => {
-        link.removeAttribute('class');
-        link.classList.add('nav__link');
-        link.classList.add('nav__link--sub');
-
-        listTemplate += link.outerHTML;
-      });
-
-      if (listTemplate) {
-        const template =
-          `
-        <div class="handorgel accordion accordion--nav accordion--sidemenu">
-          <div class="handorgel__header">
-            <button class="handorgel__header__button nav__link">
-              <span>${title}</span>
-              <img class="handorgel__icon" src="img/icons/component/accordion/arrow__down.svg" alt="">
-            </button>
-          </div>
-          <div class="handorgel__content">
-            <div class="handorgel__content__inner">
-              ${listTemplate}
-            </div>
-            <!-- /.handorgel__content__inner -->
-          </div>
-          <!-- /.handorgel__content -->
-        </div>
-        <!-- /.handorgel -->
-          `;
-
-        sideNav[0].insertAdjacentHTML('afterend', template);
-      }
-
-      else sideNav[0].parentNode.insertBefore(item, sideNav[0].nextSibling)
-
-    });
-
-
-    // ! РЕФАКТОРИНГ ПОСЛЕ ПЕРЕПИСИ СКРИПТА
-    const accordion = document.querySelectorAll('.handorgel')
-    _.forEach(accordion, instance => new handorgel(instance, {
-      ariaEnabled: false,
-    }));
-  }
 }
 
 

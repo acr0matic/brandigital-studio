@@ -75,6 +75,14 @@
 
           margin-bottom: 30px;
         }
+
+        &--mobile {
+          @include breakpoint($breakpoint-tablet--large) {
+            display: block;
+          }
+
+          display: none;
+        }
       }
 
       &__link {
