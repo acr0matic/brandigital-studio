@@ -274,7 +274,7 @@
     "no-missing-end-of-source-newline": null,
     "block-no-empty": null,
     "no-descending-specificity" : null,
-    "declaration-colon-newline-after": "always-multi-line",
+    "declaration-colon-newline-after": null,
     "declaration-empty-line-before": [
       "always",
       {

@@ -5,6 +5,8 @@
     display: flex;
     align-items: center;
 
+    cursor: pointer;
+
     @media (hover: hover) {
       &:hover {
         .dropdown__icon {
