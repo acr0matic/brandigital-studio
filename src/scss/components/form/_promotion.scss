@@ -1,0 +1,28 @@
+.form-promotion {
+  .form__action {
+    @include breakpoint($breakpoint-mobile--large) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .input {
+    width: 80%;
+  }
+
+  .form__button {
+    @include breakpoint($breakpoint-mobile--large) {
+      margin: 15px auto 0;
+    }
+
+    margin-right: 15px;
+  }
+
+  .checkbox__label {
+    white-space: nowrap;
+  }
+}
