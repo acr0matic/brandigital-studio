@@ -1,0 +1,106 @@
+.modal-promotion {
+  .modal__content {
+    @include breakpoint($breakpoint-tablet--large) {
+      padding: 20px 50px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      padding: 20px 30px;
+    }
+
+    padding: 20px 60px;
+
+    .modal__title {
+      @include breakpoint($breakpoint-laptop--medium) {
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        margin-bottom: 15px;
+        font-size: $font-size__text--big;
+      }
+
+      margin-bottom: 40px;
+
+      color: $color-text__black;
+      font-weight: $weight-Bold;
+    }
+  }
+
+  .modal__title {
+  }
+
+  .modal__text {
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--small;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      overflow: auto;
+      max-height: 150px;
+
+      padding-right: 15px;
+    }
+  }
+
+  .modal__wrapper {
+    text-align: center;
+  }
+
+  .modal__button {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-top: 40px;
+    }
+
+    margin-top: 65px;
+    margin-bottom: 70px;
+
+    color: $color-text__gray;
+
+    font-weight: $weight-Medium;
+  }
+
+  .promotion-item {
+    @include breakpoint($breakpoint-tablet) {
+      height: 150px;
+      padding: 15px 10px;
+
+      border-radius: 10px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
+    }
+
+    &::after {
+      @include breakpoint($breakpoint-tablet) {
+        font-size: $font-size__text--small;
+      }
+    }
+
+    &__title {
+      @include breakpoint($breakpoint-tablet) {
+        font-size: $font-size__text--regular;
+      }
+    }
+
+    &__subtitle {
+      @include breakpoint($breakpoint-tablet) {
+        font-size: $font-size__text--small;
+      }
+    }
+
+    &__info {
+      @include breakpoint($breakpoint-tablet) {
+        font-size: 12px;
+      }
+    }
+
+    &__background {
+      @include breakpoint($breakpoint-tablet) {
+        transform: none;
+      }
+    }
+  }
+}

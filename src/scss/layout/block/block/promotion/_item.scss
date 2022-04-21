@@ -1,14 +1,14 @@
 .promotion-item {
   @include breakpoint($breakpoint-laptop--medium) {
     height: 210px;
-    padding: 25px 20px;
+    padding: 25px 15px 10px;
+
+    border-radius: 15px;
   }
 
   @include breakpoint($breakpoint-laptop) {
     height: 170px;
     padding: 18px 15px 10px;
-
-    border-radius: 15px;
   }
 
   @include breakpoint($breakpoint-tablet--large) {
@@ -66,24 +66,10 @@
   }
 
   &--big {
-    min-height: 280px !important;
     cursor: default;
 
     &:hover {
       transform: none !important;
-    }
-
-    .promotion-item__title {
-      font-size: 50px;
-    }
-
-    .promotion-item__description {
-      font-weight: $weight-Bold;
-      font-size: 32px;
-    }
-
-    .promotion-item__info {
-      font-size: 20px;
     }
   }
 
