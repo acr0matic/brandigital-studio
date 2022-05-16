@@ -182,7 +182,7 @@
         <!-- /.header__callback -->
 
         <div class="header__action">
-          <button data-micromodal-trigger="modal-callback" class="header__button button button-outline">Связаться с нами</button>
+          <button data-micromodal-trigger="modal-callback" class="header__button button button-outline button-outline--orange">Связаться с нами</button>
         </div>
         <!-- /.header__action -->
 
@@ -458,12 +458,19 @@
 
               <div class="hero__action">
                 <button data-micromodal-trigger="modal-callback" class="button button-primary me-2 me-xl-3 me-xxl-4">Начать проект</button>
-                <a href="#portfolio" class="button button-outline">Портфолио</a>
+                <a href="#portfolio" class="button button-outline button-outline--orange button-outline--hover__gray">Портфолио</a>
               </div>
               <!-- /.hero__action -->
 
               <div class="hero__special">
-                <a href="#promotion" class="link link--bold">Наши акции</a>
+                <a href="#promotion" class="hero__promotion link link--bold">
+                  Наши акции
+                  <svg class="svg ms-3" width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" width="2" height="21" rx="1" fill="#FF8025"></rect>
+                    <rect width="2" height="9" rx="1" transform="matrix(0.707107 0.707107 -0.703365 0.710829 12.3301 14)" fill="#FF8025"></rect>
+                    <rect width="2" height="9" rx="1" transform="matrix(-0.707107 0.707107 0.703365 0.710829 2 14)" fill="#FF8025"></rect>
+                  </svg>
+                </a>
               </div>
               <!-- /.hero__special -->
             </div>
@@ -484,7 +491,7 @@
 
             <div class="hero__action">
               <button data-micromodal-trigger="modal-callback" class="button button-primary mb-2">Начать проект</button>
-              <a href="#portfolio" class="button button-outline button-outline--gray">Портфолио</a>
+              <a href="#portfolio" class="button button-outline">Портфолио</a>
             </div>
             <!-- /.hero__action -->
 
@@ -504,7 +511,7 @@
       <div class="container">
         <div class="service">
           <div class="section__header text-center">
-            <h2 class="section__title service__title">Какие наклейки мы делаем</h2>
+            <h2 class="section__title service__title">Какой дизайн мы делаем</h2>
           </div>
           <!-- /.section__header -->
 
@@ -759,7 +766,7 @@
 
         <div class="portfolio">
           <div class="portfolio__slider swiper tab__slider">
-            <div class="portfolio__tab custom-scrollbar">
+            <div class="portfolio__tab custom-scrollbar--hide">
               <div class="swiper-pagination"></div>
             </div>
             <!-- /.portfolio__tab -->
@@ -3251,7 +3258,7 @@
                 </picture>
 
                 <div class="seo__wrapper">
-                  <button class="button button-outline button-outline--gray mb-3">Полное портфолио</button>
+                  <button class="button button-outline mb-3">Полное портфолио</button>
                   <a href="" class="seo__link" download>
                     <span>Скачать PDF</span>
 
@@ -3560,13 +3567,13 @@
                   </div>
                   <!-- /.input -->
 
-                  <div class="input mb-2">
+                  <div class="input mb-3">
                     <input placeholder="E-mail" autocomplete="off" type="email" name="user_email" class="input__field input__field--modal">
                     <img data-tippy-content="Почта содержит ошибки" class="input__warning" src="img/icons/warning.svg" alt="">
                   </div>
                   <!-- /.input -->
 
-                  <div class="form__info mb-2">Обязательные поля</div>
+                  <div class="form__info mb-3">Обязательные поля</div>
 
                   <div class="form__action">
                     <button disabled class="form__button button button-primary" type="submit">Отправить</button>
@@ -3589,11 +3596,14 @@
                 1 из 5 бонусов в подарок
               </h3>
 
-              <p class="modal__text">
-                Задача организации, в особенности же новая модель организационной деятельности способствует подготовки и реализации форм развития. Таким образом постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании форм развития.
-                <br><br>
-                Задача организации, в особенности же новая модель организационной деятельности способствует подготовки и реализации форм развития.
-              </p>
+              <div class="overflow">
+                <p class="overflow__container modal__text">
+                  Задача организации, в особенности же новая модель организационной деятельности способствует подготовки и реализации форм развития. Таким образом постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании форм развития.
+                  <br><br>
+                  Задача организации, в особенности же новая модель организационной деятельности способствует подготовки и реализации форм развития.
+                </p>
+              </div>
+              <!-- /.overflow -->
             </div>
             <!-- /.col-6 -->
           </div>

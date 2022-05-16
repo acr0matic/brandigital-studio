@@ -3,7 +3,7 @@
 
   @media (hover: hover) {
     &:hover {
-      box-shadow: 2px 5px 15px #ff8025;
+      box-shadow: 2px 5px 15px rgba($color: #ff8025, $alpha: 0.8);
     }
   }
 }

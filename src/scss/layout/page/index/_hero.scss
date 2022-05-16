@@ -240,6 +240,17 @@
     }
   }
 
+  &__promotion {
+    display: inline-flex;
+    align-items: center;
+
+    @media (hover: hover) {
+      &:hover svg {
+        transform: translateY(5px);
+      }
+    }
+  }
+
   &__motion {
     @include breakpoint($breakpoint-laptop--medium) {
       right: -30px;

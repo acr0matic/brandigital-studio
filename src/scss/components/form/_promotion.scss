@@ -11,6 +11,14 @@
   }
 
   .input {
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 100%;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 80%;
+    }
+
     width: 80%;
   }
 

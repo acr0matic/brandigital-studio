@@ -19,3 +19,36 @@
 .scroll-disabled {
   overflow: hidden;
 }
+
+.overflow {
+  position: relative;
+
+  &::after {
+    @include breakpoint($breakpoint-tablet) {
+      display: block;
+    }
+
+    content: "";
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 50%;
+
+    display: none;
+    width: 100%;
+    height: 30px;
+
+    background: linear-gradient(
+      0deg,
+      rgba(#ffffff, 1) 30%,
+      rgba(#ffffff, 0) 100%
+    );
+
+    transform: translateX(-50%);
+  }
+
+  &__container {
+    overflow: auto;
+    padding-bottom: 30px;
+  }
+}

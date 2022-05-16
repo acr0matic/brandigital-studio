@@ -41,6 +41,15 @@
       background-color: rgba($color: #ffffff, $alpha: 0.5);
     }
   }
+
+  &--hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
 
 /* purgecss end ignore */

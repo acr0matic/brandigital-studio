@@ -1,5 +1,6 @@
 #portfolio {
   overflow: hidden;
+  padding-top: 10px;
 
   .tab__slider {
   }
@@ -14,7 +15,9 @@
 .portfolio {
   &__tab {
     position: relative;
+    display: flex;
     overflow: auto;
+
     margin-bottom: 20px;
 
     text-align: center;
