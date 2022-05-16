@@ -98,6 +98,23 @@ if (header) {
 
   /*
   --------------------------------------------------------
+                СКРИПТ СКРЫТИЯ ХЕДЕРА
+  --------------------------------------------------------
+  */
+
+  let lastScroll = 0;
+
+  window.addEventListener('scroll', () => {
+    const position = window.pageYOffset;
+    if (position > lastScroll) header.classList.add('header-hide');
+    else header.classList.remove('header-hide');
+
+    lastScroll = position;
+  });
+
+
+  /*
+  --------------------------------------------------------
                 СКРИПТ БОКОВОГО МЕНЮ
   --------------------------------------------------------
   */

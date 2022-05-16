@@ -1,12 +1,21 @@
 .logo {
-  transition: $transition ease;
-
-  @media (hover: hover) {
-    &:hover {
-      opacity: 0.6;
-    }
-  }
-
   &--header {
+    transform: translateX(-10px);
+
+    @media (hover: hover) {
+      &:hover {
+        .translate-left {
+          transform: translateX(-5px);
+        }
+
+        .translate-right {
+          transform: translateX(5px);
+        }
+      }
+    }
+
+    path {
+      backface-visibility: hidden;
+    }
   }
 }

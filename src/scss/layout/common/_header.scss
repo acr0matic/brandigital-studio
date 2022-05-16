@@ -3,10 +3,12 @@
 // -----------------------------------------------------------------------------
 
 #header {
-  position: sticky;
+  position: fixed;
   z-index: $z-index-header;
   top: 0;
   left: 0;
+
+  width: 100%;
 
   background-color: $palette-black;
 
@@ -34,6 +36,10 @@
       color: $color-text__black;
     }
   }
+}
+
+.header-hide {
+  transform: translateY(-100%);
 }
 
 .header {
