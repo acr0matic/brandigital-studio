@@ -1,4 +1,6 @@
 .form-callback {
+  position: relative;
+
   .form__button {
     @include breakpoint($breakpoint-laptop--medium) {
       flex-grow: 1;
