@@ -2,7 +2,7 @@ const portfolio = document.getElementById('portfolio');
 
 if (portfolio) {
   let tabName = [];
-  const sliderItems = portfolio.querySelectorAll('[data-title]');
+  const sliderContainers = portfolio.querySelectorAll('[data-title]');
 
   const tab = new Swiper(portfolio.querySelector('.tab__slider'), {
     simulateTouch: false,
@@ -28,7 +28,7 @@ if (portfolio) {
 
     on: {
       afterInit(instance) {
-        tabName = _.map(sliderItems, 'dataset.title')
+        tabName = _.map(sliderContainers, 'dataset.title')
 
         instance.pagination.render();
         instance.pagination.update();
@@ -37,38 +37,35 @@ if (portfolio) {
   });
 
   if (window.matchMedia('(min-width: 768px)').matches) {
-    _.forEach(sliderItems, (item) => {
+    _.forEach(sliderContainers, (item) => {
+
       const inner = item.querySelector('.inner__slider');
       const thumbnail = item.querySelector('.thumbnail__slider');
 
       const thumbnailSlider = new Swiper(thumbnail, {
         allowTouchMove: false,
+        nested: true,
+        speed: 500,
+        a11y: {
+          enabled: false,
+        },
 
         spaceBetween: 20,
         slidesPerView: 'auto',
 
-        nested: true,
         slideToClickedSlide: true,
-
-        speed: 500,
-
-        a11y: {
-          enabled: false,
-        },
       });
 
       const innerSlider = new Swiper(inner, {
-        simulateTouch: false,
         allowTouchMove: false,
-
-        spaceBetween: 30,
-
         nested: true,
         speed: 500,
-
         a11y: {
           enabled: false,
         },
+
+        simulateTouch: false,
+        spaceBetween: 30,
 
         navigation: {
           nextEl: inner.querySelector('.portfolio__next'),

@@ -102,15 +102,18 @@ if (header) {
   --------------------------------------------------------
   */
 
-  let lastScroll = 0;
+  if (!isTablet) {
+    let lastScroll = 0;
 
-  window.addEventListener('scroll', () => {
-    const position = window.pageYOffset;
-    if (position > lastScroll) header.classList.add('header-hide');
-    else header.classList.remove('header-hide');
+    window.addEventListener('scroll', () => {
+      const position = window.pageYOffset;
+      if (position > lastScroll) header.classList.add('header-hide');
+      else header.classList.remove('header-hide');
 
-    lastScroll = position;
-  });
+      lastScroll = position;
+    });
+  }
+
 
 
   /*

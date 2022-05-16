@@ -33,7 +33,8 @@ const scrollParams = {
   speed: 500,
   speedAsDuration: true,
   updateURL: false,
-  offset: 150,
+  offset: -60,
+  header: '#header',
 }
 
-if (isTablet) scrollParams.offset = 100;
+if (isTablet) scrollParams.offset = 20;
