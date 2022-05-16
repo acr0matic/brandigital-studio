@@ -73,10 +73,6 @@
       margin-right: 30px;
     }
 
-    @include breakpoint($breakpoint-tablet--large) {
-      width: 65px;
-    }
-
     @include breakpoint($breakpoint-tablet) {
       width: 80px;
     }
