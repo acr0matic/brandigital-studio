@@ -50,10 +50,17 @@ if (portfolio) {
           enabled: false,
         },
 
-        spaceBetween: 20,
+        spaceBetween: 10,
         slidesPerView: 'auto',
 
         slideToClickedSlide: true,
+
+        breakpoints: {
+          991: {
+            spaceBetween: 20,
+
+          }
+        }
       });
 
       const innerSlider = new Swiper(inner, {

@@ -19,13 +19,21 @@
   }
 
   &__description {
-    @include breakpoint($breakpoint-laptop) {
+    @include breakpoint($breakpoint-laptop--large) {
       margin-bottom: 20px;
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
       font-size: $font-size__text--regular;
     }
 
     @include breakpoint($breakpoint-tablet--large) {
       font-size: $font-size__text--small;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: $font-size__text--regular;
     }
 
     margin-bottom: 30px;
@@ -34,7 +42,7 @@
 
   &__content {
     & > *:not(:last-child) {
-      @include breakpoint($breakpoint-laptop) {
+      @include breakpoint($breakpoint-laptop--large) {
         margin-bottom: 20px;
       }
 
@@ -56,6 +64,10 @@
 
       @include breakpoint($breakpoint-tablet--large) {
         font-size: $font-size__text--small;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $font-size__text--regular;
       }
 
       font-weight: $weight-Medium;
@@ -80,6 +92,10 @@
 
       @include breakpoint($breakpoint-tablet--large) {
         font-size: $font-size__text--small;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $font-size__text--regular;
       }
 
       font-size: $font-size__text--large;

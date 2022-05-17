@@ -1,4 +1,9 @@
 .portfolio-thumbnail {
+  @include breakpoint($breakpoint-tablet--large) {
+    padding: 8px;
+    border-radius: 6px;
+  }
+
   @include breakpoint($breakpoint-tablet) {
     padding: 0;
   }
@@ -15,7 +20,7 @@
   }
 
   &__title {
-    @include breakpoint($breakpoint-laptop) {
+    @include breakpoint($breakpoint-laptop--medium) {
       font-size: $font-size__text--regular;
     }
 
@@ -24,7 +29,7 @@
     }
 
     margin-bottom: 5px;
-    font-size: $font-size__text--large;
+    font-size: $font-size__text--big;
   }
 
   &__deadline {
@@ -39,7 +44,7 @@
     color: $color-text__gray;
 
     font-weight: $weight-Medium;
-    font-size: $font-size__text--regular;
+    font-size: $font-size__text--small;
 
     span {
       color: $color-text__orange;
