@@ -174,24 +174,10 @@
     font-weight: $weight-Regular;
   }
 
-  &__burger {
-    @include breakpoint($breakpoint-laptop) {
-      .hamburger-box {
-        width: 30px;
-      }
-
-      .hamburger-inner {
-        &::before {
-          top: -8px;
-        }
-
-        &::after {
-          bottom: -8px;
-        }
-      }
-    }
-
+  &__mobile {
     @include breakpoint($breakpoint-tablet) {
+      display: block;
+
       .hamburger-box {
         width: 35px;
       }
@@ -205,6 +191,14 @@
           bottom: -11px;
         }
       }
+    }
+
+    display: none;
+  }
+
+  &__burger {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
     }
   }
 }

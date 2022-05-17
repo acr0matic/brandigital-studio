@@ -27,10 +27,12 @@ if (header) {
     else if (state === 'toggle') {
       header.classList.toggle(StyleСlass.header.inverted);
       CheckHeader();
-      headerBurger.classList.toggle('is-active');
 
       document.body.classList.toggle(StyleСlass.body.overflow);
-      if (menu === 'mobile') mobileMenu.classList.toggle(StyleСlass.mobile.open);
+      if (menu === 'mobile') {
+        headerMobile.classList.toggle('is-active');
+        mobileMenu.classList.toggle(StyleСlass.mobile.open);
+      }
     }
   }
 
@@ -122,7 +124,7 @@ if (header) {
   --------------------------------------------------------
   */
 
-  const headerBurger = header.querySelector('.header__burger .hamburger');
+  const headerBurger = header.querySelector('.header__burger');
 
   const sideMenu = document.getElementById('side-menu');
   const sideMenuOverlay = sideMenu.querySelector('.side-menu__overlay');
@@ -130,11 +132,7 @@ if (header) {
 
   sideMenuOverlay.addEventListener('click', () => Menu('side', 'close'));
   sideMenuClose.addEventListener('click', () => Menu('side', 'close'));
-
-  headerBurger.addEventListener('click', () => {
-    if (!isMobile) Menu('side', 'open');
-    else Menu('mobile', 'toggle');
-  });
+  headerBurger.addEventListener('click', () => Menu('side', 'open'));
 }
 
 
@@ -145,6 +143,7 @@ if (header) {
 --------------------------------------------------------
 */
 
+const headerMobile = header.querySelector('.header__mobile .hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
 if (mobileMenu) {
   const mobileMenuOverlay = mobileMenu.querySelector('.mobile-menu__overlay');
@@ -152,5 +151,6 @@ if (mobileMenu) {
 
   mobileMenuOverlay.addEventListener('click', () => Menu('mobile', 'toggle'));
   button.addEventListener('click', () => Menu('mobile', 'toggle'));
+  headerMobile.parentNode.addEventListener('click', () => Menu('mobile', 'toggle'));
 }
 

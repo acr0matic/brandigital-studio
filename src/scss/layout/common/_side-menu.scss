@@ -117,20 +117,13 @@
   }
 
   &__close {
-    @include breakpoint($breakpoint-laptop--medium) {
-      width: 32px;
+    div {
+      span,
+      &::before,
+      &::after {
+        background: $palette-white;
+      }
     }
-
-    @include breakpoint($breakpoint-laptop) {
-      width: 27px;
-    }
-
-    display: inline-block;
-
-    width: 42px;
-    margin-left: auto;
-
-    cursor: pointer;
   }
 
   &__nav {

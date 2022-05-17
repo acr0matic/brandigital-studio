@@ -1,0 +1,101 @@
+.hamburger-custom {
+  position: relative;
+  width: 36px;
+  height: 24px;
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      div {
+        transform: rotate(-90deg);
+
+        span {
+          opacity: 0;
+        }
+
+        &::before,
+        &::after {
+          width: 20px;
+        }
+
+        &::before {
+          top: 8px;
+          left: 2px;
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          bottom: 8px;
+          left: 13px;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  &--left {
+    @media (hover: hover) {
+      &:hover {
+        div {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  div {
+    position: relative;
+    width: 100%;
+    padding: 8px 0;
+
+    border-radius: 50%;
+
+    transition: $transition ease;
+
+    span {
+      display: block;
+      overflow: hidden;
+
+      white-space: nowrap;
+      transition: $transition ease;
+    }
+
+    span,
+    &::before,
+    &::after {
+      height: 4px;
+      border-radius: 2px;
+      background: #ff7012;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+
+      width: 100%;
+
+      transform-origin: center center;
+      transition: $transition ease;
+    }
+
+    &::before {
+      top: -4px;
+    }
+
+    &::after {
+      bottom: -4px;
+    }
+  }
+}
