@@ -1,15 +1,19 @@
 .logo {
   &--header {
-    transform: translateX(-10px);
+    transform: translateX(-5px);
 
     @media (hover: hover) {
       &:hover {
         .translate-left {
-          transform: translateX(-5px);
+          transform: translateX(-10px);
+
+          &--small {
+            transform: translateX(-5px);
+          }
         }
 
         .translate-right {
-          transform: translateX(5px);
+          transform: translateX(10px);
         }
       }
     }

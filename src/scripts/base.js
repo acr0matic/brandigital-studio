@@ -11,6 +11,7 @@ const StyleСlass = {
 
   'side': {
     'open': 'side-menu--open',
+    'burger': 'hamburger-custom--hover',
   },
 
   'mobile': {

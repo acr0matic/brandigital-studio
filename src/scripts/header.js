@@ -8,7 +8,7 @@ if (header) {
   --------------------------------------------------------
   */
 
-  let heroHeight, headerHeight;
+  let heroHeight, headerHeight, isReach;
   const getHeight = (block) => block ? block.clientHeight : null;
 
   function Menu(menu, state) {
@@ -37,15 +37,11 @@ if (header) {
   }
 
   function CheckHeader() {
-    if (heroHeight) {
-      if (window.scrollY >= heroHeight) header.classList.add(StyleСlass.header.inverted);
-      else header.classList.remove(StyleСlass.header.inverted)
-    }
+    let offset = heroHeight || headerHeight + 50;
+    isReach = window.scrollY >= offset;
 
-    else {
-      if (window.scrollY >= headerHeight + 50) header.classList.add(StyleСlass.header.inverted);
-      else header.classList.remove(StyleСlass.header.inverted)
-    }
+    if (isReach) header.classList.add(StyleСlass.header.inverted);
+    else header.classList.remove(StyleСlass.header.inverted)
   }
 
   /*
@@ -109,7 +105,7 @@ if (header) {
 
     window.addEventListener('scroll', () => {
       const position = window.pageYOffset;
-      if (position > lastScroll) header.classList.add('header-hide');
+      if ((position > lastScroll) && isReach) header.classList.add('header-hide');
       else header.classList.remove('header-hide');
 
       lastScroll = position;
@@ -130,9 +126,29 @@ if (header) {
   const sideMenuOverlay = sideMenu.querySelector('.side-menu__overlay');
   const sideMenuClose = sideMenu.querySelector('.side-menu__close');
 
+  let timer = null;
+
   sideMenuOverlay.addEventListener('click', () => Menu('side', 'close'));
   sideMenuClose.addEventListener('click', () => Menu('side', 'close'));
   headerBurger.addEventListener('click', () => Menu('side', 'open'));
+
+  headerBurger.addEventListener('mouseenter', () => {
+    window.clearTimeout(timer);
+    headerBurger.classList.add(StyleСlass.side.burger);
+  });
+
+  headerBurger.addEventListener('mouseleave', () => timer = window.setTimeout(() => {
+    headerBurger.classList.remove(StyleСlass.side.burger);
+  }, 500));
+
+  sideMenuClose.addEventListener('mouseenter', () => {
+    sideMenuClose.classList.add(StyleСlass.side.burger);
+  });
+
+  sideMenuClose.addEventListener('mouseleave', () => {
+    sideMenuClose.classList.remove(StyleСlass.side.burger);
+  });
+
 }
 
 
@@ -146,7 +162,7 @@ if (header) {
 const headerMobile = header.querySelector('.header__mobile .hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
 if (mobileMenu) {
-  const mobileMenuOverlay = mobileMenu.querySelector('.mobile-menu__overlay');
+  const mobileMenuOverlay = mobileMenu.querySelector('.mobile-menu__box');
   const button = mobileMenu.querySelector('.mobile-menu__button');
 
   mobileMenuOverlay.addEventListener('click', () => Menu('mobile', 'toggle'));

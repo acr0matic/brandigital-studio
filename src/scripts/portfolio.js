@@ -56,7 +56,7 @@ if (portfolio) {
         slideToClickedSlide: true,
 
         breakpoints: {
-          991: {
+          1200: {
             spaceBetween: 20,
 
           }

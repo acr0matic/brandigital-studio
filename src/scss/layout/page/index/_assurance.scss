@@ -1,4 +1,6 @@
 #assurance {
+  margin-bottom: -20px;
+
   @include breakpoint($breakpoint-tablet--large) {
     margin-top: 40px;
     margin-bottom: -10px;
