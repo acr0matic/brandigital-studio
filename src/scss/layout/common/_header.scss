@@ -43,10 +43,6 @@
 }
 
 .header {
-  @include breakpoint($breakpoint-laptop--medium) {
-    height: 100px;
-  }
-
   @include breakpoint($breakpoint-tablet--large) {
     height: 60px;
   }
@@ -58,7 +54,7 @@
   display: flex;
   align-items: center;
 
-  height: 115px;
+  height: 100px;
 
   padding: 20px 0;
 

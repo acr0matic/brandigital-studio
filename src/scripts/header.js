@@ -1,3 +1,5 @@
+'use strict';
+
 const header = document.querySelector('#header');
 
 if (header) {
@@ -8,33 +10,8 @@ if (header) {
   --------------------------------------------------------
   */
 
-  let heroHeight, headerHeight, isReach;
   const getHeight = (block) => block ? block.clientHeight : null;
-
-  function Menu(menu, state) {
-    if (state === 'open') {
-      document.body.classList.add(StyleСlass.body.overflow);
-
-      if (menu === 'side') sideMenu.classList.add(StyleСlass.side.open);
-      else if (menu === 'mobile') mobileMenu.classList.add(StyleСlass.mobile.open);
-    }
-
-    else if (state === 'close') {
-      document.body.classList.remove(StyleСlass.body.overflow);
-      if (menu === 'side') sideMenu.classList.remove(StyleСlass.side.open);
-    }
-
-    else if (state === 'toggle') {
-      header.classList.toggle(StyleСlass.header.inverted);
-      CheckHeader();
-
-      document.body.classList.toggle(StyleСlass.body.overflow);
-      if (menu === 'mobile') {
-        headerMobile.classList.toggle('is-active');
-        mobileMenu.classList.toggle(StyleСlass.mobile.open);
-      }
-    }
-  }
+  let heroHeight, headerHeight, isReach;
 
   function CheckHeader() {
     let offset = heroHeight || headerHeight + 50;
@@ -149,24 +126,55 @@ if (header) {
     sideMenuClose.classList.remove(StyleСlass.side.burger);
   });
 
+
+
+  /*
+  --------------------------------------------------------
+                СКРИПТ МОБИЛЬНОГО МЕНЮ
+  --------------------------------------------------------
+  */
+
+  const headerMobile = header.querySelector('.header__mobile .hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (mobileMenu) {
+    const mobileMenuOverlay = mobileMenu.querySelector('.mobile-menu__overlay');
+    const button = mobileMenu.querySelector('.mobile-menu__button');
+
+    mobileMenuOverlay.addEventListener('click', () => Menu('mobile', 'toggle'));
+    button.addEventListener('click', () => Menu('mobile', 'toggle'));
+    headerMobile.parentNode.addEventListener('click', () => Menu('mobile', 'toggle'));
+  }
+
+
+
+  /*
+  --------------------------------------------------------
+                ОБРАБОТЧИК МЕНЮ
+  --------------------------------------------------------
+  */
+
+  function Menu(menu, state) {
+    if (state === 'open') {
+      document.body.classList.add(StyleСlass.body.overflow);
+
+      if (menu === 'side') sideMenu.classList.add(StyleСlass.side.open);
+      else if (menu === 'mobile') mobileMenu.classList.add(StyleСlass.mobile.open);
+    }
+
+    else if (state === 'close') {
+      document.body.classList.remove(StyleСlass.body.overflow);
+      if (menu === 'side') sideMenu.classList.remove(StyleСlass.side.open);
+    }
+
+    else if (state === 'toggle') {
+      header.classList.toggle(StyleСlass.header.inverted);
+      CheckHeader();
+
+      document.body.classList.toggle(StyleСlass.body.overflow);
+      if (menu === 'mobile') {
+        headerMobile.classList.toggle('is-active');
+        mobileMenu.classList.toggle(StyleСlass.mobile.open);
+      }
+    }
+  }
 }
-
-
-
-/*
---------------------------------------------------------
-              СКРИПТ МОБИЛЬНОГО МЕНЮ
---------------------------------------------------------
-*/
-
-const headerMobile = header.querySelector('.header__mobile .hamburger');
-const mobileMenu = document.getElementById('mobile-menu');
-if (mobileMenu) {
-  const mobileMenuOverlay = mobileMenu.querySelector('.mobile-menu__box');
-  const button = mobileMenu.querySelector('.mobile-menu__button');
-
-  mobileMenuOverlay.addEventListener('click', () => Menu('mobile', 'toggle'));
-  button.addEventListener('click', () => Menu('mobile', 'toggle'));
-  headerMobile.parentNode.addEventListener('click', () => Menu('mobile', 'toggle'));
-}
-

@@ -1,0 +1,21 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__link {
+    transform: translateZ(0);
+    transition: $transition ease;
+
+    backface-visibility: hidden;
+
+    @media (hover: hover) {
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+  }
+
+  &__icon {
+  }
+}

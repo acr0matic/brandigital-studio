@@ -1,4 +1,9 @@
 .hamburger-custom {
+  @include breakpoint($breakpoint-tablet--large) {
+    width: 30px;
+    height: 18px;
+  }
+
   position: relative;
   width: 36px;
   height: 24px;
@@ -38,6 +43,10 @@
     span,
     &::before,
     &::after {
+      @include breakpoint($breakpoint-tablet--large) {
+        height: 3px;
+      }
+
       height: 4px;
       border-radius: 2px;
       background: #ff7012;
@@ -56,10 +65,18 @@
     }
 
     &::before {
+      @include breakpoint($breakpoint-tablet--large) {
+        top: -2px;
+      }
+
       top: -4px;
     }
 
     &::after {
+      @include breakpoint($breakpoint-tablet--large) {
+        bottom: -2px;
+      }
+
       bottom: -4px;
     }
   }
@@ -74,16 +91,28 @@
 
       &::before,
       &::after {
+        @include breakpoint($breakpoint-tablet--large) {
+          width: 16px;
+        }
+
         width: 20px;
       }
 
       &::before {
+        @include breakpoint($breakpoint-tablet--large) {
+          left: 2px;
+        }
+
         top: 8px;
         left: 1px;
         transform: rotate(45deg);
       }
 
       &::after {
+        @include breakpoint($breakpoint-tablet--large) {
+          left: 11px;
+        }
+
         bottom: 8px;
         left: 13px;
         transform: rotate(-45deg);

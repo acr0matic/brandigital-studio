@@ -157,7 +157,6 @@
       margin-top: 15px;
     }
 
-    display: flex;
     justify-content: center;
     margin-top: auto;
 
@@ -189,16 +188,5 @@
 
     width: 56px;
     height: 56px;
-
-    transform: translateZ(0);
-    transition: $transition ease;
-
-    backface-visibility: hidden;
-
-    @media (hover: hover) {
-      &:hover {
-        transform: scale(1.15);
-      }
-    }
   }
 }
