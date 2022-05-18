@@ -4,6 +4,7 @@ const isTablet = window.matchMedia('(max-width: 992px)').matches;
 const StyleСlass = {
   'header': {
     'inverted': 'header-inverted',
+    'hidden': 'header-hide',
     'dropdown': {
       'open': 'dropdown--open',
     },

@@ -107,6 +107,11 @@
     top: 130px;
 
     text-align: center;
+    transition: 0.3s ease;
+
+    &[data-header-hidden="true"] {
+      top: 50px;
+    }
   }
 
   &__wrapper {

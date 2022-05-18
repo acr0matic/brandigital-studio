@@ -78,14 +78,17 @@ if (header) {
   */
 
   if (!isTablet) {
+    const offsetBlock = document.querySelectorAll('[data-header-hidden]');
     let lastScroll = 0;
 
     window.addEventListener('scroll', () => {
       const position = window.pageYOffset;
-      if ((position > lastScroll) && isReach) header.classList.add('header-hide');
-      else header.classList.remove('header-hide');
+      if ((position > lastScroll) && isReach) header.classList.add(StyleСlass.header.hidden);
+      else header.classList.remove(StyleСlass.header.hidden);
 
       lastScroll = position;
+
+      _.forEach(offsetBlock, (block) => block.dataset.headerHidden = header.classList.contains(StyleСlass.header.hidden))
     });
   }
 
