@@ -13,7 +13,7 @@
 
       <nav class="side-menu__nav nav nav--side custom-scrollbar custom-scrollbar--white">
         <ul class="nav__list">
-          <li class="nav__item"><a href="" class="nav__link">Главная страница</a></li>
+          <li class="nav__item"><a href="/" class="nav__link">Главная страница</a></li>
 
           <li class="nav__item nav__item--mobile">
             <div class="handorgel accordion accordion--nav">
@@ -93,9 +93,9 @@
             <!-- /.handorgel -->
           </li>
 
-          <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
-          <li class="nav__item"><a href="" class="nav__link">Блог</a></li>
-          <li class="nav__item"><a href="" class="nav__link">FAQ</a></li>
+          <li class="nav__item"><a href="contact.php" class="nav__link">Контакты</a></li>
+          <li class="nav__item"><a href="blog.php" class="nav__link">Блог</a></li>
+          <li class="nav__item"><a href="faq.php" class="nav__link">FAQ</a></li>
         </ul>
       </nav>
 

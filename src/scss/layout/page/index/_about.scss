@@ -1,4 +1,4 @@
-#about {
+section#about {
   @include breakpoint($breakpoint-tablet) {
     display: none;
   }

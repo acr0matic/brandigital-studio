@@ -1,4 +1,4 @@
-#callback {
+section#callback {
   @include breakpoint($breakpoint-laptop--medium) {
     background-position-x: calc(50% + 350px);
     background-size: 575px;
