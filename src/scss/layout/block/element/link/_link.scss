@@ -14,4 +14,10 @@
   &--bold {
     font-weight: $weight-Bold;
   }
+
+  &--underline {
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 3px;
+  }
 }
