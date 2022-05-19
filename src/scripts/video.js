@@ -10,6 +10,6 @@ if (motion && isSafari) {
     if (mobile) source = isMobile ? mobile : laptop;
     else source = laptop;
 
-    item.innerHTML = `<img class="motion__item" src="${source}"/>`;
+    item.innerHTML = `<img class="motion__media" src="${source}"/>`;
   });
 }
