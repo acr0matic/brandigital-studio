@@ -1,0 +1,72 @@
+section#not-found {
+}
+
+.not-found {
+  @include breakpoint($breakpoint-tablet) {
+    flex-direction: column;
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 100px 0;
+
+  &__content {
+  }
+
+  &__title {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 10px;
+    }
+
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--regular;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 30px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--big;
+    }
+
+    margin-bottom: 50px;
+    font-size: $font-size__text--large;
+  }
+
+  &__button {
+  }
+
+  &__illustartion {
+    @include breakpoint($breakpoint-laptop--medium) {
+      width: 550px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      width: 420px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 270px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      max-width: 320px;
+      margin: 30px auto 0;
+    }
+
+    width: 730px;
+  }
+}
