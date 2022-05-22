@@ -9,6 +9,11 @@
     }
   }
 
+  &--white {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+
   &--orange {
     border-color: #ff8025;
     color: $color-text__white;

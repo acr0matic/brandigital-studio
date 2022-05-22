@@ -1,0 +1,52 @@
+section#blog {
+}
+
+.blog {
+  &__wrapper {
+    @include breakpoint($breakpoint-laptop) {
+      margin-bottom: 40px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: 30px;
+    }
+
+    margin-bottom: 60px;
+  }
+
+  &__pagination {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__text--large + 5px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--large;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      justify-content: center;
+    }
+
+    display: flex;
+    align-items: center;
+
+    font-weight: $weight-Medium;
+    font-size: $font-size__title--medium;
+
+    .current {
+      color: $color-text__orange;
+    }
+
+    & > *:not(:last-child) {
+      @include breakpoint($breakpoint-mobile--large) {
+        margin-right: 10px;
+      }
+
+      margin-right: 15px;
+    }
+  }
+}

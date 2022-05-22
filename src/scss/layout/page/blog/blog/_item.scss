@@ -1,0 +1,161 @@
+.blog-item {
+  @include breakpoint($breakpoint-tablet) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  display: flex;
+  align-items: flex-start;
+
+  &:not(:last-child) {
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin-bottom: 50px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 30px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 50px;
+    }
+
+    margin-bottom: 70px;
+  }
+
+  &__picture {
+    @include breakpoint($breakpoint-laptop--medium) {
+      width: 470px;
+      height: 270px;
+      border-radius: 15px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      width: 375px;
+      height: 220px;
+      border-radius: 10px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 260px;
+      height: 160px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      width: 100%;
+      height: 260px;
+      margin-bottom: 25px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      height: 220px;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      height: 180px;
+    }
+
+    overflow: hidden;
+
+    width: 600px;
+    height: 350px;
+
+    border-radius: 20px;
+
+    @media (hover: hover) {
+      &:hover .image {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__content {
+    @include breakpoint($breakpoint-laptop--medium) {
+      padding-left: 75px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      padding-left: 60px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      padding-left: 40px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+    }
+
+    flex-grow: 1;
+    padding-left: 100px;
+  }
+
+  &__title {
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin-bottom: 15px;
+      font-size: $font-size__title--small;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--large + 5;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      order: 2;
+    }
+
+    margin-bottom: 20px;
+    font-size: $font-size__title--medium;
+  }
+
+  &__description {
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin-bottom: 40px;
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--regular;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      order: 3;
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 100%;
+    }
+
+    margin-bottom: 50px;
+    font-size: $font-size__text--large + 5;
+  }
+
+  &__filter {
+    @include breakpoint($breakpoint-tablet) {
+      order: 1;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__action {
+    @include breakpoint($breakpoint-tablet) {
+      display: block;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: flex;
+      justify-content: center;
+    }
+
+    display: none;
+    order: 4;
+  }
+}
