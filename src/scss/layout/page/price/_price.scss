@@ -1,0 +1,22 @@
+main#price {
+  section#promotion {
+    .section__header {
+      display: none;
+    }
+  }
+}
+
+section#price {
+  .price {
+    &__header {
+      @include breakpoint($breakpoint-laptop) {
+        padding-top: 0;
+      }
+
+      padding-top: 30px;
+    }
+
+    &__body {
+    }
+  }
+}

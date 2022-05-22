@@ -10,10 +10,6 @@
   margin-top: 80px;
 
   &:first-child {
-    @include breakpoint($breakpoint-laptop--medium) {
-      padding-top: 100px;
-    }
-
     @include breakpoint($breakpoint-tablet--large) {
       padding-top: 60px;
     }
@@ -23,7 +19,7 @@
     }
 
     margin-top: 0;
-    padding-top: 115px;
+    padding-top: 100px;
   }
 
   &__header {

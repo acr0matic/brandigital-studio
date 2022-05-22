@@ -1,0 +1,40 @@
+.price-header {
+  background-color: $palette-black;
+  color: $color-text__white;
+
+  .section__header {
+    @include breakpoint($breakpoint-laptop--medium) {
+      left: 15px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      left: 0;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      position: static;
+      margin-bottom: 0;
+      padding-bottom: 30px;
+    }
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .section__title {
+    padding-top: 30px;
+  }
+
+  &__background {
+    @include breakpoint($breakpoint-laptop) {
+      padding-bottom: 50px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
+
+    padding-bottom: 80px;
+  }
+}

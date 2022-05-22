@@ -1,0 +1,105 @@
+.price-card {
+  @include breakpoint($breakpoint-tablet) {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  overflow: hidden;
+  border-radius: 10px;
+
+  box-shadow: 6px 6px 8px rgba(#000000, 0.15);
+
+  &__header {
+    @include breakpoint($breakpoint-laptop--medium) {
+      padding: 16px 0;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      padding: 12px 0;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      padding: 12px 0 12px 20px;
+      text-align: left;
+    }
+
+    padding: 20px 0;
+    background-color: $palette-orange;
+    text-align: center;
+  }
+
+  &__title {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--regular;
+    }
+
+    color: $color-text__white;
+    font-size: $font-size__text--large;
+  }
+
+  &__body {
+    @include breakpoint($breakpoint-tablet) {
+      padding-left: 20px;
+      text-align: left;
+    }
+
+    text-align: center;
+  }
+
+  &__picture {
+    @include breakpoint($breakpoint-laptop--medium) {
+      height: 240px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      height: 190px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      height: 140px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      position: relative;
+      top: -30px;
+      right: -20%;
+
+      height: 200px;
+      margin-bottom: -80px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      right: -25%;
+      height: 150px;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      right: -60px;
+    }
+
+    height: 295px;
+  }
+
+  &__cost {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      padding: 15px 0 10px;
+      font-size: $font-size__text--regular;
+    }
+
+    display: block;
+    padding: 15px 0 20px;
+
+    color: $color-text__orange;
+
+    font-weight: $weight-Bold;
+    font-size: $font-size__text--large;
+  }
+}

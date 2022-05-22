@@ -454,7 +454,19 @@
     <!-- /.container -->
   </section>
 
-  <?php include_once('layout/block/promotion.php') ?>
+  <section id="promotion" class="section">
+    <div class="container">
+      <div class="section__header text-center">
+        <h2 class="section__title">Акции и скидки</h2>
+      </div>
+      <!-- /.section__header -->
+
+      <?php include_once('layout/block/promotion.php') ?>
+    </div>
+    <!-- /.container -->
+
+    <?php include_once('layout/partials/modal/promotion.php') ?>
+  </section>
 
   <?php include_once('layout/block/callback.php') ?>
 

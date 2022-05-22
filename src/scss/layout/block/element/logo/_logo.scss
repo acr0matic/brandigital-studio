@@ -1,7 +1,5 @@
 .logo {
   &--header {
-    transform: translateX(-5px);
-
     @media (hover: hover) {
       &:hover {
         .translate-left {

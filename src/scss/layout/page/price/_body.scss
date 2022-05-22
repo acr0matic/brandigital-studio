@@ -1,0 +1,73 @@
+.price-body {
+  &__wrapper {
+    @include breakpoint($breakpoint-tablet) {
+      flex-direction: column-reverse;
+    }
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__promotion {
+    @include breakpoint($breakpoint-laptop--medium) {
+      top: -150px;
+      margin-bottom: -170px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      top: -110px;
+      margin-bottom: -130px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      top: -90px;
+      margin-top: 45px;
+      margin-bottom: -120px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      top: 0;
+      margin-bottom: 0;
+    }
+
+    position: relative;
+    top: -200px;
+    margin-bottom: -220px;
+
+    .section__header {
+      @include breakpoint($breakpoint-tablet) {
+        display: block;
+      }
+
+      display: none;
+    }
+  }
+
+  &__service {
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: 0;
+    }
+
+    margin-top: 75px;
+
+    .section__header {
+      @include breakpoint($breakpoint-tablet) {
+        margin-bottom: 30px;
+      }
+
+      margin-bottom: 50px;
+    }
+
+    .section__title {
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+    }
+
+    .section__description {
+      max-width: 940px;
+      margin: 20px auto 0;
+      color: $color-text__gray;
+    }
+  }
+}
