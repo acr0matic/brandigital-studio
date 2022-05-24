@@ -1,0 +1,153 @@
+.single-blog-body {
+  &__header {
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin-bottom: 45px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 20px;
+      padding-top: 30px;
+    }
+
+    margin-bottom: 60px;
+  }
+
+  &__filter {
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin-bottom: 20px;
+      font-size: $font-size__title--medium + 5;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__title--medium;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 10px;
+      font-size: $font-size__title--small;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--large + 5;
+    }
+
+    margin-bottom: 25px;
+
+    font-weight: $weight-Black;
+    font-size: $font-size__title--large + 5px;
+  }
+
+  &__description {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__title--small - 5px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__title--small;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--large + 5;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--large;
+
+      br {
+        display: none;
+      }
+    }
+
+    font-weight: $weight-Bold;
+    font-size: $font-size__title--small;
+  }
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__picture {
+    @include breakpoint($breakpoint-laptop--medium) {
+      height: 390px;
+      margin-bottom: 45px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      height: 300px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 30px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      height: 210px;
+    }
+
+    height: 490px;
+    margin-bottom: 60px;
+  }
+
+  &__editor {
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin-right: 70px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      margin-right: 45px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-right: 0;
+    }
+
+    flex-grow: 1;
+    margin-right: 130px;
+
+    p {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $font-size__text--big;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        font-size: $font-size__text--regular;
+      }
+
+      font-size: $font-size__text--large;
+    }
+
+    img {
+      @include breakpoint($breakpoint-laptop--medium) {
+        margin: 45px 0;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        margin: 30px 0;
+      }
+
+      margin: 60px 0;
+    }
+  }
+
+  &__side {
+    @include breakpoint($breakpoint-laptop--medium) {
+      width: 430px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      width: 350px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      display: none;
+    }
+
+    flex-shrink: 0;
+    width: 510px;
+  }
+}

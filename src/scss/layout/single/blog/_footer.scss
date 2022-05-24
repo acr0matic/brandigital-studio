@@ -1,0 +1,88 @@
+.single-blog-footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 3px;
+    height: 100%;
+    background-color: $palette-white;
+
+    transform: translateX(-50%);
+  }
+
+  &__button {
+    @include breakpoint($breakpoint-tablet) {
+      flex-direction: column;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      padding: 10px 0;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    padding: 25px 0;
+    background-color: #e3e3e3;
+
+    text-align: center;
+    transition: $transition ease;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: #f1f1f1;
+
+        & > .single-blog-footer__label {
+          padding: 0 50px;
+        }
+      }
+    }
+  }
+
+  &__prev {
+    @include breakpoint($breakpoint-tablet) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__label {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__text--large + 2px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--regular;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      font-size: $font-size__text--small;
+    }
+
+    padding: 0 15px;
+
+    font-size: $font-size__text--large + 5px;
+    transition: $transition ease;
+  }
+
+  &__arrow {
+    @include breakpoint($breakpoint-mobile--large) {
+      margin: 10px 0 5px;
+    }
+
+    width: 30px;
+    margin: 15px;
+  }
+}

@@ -18,6 +18,7 @@
         <!-- /.pinned__content -->
 
         <div class="pinned__picture lazy">
+          <source srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" media="(max-width: 768px)">
           <img data-src="img/page/blog/pinned/picture.jpg" alt="" class="pinned__image image image--cover lazy__item">
           <img src="img/misc/preloader.svg" alt="" class="preloader">
         </div>

@@ -1,0 +1,15 @@
+section#single-blog {
+}
+
+.single-blog {
+  &__header {
+  }
+
+  &__body {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 30px;
+    }
+
+    margin-bottom: 60px;
+  }
+}

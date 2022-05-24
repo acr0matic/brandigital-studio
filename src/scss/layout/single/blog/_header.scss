@@ -1,0 +1,25 @@
+.single-blog-header {
+  @include breakpoint($breakpoint-laptop--medium) {
+    height: 400px;
+  }
+
+  @include breakpoint($breakpoint-laptop) {
+    height: 320px;
+  }
+
+  @include breakpoint($breakpoint-tablet--large) {
+    height: 250px;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    display: none;
+  }
+
+  height: 570px;
+  filter: drop-shadow(0 4px 4px rgba(#000000, 0.5));
+
+  &__picture {
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 70% 95%, 67% 75%, 0% 75%);
+  }
+}
