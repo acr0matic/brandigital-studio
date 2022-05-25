@@ -1,54 +1,56 @@
-.portfolio-thumbnail {
-  @include breakpoint($breakpoint-tablet--large) {
-    padding: 8px;
-    border-radius: 6px;
-  }
+section#portfolio {
+  .portfolio-thumbnail {
+    @include breakpoint($breakpoint-tablet--large) {
+      padding: 8px;
+      border-radius: 6px;
+    }
 
-  @include breakpoint($breakpoint-tablet) {
-    padding: 0;
-  }
+    @include breakpoint($breakpoint-tablet) {
+      padding: 0;
+    }
 
-  padding: 10px;
-  border-radius: 8px;
-
-  transition: $transition ease;
-
-  &__picture {
-    overflow: hidden;
-    margin-bottom: 10px;
+    padding: 10px;
     border-radius: 8px;
-  }
 
-  &__title {
-    @include breakpoint($breakpoint-laptop--medium) {
-      font-size: $font-size__text--regular;
+    transition: $transition ease;
+
+    &__picture {
+      overflow: hidden;
+      margin-bottom: 10px;
+      border-radius: 8px;
     }
 
-    @include breakpoint($breakpoint-tablet--large) {
+    &__title {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $font-size__text--regular;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: $font-size__text--small;
+      }
+
+      margin-bottom: 5px;
+      font-size: $font-size__text--big;
+    }
+
+    &__deadline {
+      @include breakpoint($breakpoint-laptop) {
+        font-size: 13px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: 12px;
+      }
+
+      color: $color-text__gray;
+
+      font-weight: $weight-Medium;
       font-size: $font-size__text--small;
-    }
 
-    margin-bottom: 5px;
-    font-size: $font-size__text--big;
-  }
-
-  &__deadline {
-    @include breakpoint($breakpoint-laptop) {
-      font-size: 13px;
-    }
-
-    @include breakpoint($breakpoint-tablet--large) {
-      font-size: 12px;
-    }
-
-    color: $color-text__gray;
-
-    font-weight: $weight-Medium;
-    font-size: $font-size__text--small;
-
-    span {
-      color: $color-text__orange;
-      font-weight: $weight-Bold;
+      span {
+        color: $color-text__orange;
+        font-weight: $weight-Bold;
+      }
     }
   }
 }

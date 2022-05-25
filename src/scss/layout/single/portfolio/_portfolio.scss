@@ -1,9 +1,14 @@
 .single-portfolio {
   &__header {
-
   }
 
   &__body {
+    margin-bottom: -1.5rem;
 
+    .col-6:last-child {
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+    }
   }
 }

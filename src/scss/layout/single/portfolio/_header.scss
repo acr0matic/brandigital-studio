@@ -5,6 +5,7 @@ section#single-portfolio {
     }
 
     @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 30px;
       padding-bottom: 25px;
     }
 

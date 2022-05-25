@@ -1,0 +1,157 @@
+section#single-portfolio {
+  .portfolio-item {
+    @include breakpoint($breakpoint-laptop--medium) {
+      padding: 15px;
+      border-radius: 15px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      padding: 12px;
+      border-radius: 12px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      padding: 8px;
+      border-radius: 10px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      padding: 0;
+      border-radius: 15px;
+
+      background-color: transparent;
+    }
+
+    margin-bottom: 1.5rem;
+    padding: 20px;
+
+    border-radius: 20px;
+    background-color: $palette-gray--light;
+
+    cursor: pointer;
+
+    @media (hover: hover) {
+      &:hover {
+        .portfolio-item__image {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    &__picture {
+      @include breakpoint($breakpoint-laptop--medium) {
+        height: 280px;
+        border-radius: 15px;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        height: 220px;
+        margin-bottom: 10px;
+        border-radius: 12px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        height: 170px;
+        border-radius: 10px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        height: 160px;
+        border-radius: 15px;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        height: 120px;
+        border-radius: 10px;
+      }
+
+      overflow: hidden;
+
+      height: 360px;
+
+      margin-bottom: 20px;
+      border-radius: 20px;
+    }
+
+    &__title {
+      @include breakpoint($breakpoint-laptop--medium) {
+        margin-bottom: 5px;
+        font-size: $font-size__text--large + 2px;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        font-size: $font-size__text--big;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        margin-bottom: 3px;
+        font-size: $font-size__text--small;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        font-size: $font-size__text--regular;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $font-size__text--small;
+      }
+
+      margin-bottom: 10px;
+
+      font-weight: $weight-Bold;
+      font-size: $font-size__title--small - 4px;
+    }
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__info {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $font-size__text--regular;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: $font-size__text--small - 2;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        font-size: $font-size__text--small;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: $font-size__text--small - 2;
+      }
+
+      color: $color-text__gray;
+
+      font-weight: $weight-Medium;
+      font-size: $font-size__text--large;
+
+      span {
+        display: inline-block;
+
+        color: $color-text__orange;
+        font-weight: $weight-Bold;
+      }
+    }
+
+    &__dots {
+      @include breakpoint($breakpoint-laptop--medium) {
+        width: 30px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        width: 24px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+
+      width: 36px;
+    }
+  }
+}
