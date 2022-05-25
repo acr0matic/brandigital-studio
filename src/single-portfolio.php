@@ -384,7 +384,10 @@
           <!-- /.portfolio-body__portfolio -->
 
           <div class="portfolio-body__action">
-            <button class="portfolio-body__button button button-primary">Смотреть больше</button>
+            <button data-loading="Загрузка" class="portfolio-body__button button button-primary button-loader button-loader--progress">
+              Загрузка
+              <img src="img/misc/preloader--white.svg" alt="" class="preloader preloader--button">
+            </button>
           </div>
           <!-- /.portfolio-body__action -->
         </div>

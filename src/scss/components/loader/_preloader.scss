@@ -13,4 +13,11 @@
     opacity: 0;
     visibility: hidden;
   }
+
+  &--button {
+    position: static;
+
+    width: 24px;
+    transform: none;
+  }
 }
