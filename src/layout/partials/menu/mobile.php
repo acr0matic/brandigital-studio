@@ -30,7 +30,7 @@
               <!-- /.handorgel -->
             </li>
 
-            <li class="nav__item"><a href="" class="nav__link">Цены и акции</a></li>
+            <li class="nav__item"><a href="price.php" class="nav__link">Цены и акции</a></li>
 
             <li class="nav__item">
               <div class="handorgel accordion accordion--nav">

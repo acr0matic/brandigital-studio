@@ -41,11 +41,11 @@
   <meta name="robots" content="index,follow" />
 
   <!-- Покраска адресной строки в мобильных Chrome, Firefox OS и Opera -->
-  <meta name="theme-color" content="#4285f4" />
+  <meta name="theme-color" content="#0f0f0f" />
 
   <!-- Покраска для iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0f0f0f">
 
   <!-- Место для счетков и аналитики -->
 

@@ -65,7 +65,7 @@
             <!-- /.handorgel -->
           </li>
 
-          <li class="nav__item nav__item--mobile"><a href="" class="nav__link">Цены и акции</a></li>
+          <li class="nav__item nav__item--mobile"><a href="price.php" class="nav__link">Цены и акции</a></li>
 
           <li class="nav__item nav__item--mobile">
             <div class="handorgel accordion accordion--nav">

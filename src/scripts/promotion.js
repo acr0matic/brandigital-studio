@@ -1,4 +1,4 @@
-const promotion = document.getElementById('promotion');
+const promotion = document.querySelector('.promotion');
 const promotionModal = document.getElementById('modal-promotion');
 
 if (promotion && promotionModal) {

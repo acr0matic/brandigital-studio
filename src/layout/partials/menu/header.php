@@ -36,7 +36,7 @@
     </li>
 
     <li class="nav__item">
-      <a href="" class="nav__link link">Цены и акции</a>
+      <a href="price.php" class="nav__link link">Цены и акции</a>
     </li>
 
     <li class="nav__item dropdown">

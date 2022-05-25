@@ -41,7 +41,7 @@
       <div class="blog">
         <div class="blog__wrapper">
           <article class="blog__item blog-item">
-            <a href="">
+            <a href="single-blog.php">
               <picture class="blog-item__picture lazy">
                 <img data-src="img/page/blog/blog/picture.jpg" alt="" class="blog-item__image image image--cover lazy__item">
                 <img src="img/misc/preloader.svg" alt="" class="preloader">
@@ -51,7 +51,7 @@
 
             <div class="blog-item__content">
               <h3 class="blog-item__title">
-                <a class="link" href="">
+                <a class="link" href="single-blog.php">
                   Тренды в Web-дизайне 2022 г.
                 </a>
               </h3>
@@ -93,7 +93,7 @@
           <!-- /.blog__item -->
 
           <article class="blog__item blog-item">
-            <a href="">
+            <a href="single-blog.php">
               <picture class="blog-item__picture lazy">
                 <img data-src="img/page/blog/blog/picture.jpg" alt="" class="blog-item__image image image--cover lazy__item">
                 <img src="img/misc/preloader.svg" alt="" class="preloader">
@@ -103,7 +103,7 @@
 
             <div class="blog-item__content">
               <h3 class="blog-item__title">
-                <a class="link" href="">
+                <a class="link" href="single-blog.php">
                   Тренды в Web-дизайне 2022 г.
                 </a>
               </h3>
@@ -155,7 +155,7 @@
           <!-- /.blog__item -->
 
           <article class="blog__item blog-item">
-            <a href="">
+            <a href="single-blog.php">
               <picture class="blog-item__picture lazy">
                 <img data-src="img/page/blog/blog/picture.jpg" alt="" class="blog-item__image image image--cover lazy__item">
                 <img src="img/misc/preloader.svg" alt="" class="preloader">
@@ -165,7 +165,7 @@
 
             <div class="blog-item__content">
               <h3 class="blog-item__title">
-                <a class="link" href="">
+                <a class="link" href="single-blog.php">
                   Тренды в Web-дизайне 2022 г.
                 </a>
               </h3>
