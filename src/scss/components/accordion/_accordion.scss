@@ -15,7 +15,7 @@
     }
 
     .handorgel__header__button {
-      @include breakpoint($breakpoint-mobile--large) {
+      @include breakpoint($breakpoint-tablet) {
         justify-content: center;
       }
 
@@ -29,7 +29,7 @@
     }
 
     .handorgel__icon {
-      @include breakpoint($breakpoint-mobile--large) {
+      @include breakpoint($breakpoint-tablet) {
         path {
           stroke: $palette-black;
         }
@@ -48,14 +48,16 @@
     }
 
     .handorgel__content__inner {
-      @include breakpoint($breakpoint-mobile--large) {
+      @include breakpoint($breakpoint-tablet) {
         padding: 15px 0 0;
+        text-align: center;
       }
 
       display: flex;
       flex-direction: column;
 
       padding: 15px 22px 0 0;
+      text-align: right;
 
       & > * {
         &:not(:last-child) {

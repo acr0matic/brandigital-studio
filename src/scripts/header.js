@@ -1,6 +1,6 @@
 'use strict';
 
-const header = document.querySelector('#header');
+const header = document.querySelector('#header, #header-portfolio');
 
 if (header) {
 
@@ -60,14 +60,16 @@ if (header) {
   heroHeight = getHeight(heroBlock);
   headerHeight = getHeight(header);
 
-  // Смена цветовой гаммы хедера
-  window.addEventListener('scroll', () => CheckHeader());
+  if (header.id !== 'header-portfolio') {
+    // Смена цветовой гаммы хедера
+    window.addEventListener('scroll', () => CheckHeader());
 
-  // Обновление значений высот при изменении окна
-  window.addEventListener('resize', () => {
-    heroHeight = getHeight(heroBlock);
-    headerHeight = getHeight(header);
-  });
+    // Обновление значений высот при изменении окна
+    window.addEventListener('resize', () => {
+      heroHeight = getHeight(heroBlock);
+      headerHeight = getHeight(header);
+    });
+  }
 
 
 
@@ -100,17 +102,19 @@ if (header) {
   --------------------------------------------------------
   */
 
-  const headerBurger = header.querySelector('.header__burger');
+  const headerBurger = header.querySelector('.header__burger, .header-portfolio__burger');
 
   const sideMenu = document.getElementById('side-menu');
   const sideMenuOverlay = sideMenu.querySelector('.side-menu__overlay');
   const sideMenuClose = sideMenu.querySelector('.side-menu__close');
+  const sideMenuButton = sideMenu.querySelector('.side-menu__button');
 
   let timer = null;
 
   sideMenuOverlay.addEventListener('click', () => Menu('side', 'close'));
   sideMenuClose.addEventListener('click', () => Menu('side', 'close'));
   headerBurger.addEventListener('click', () => Menu('side', 'open'));
+  sideMenuButton.addEventListener('click', () => Menu('side', 'close'));
 
   headerBurger.addEventListener('mouseenter', () => {
     window.clearTimeout(timer);

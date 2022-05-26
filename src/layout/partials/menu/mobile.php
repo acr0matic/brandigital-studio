@@ -44,13 +44,13 @@
                 </div>
                 <div class="handorgel__content">
                   <div class="handorgel__content__inner">
-                    <a href="" class="nav__link nav__link--sub">Общее портфолио</a>
-                    <a href="" class="nav__link nav__link--sub">Брендирование</a>
-                    <a href="" class="nav__link nav__link--sub">Web-дизайн</a>
-                    <a href="" class="nav__link nav__link--sub">Дизайн авто</a>
-                    <a href="" class="nav__link nav__link--sub">Логотип</a>
-                    <a href="" class="nav__link nav__link--sub">Упаковка</a>
-                    <a href="" class="nav__link nav__link--sub">Иллюстрации / motion</a>
+                    <a href="portfolio.php" class="nav__link nav__link--sub">Общее портфолио</a>
+                    <a href="single-portfolio.php" class="nav__link nav__link--sub">Брендирование</a>
+                    <a href="single-portfolio.php" class="nav__link nav__link--sub">Web-дизайн</a>
+                    <a href="single-portfolio.php" class="nav__link nav__link--sub">Дизайн авто</a>
+                    <a href="single-portfolio.php" class="nav__link nav__link--sub">Логотип</a>
+                    <a href="single-portfolio.php" class="nav__link nav__link--sub">Упаковка</a>
+                    <a href="single-portfolio.php" class="nav__link nav__link--sub">Иллюстрации / motion</a>
                   </div>
                   <!-- /.handorgel__content__inner -->
                 </div>

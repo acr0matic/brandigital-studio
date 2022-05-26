@@ -1,0 +1,30 @@
+#header-portfolio {
+  position: sticky;
+  z-index: $z-index-header;
+  top: 0;
+
+  width: 100%;
+  background-color: #000000;
+
+  transition: $transition ease;
+}
+
+.header-portfolio {
+  display: flex;
+  align-items: center;
+
+  height: 100px;
+  transition: $transition ease;
+
+  &__logo {
+    width: 120px;
+  }
+
+  &__text {
+    margin-left: auto;
+  }
+
+  &__burger {
+    margin-left: 50px;
+  }
+}

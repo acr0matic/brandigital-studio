@@ -24,13 +24,13 @@
       </span>
 
       <div class="dropdown__content">
-        <a class="dropdown__item dropdown__item--main dropdown__item--arrow" href="">Общее портфолио</a>
-        <a class="dropdown__item" href="">Брендирование</a>
-        <a class="dropdown__item" href="">Web-дизайн</a>
-        <a class="dropdown__item" href="">Дизайн авто</a>
-        <a class="dropdown__item" href="">Логотип</a>
-        <a class="dropdown__item" href="">Упаковка</a>
-        <a class="dropdown__item" href="">Иллюстрации / motion</a>
+        <a class="dropdown__item dropdown__item--main dropdown__item--arrow" href="portfolio.php">Общее портфолио</a>
+        <a class="dropdown__item" href="single-portfolio.php">Брендирование</a>
+        <a class="dropdown__item" href="single-portfolio.php">Web-дизайн</a>
+        <a class="dropdown__item" href="single-portfolio.php">Дизайн авто</a>
+        <a class="dropdown__item" href="single-portfolio.php">Логотип</a>
+        <a class="dropdown__item" href="single-portfolio.php">Упаковка</a>
+        <a class="dropdown__item" href="single-portfolio.php">Иллюстрации / motion</a>
       </div>
       <!-- /.dropdown__content -->
     </li>

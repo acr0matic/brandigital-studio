@@ -8,6 +8,13 @@
     pointer-events: none;
 
     transition: $transition ease;
+
+    &--blur {
+      opacity: 1;
+      visibility: visible;
+
+      filter: blur(10px);
+    }
   }
 }
 
@@ -15,5 +22,6 @@
   opacity: 1;
   visibility: visible;
 
+  filter: none;
   pointer-events: initial;
 }

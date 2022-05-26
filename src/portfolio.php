@@ -1,11 +1,10 @@
-<?php include_once('misc/head.php') ?>
+<?php include_once('layout/partials/misc/head.php') ?>
 
-<body class="custom-scrollbar custom-scrollbar--page">
-  <!-- Шапка -->
-  <header id="header">
+<body id="portfolio" class="custom-scrollbar custom-scrollbar--page">
+  <header id="header-portfolio">
     <div class="container">
-      <div class="header">
-        <div class="header__logo">
+      <div class="header-portfolio">
+        <div class="header-portfolio__logo">
           <a href="index.php">
             <svg class="svg logo logo--header" width="100%" height="100%" viewBox="0 0 136 57" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M34.6066 24.002H38.538C38.8271 24.002 39.0602 24.2352 39.0602 24.5246V40.368C39.0602 40.6574 38.8271 40.8906 38.538 40.8906H34.6066C34.3175 40.8906 34.0845 40.6574 34.0845 40.368V24.5246C34.0845 24.2352 34.3175 24.002 34.6066 24.002Z" fill="white" class="invert translate-right" />
@@ -31,40 +30,90 @@
         </div>
         <!-- /.header__logo -->
 
-        <div class="header__nav">
-          <?php include_once('menu/header.php') ?>
+        <div class="header-portfolio__text">
+          <svg width="231" height="18" viewBox="0 0 231 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.8149 17.6407V0.359281H0V17.6407H4.11212V3.35329H12.7299V17.6407H16.8149Z" fill="white" />
+            <path d="M35.8625 0.0598802C30.054 0.0598802 26.4169 3.49701 26.4169 9.00599C26.4169 14.503 30.054 17.9401 35.8625 17.9401C41.6575 17.9401 45.3082 14.503 45.3082 9.00599C45.3082 3.49701 41.6575 0.0598802 35.8625 0.0598802ZM35.8625 3.07784C39.0654 3.07784 41.1147 5.37725 41.1147 9.00599C41.1147 12.6228 39.0654 14.9102 35.8625 14.9102C32.6461 14.9102 30.5969 12.6228 30.5969 9.00599C30.5969 5.37725 32.6597 3.07784 35.8625 3.07784Z" fill="white" />
+            <path d="M54.8966 0.359281V17.6407H58.9952V12.1916H62.6594C66.7851 12.1916 69.6487 9.82036 69.6487 6.27545C69.6487 2.71856 66.8801 0.359281 62.863 0.359281H54.8966ZM58.9952 3.22156H61.7773C64.1251 3.22156 65.4823 4.32335 65.4823 6.28743C65.4823 8.26347 64.1116 9.36527 61.7637 9.36527H58.9952V3.22156Z" fill="white" />
+            <path d="M87.7192 17.6407V3.34132H93.392V0.359281H77.9614V3.34132H83.6206V17.6407H87.7192Z" fill="white" />
+            <path d="M109.495 13.2455C106.495 13.1377 104.555 11.5329 104.555 8.95808C104.555 6.41916 106.495 4.81437 109.495 4.68263V13.2455ZM118.37 8.97006C118.37 11.521 116.43 13.1257 113.43 13.2455V4.68263C116.43 4.8024 118.37 6.40719 118.37 8.97006ZM109.454 16.1557V18H113.485V16.1557C118.913 16 122.496 13.3413 122.496 8.97006C122.496 4.58683 118.927 1.92814 113.485 1.78443V0H109.454V1.78443C104.012 1.94012 100.429 4.5988 100.429 8.95808C100.429 13.3533 104.012 16.012 109.454 16.1557Z" fill="white" />
+            <path d="M140.716 0.0598802C134.907 0.0598802 131.27 3.49701 131.27 9.00599C131.27 14.503 134.907 17.9401 140.716 17.9401C146.511 17.9401 150.161 14.503 150.161 9.00599C150.161 3.49701 146.511 0.0598802 140.716 0.0598802ZM140.716 3.07784C143.919 3.07784 145.968 5.37725 145.968 9.00599C145.968 12.6228 143.919 14.9102 140.716 14.9102C137.499 14.9102 135.45 12.6228 135.45 9.00599C135.45 5.37725 137.513 3.07784 140.716 3.07784Z" fill="white" />
+            <path d="M175.208 17.6407V0.359281H161.731L161.148 10.5749C160.998 13.1737 160.374 14.5629 158.556 14.5629C158.203 14.5629 157.836 14.503 157.646 14.4671V17.6287C157.918 17.7126 158.461 17.7964 159.126 17.7964C163.034 17.7964 164.649 15.2814 164.921 10.8144L165.396 3.34132H171.109V17.6407H175.208Z" fill="white" />
+            <path d="M198.422 17.6407H202.507V0.359281H198.557L189.668 12.0599H189.505V0.359281H185.42V17.6407H189.37L198.259 5.9521H198.422V17.6407Z" fill="white" />
+            <path d="M221.554 0.0598802C215.746 0.0598802 212.109 3.49701 212.109 9.00599C212.109 14.503 215.746 17.9401 221.554 17.9401C227.349 17.9401 231 14.503 231 9.00599C231 3.49701 227.349 0.0598802 221.554 0.0598802ZM221.554 3.07784C224.757 3.07784 226.806 5.37725 226.806 9.00599C226.806 12.6228 224.757 14.9102 221.554 14.9102C218.338 14.9102 216.289 12.6228 216.289 9.00599C216.289 5.37725 218.352 3.07784 221.554 3.07784Z" fill="white" />
+          </svg>
         </div>
-        <!-- /.header__nav -->
+        <!-- /.header-portfolio__text -->
 
-        <div class="header__callback">
-          <a href="tel:" class="link link--bold mb-lg-1">+7 999 141-24-80</a>
-          <a href="mailto:" class="link link--bold">info@brandigital.ru</a>
-        </div>
-        <!-- /.header__callback -->
-
-        <div class="header__action">
-          <button data-micromodal-trigger="modal-callback" class="header__button button button-outline button-outline--orange">Связаться с нами</button>
-        </div>
-        <!-- /.header__action -->
-
-        <div class="header__mobile">
-          <button class="hamburger hamburger--spin" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-        </div>
-        <!-- /.header__mobile -->
-
-        <div class="header__burger hamburger-custom">
+        <div class="header-portfolio__burger hamburger-custom">
           <div><span></span></div>
         </div>
-        <!-- /.header__hamburger -->
+        <!-- /.header-portfolio__burger -->
       </div>
-      <!-- /.header -->
+      <!-- /.header-portfolio -->
     </div>
     <!-- /.container -->
   </header>
 
-  <?php include_once('menu/side.php') ?>
-  <?php include_once('menu/mobile.php') ?>
+  <?php include_once('layout/partials/menu/side.php') ?>
+
+  <!-- Основной контент -->
+  <main id="portfolio">
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="portfolio">
+          <div class="portfolio__item">
+            <picture class="portfolio__picture lazy">
+              <img class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/1.jpg" src="img/page/portfolio/thumb/1.jpg" alt="">
+              <img src="img/misc/preloader.svg" alt="" class="preloader">
+            </picture>
+          </div>
+          <!-- /.portfolio__item -->
+
+          <div class="portfolio__item">
+            <picture class="portfolio__picture lazy">
+              <img class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/2.jpg" src="img/page/portfolio/thumb/2.jpg" alt="">
+              <img src="img/misc/preloader.svg" alt="" class="preloader">
+            </picture>
+          </div>
+          <!-- /.portfolio__item -->
+
+          <div class="portfolio__item">
+            <picture class="portfolio__picture lazy">
+              <img class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/3.jpg" src="img/page/portfolio/thumb/3.jpg" alt="">
+              <img src="img/misc/preloader.svg" alt="" class="preloader">
+            </picture>
+          </div>
+          <!-- /.portfolio__item -->
+
+          <div class="portfolio__item">
+            <picture class="portfolio__picture lazy">
+              <img class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/4.jpg" src="img/page/portfolio/thumb/4.jpg" alt="">
+              <img src="img/misc/preloader.svg" alt="" class="preloader">
+            </picture>
+          </div>
+          <!-- /.portfolio__item -->
+
+          <div class="portfolio__item">
+            <picture class="portfolio__picture lazy">
+              <img class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/5.jpg" src="img/page/portfolio/thumb/5.jpg" alt="">
+              <img src="img/misc/preloader.svg" alt="" class="preloader">
+            </picture>
+          </div>
+          <!-- /.portfolio__item -->
+
+          <div class="portfolio__item">
+            <picture class="portfolio__picture lazy">
+              <img class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/6.jpg" src="img/page/portfolio/thumb/6.jpg" alt="">
+              <img src="img/misc/preloader.svg" alt="" class="preloader">
+            </picture>
+          </div>
+          <!-- /.portfolio__item -->
+        </div>
+        <!-- /.portfolio -->
+      </div>
+      <!-- /.container -->
+    </section>
+  </main>
+
+  <?php include_once('layout/partials/footer.php') ?>

@@ -1,0 +1,69 @@
+body#portfolio {
+  background-color: $palette-black;
+
+  section#portfolio {
+    padding-top: 30px;
+  }
+
+  #side-menu {
+    .nav__item:first-child {
+      .nav__link {
+        font-weight: $weight-Bold;
+      }
+    }
+
+    .nav__item--mobile {
+      display: block;
+    }
+
+    .handorgel__icon {
+      width: 18px;
+      height: 18px;
+    }
+
+    .side-menu__nav {
+      overflow: auto;
+      max-height: 395px;
+      margin-right: -20px;
+      margin-bottom: 40px;
+      padding-right: 20px;
+    }
+
+    .side-menu__button {
+      display: inline-flex;
+    }
+  }
+
+  .portfolio {
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 55px;
+      }
+
+      &:nth-child(5n - 4) .portfolio__picture {
+        margin: 0 auto;
+      }
+
+      &:nth-child(5n - 3) .portfolio__picture {
+        margin: 0 auto 0 5%;
+      }
+
+      &:nth-child(5n - 2) .portfolio__picture {
+        margin: 0 auto 0 6%;
+      }
+
+      &:nth-child(5n - 1) .portfolio__picture {
+        margin: 0 auto 0 7%;
+      }
+
+      &:nth-child(5n) .portfolio__picture {
+        margin: 0 auto 0 8%;
+      }
+    }
+
+    &__picture {
+      width: 135vh;
+      max-width: 1560px;
+    }
+  }
+}

@@ -27,13 +27,13 @@
               </div>
               <div class="handorgel__content">
                 <div class="handorgel__content__inner">
-                  <a href="" class="nav__link nav__link--sub">Общее портфолио</a>
-                  <a href="" class="nav__link nav__link--sub">Брендирование</a>
-                  <a href="" class="nav__link nav__link--sub">Web-дизайн</a>
-                  <a href="" class="nav__link nav__link--sub">Дизайн авто</a>
-                  <a href="" class="nav__link nav__link--sub">Логотип</a>
-                  <a href="" class="nav__link nav__link--sub">Упаковка</a>
-                  <a href="" class="nav__link nav__link--sub">Иллюстрации / motion</a>
+                  <a href="portfolio.php" class="nav__link nav__link--sub">Общее портфолио</a>
+                  <a href="single-portfolio.php" class="nav__link nav__link--sub">Брендирование</a>
+                  <a href="single-portfolio.php" class="nav__link nav__link--sub">Web-дизайн</a>
+                  <a href="single-portfolio.php" class="nav__link nav__link--sub">Дизайн авто</a>
+                  <a href="single-portfolio.php" class="nav__link nav__link--sub">Логотип</a>
+                  <a href="single-portfolio.php" class="nav__link nav__link--sub">Упаковка</a>
+                  <a href="single-portfolio.php" class="nav__link nav__link--sub">Иллюстрации / motion</a>
                 </div>
                 <!-- /.handorgel__content__inner -->
               </div>
@@ -99,7 +99,7 @@
         </ul>
       </nav>
 
-      <button data-micromodal-trigger="modal-callback" class="side-menu__button button button-outline">Связаться с нами</button>
+      <button data-micromodal-trigger="modal-callback" class="side-menu__button button button-outline button-outline--orange">Связаться с нами</button>
 
       <div class="side-menu__social social">
         <a href="" class="side-menu__link social__link"><img src="img/icons/social/vk.svg" alt="" class="side-menu__icon social__icon"></a>

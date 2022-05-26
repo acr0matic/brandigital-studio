@@ -138,14 +138,15 @@
   }
 
   &__button {
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-tablet--large) {
       display: block;
     }
 
     display: none;
     width: 100%;
+    max-width: 220px;
 
-    margin-top: auto;
+    margin: auto auto 0;
     padding: 12px 0;
 
     font-weight: $weight-Medium;
@@ -153,7 +154,7 @@
   }
 
   &__social {
-    @include breakpoint($breakpoint-tablet) {
+    @include breakpoint($breakpoint-tablet--large) {
       margin-top: 15px;
     }
 
