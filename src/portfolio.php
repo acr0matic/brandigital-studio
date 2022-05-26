@@ -4,7 +4,7 @@
   <header id="header-portfolio">
     <div class="container">
       <div class="header-portfolio">
-        <div class="header-portfolio__logo">
+        <div class="header__logo">
           <a href="index.php">
             <svg class="svg logo logo--header" width="100%" height="100%" viewBox="0 0 136 57" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M34.6066 24.002H38.538C38.8271 24.002 39.0602 24.2352 39.0602 24.5246V40.368C39.0602 40.6574 38.8271 40.8906 38.538 40.8906H34.6066C34.3175 40.8906 34.0845 40.6574 34.0845 40.368V24.5246C34.0845 24.2352 34.3175 24.002 34.6066 24.002Z" fill="white" class="invert translate-right" />
@@ -31,7 +31,7 @@
         <!-- /.header__logo -->
 
         <div class="header-portfolio__text">
-          <svg width="231" height="18" viewBox="0 0 231 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 231 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16.8149 17.6407V0.359281H0V17.6407H4.11212V3.35329H12.7299V17.6407H16.8149Z" fill="white" />
             <path d="M35.8625 0.0598802C30.054 0.0598802 26.4169 3.49701 26.4169 9.00599C26.4169 14.503 30.054 17.9401 35.8625 17.9401C41.6575 17.9401 45.3082 14.503 45.3082 9.00599C45.3082 3.49701 41.6575 0.0598802 35.8625 0.0598802ZM35.8625 3.07784C39.0654 3.07784 41.1147 5.37725 41.1147 9.00599C41.1147 12.6228 39.0654 14.9102 35.8625 14.9102C32.6461 14.9102 30.5969 12.6228 30.5969 9.00599C30.5969 5.37725 32.6597 3.07784 35.8625 3.07784Z" fill="white" />
             <path d="M54.8966 0.359281V17.6407H58.9952V12.1916H62.6594C66.7851 12.1916 69.6487 9.82036 69.6487 6.27545C69.6487 2.71856 66.8801 0.359281 62.863 0.359281H54.8966ZM58.9952 3.22156H61.7773C64.1251 3.22156 65.4823 4.32335 65.4823 6.28743C65.4823 8.26347 64.1116 9.36527 61.7637 9.36527H58.9952V3.22156Z" fill="white" />
@@ -45,17 +45,28 @@
         </div>
         <!-- /.header-portfolio__text -->
 
-        <div class="header-portfolio__burger hamburger-custom">
+        <div class="header__burger hamburger-custom">
           <div><span></span></div>
         </div>
         <!-- /.header-portfolio__burger -->
+
+        <div class="header__mobile">
+          <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        <!-- /.header__mobile -->
       </div>
       <!-- /.header-portfolio -->
     </div>
     <!-- /.container -->
   </header>
 
+  <?php $modify = "portfolio"; ?>
   <?php include_once('layout/partials/menu/side.php') ?>
+  <?php include_once('layout/partials/menu/mobile.php') ?>
 
   <!-- Основной контент -->
   <main id="portfolio">

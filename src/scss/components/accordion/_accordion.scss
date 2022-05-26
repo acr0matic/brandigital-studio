@@ -29,14 +29,20 @@
     }
 
     .handorgel__icon {
+      @include breakpoint($breakpoint-tablet--large) {
+        width: 12px;
+        height: 8px;
+      }
+
       @include breakpoint($breakpoint-tablet) {
         path {
           stroke: $palette-black;
         }
       }
 
-      width: 12px;
-      height: 8px;
+      width: 18px;
+      height: 18px;
+
       margin-left: 10px;
 
       transition: $transition ease;
