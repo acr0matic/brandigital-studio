@@ -1,0 +1,69 @@
+main#process {
+  .process-main {
+    &__title {
+      @include breakpoint($breakpoint-tablet) {
+        br {
+          display: none;
+        }
+      }
+
+      font-weight: $weight-Bold;
+    }
+
+    &__separator {
+      @include breakpoint($breakpoint-laptop) {
+        margin: 15px 0 25px;
+      }
+
+      width: 100%;
+      height: 1px;
+
+      margin: 25px 0 35px;
+
+      background-color: #c4c4c4;
+    }
+
+    &__text {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $font-size__text--big;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: $font-size__text--regular;
+      }
+
+      font-size: $font-size__text--large + 4px;
+    }
+
+    &__picture {
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+
+      height: 100%;
+    }
+
+    &__action {
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+
+      margin-top: 30px;
+    }
+
+    &__link {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $font-size__text--large;
+      }
+
+      color: $palette-orange;
+      font-size: $font-size__text--large + 4px;
+
+      @media (hover: hover) {
+        &:hover svg {
+          transform: translateY(5px);
+        }
+      }
+    }
+  }
+}

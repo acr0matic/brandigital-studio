@@ -1,0 +1,13 @@
+#process .document__slider {
+  @include breakpoint($breakpoint-tablet) {
+    .swiper-slide {
+      width: 40%;
+    }
+  }
+
+  @include breakpoint(max-width 500px) {
+    .swiper-slide {
+      width: 60%;
+    }
+  }
+}

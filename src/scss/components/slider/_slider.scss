@@ -49,6 +49,44 @@
       }
     }
   }
+
+  &--mobile {
+    @include breakpoint($breakpoint-tablet) {
+      flex-wrap: nowrap;
+      overflow: initial;
+    }
+
+    .swiper-wrapper {
+      @include breakpoint($breakpoint-tablet) {
+        flex-wrap: nowrap;
+        margin: 0;
+      }
+    }
+
+    .swiper-slide {
+      @include breakpoint($breakpoint-tablet) {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    .row {
+      @include breakpoint($breakpoint-tablet) {
+        flex-wrap: nowrap;
+      }
+
+      flex-wrap: wrap;
+      margin: 0 -10px;
+
+      & > * {
+        @include breakpoint($breakpoint-tablet) {
+          padding: 0;
+        }
+
+        padding: 0 10px;
+      }
+    }
+  }
 }
 
 /* purgecss end ignore */

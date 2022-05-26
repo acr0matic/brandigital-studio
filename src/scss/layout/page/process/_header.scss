@@ -1,4 +1,12 @@
 section#process-header {
+  @include breakpoint($breakpoint-laptop) {
+    margin-bottom: 175px;
+  }
+
+  @include breakpoint($breakpoint-tablet) {
+    margin-bottom: 30px;
+  }
+
   position: relative;
   margin-bottom: 200px;
 
