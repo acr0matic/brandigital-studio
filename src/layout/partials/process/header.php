@@ -26,7 +26,7 @@
   <div class="process-header__nav process-nav">
     <div class="container">
       <div class="process-nav__wrapper">
-        <div class="process-nav__item<?php echo $current == "managment" ? " process-nav__item--current" : "" ?>">
+        <div class="process-nav__item<?php echo $current == "management" ? " process-nav__item--current" : "" ?>">
           <div class="process-nav__image">
             <div class="process-nav__background"></div>
             <svg class="process-nav__icon svg" viewBox="0 0 167 167" fill="none" xmlns="http://www.w3.org/2000/svg">
