@@ -137,7 +137,7 @@
           <div class="portfolio-body__portfolio">
             <div class="row">
               <div class="col-6 col-md-4">
-                <div data-mircomodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
+                <div data-micromodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
                   <div class="portfolio-item__picture lazy">
                     <img data-src="img/single/portfolio/1.jpg" alt="" class="portfolio-item__image image image--cover lazy__item">
                     <img src="img/misc/preloader.svg" alt="" class="preloader">
@@ -154,6 +154,48 @@
                       <!-- /.portfolio-item__info -->
 
                       <img class="portfolio-item__dots" src="img/single/portfolio/dots.svg" alt="">
+
+                      <div class="portfolio-item__hidden">
+                        <div class="portfolio-item__category">Брендинг</div>
+
+                        <p class="portfolio-item__description">
+                          Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
+                        </p>
+
+                        <ul class="portfolio-item__list list list--info">
+                          <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                          <li class="list__item">Срок изготовления: <span>1 рабочий день</span></li>
+                          <li class="list__item">Гарантия: <span>6 месяцев</span></li>
+                        </ul>
+
+                        <div class="portfolio-item__gallery">
+                          <picture class="modal__picture lazy">
+                            <a href="img/section/portfolio/modal/2.jpg">
+                              <img data-src="img/section/portfolio/modal/2.jpg" alt="" class="modal__image image image--cover lazy__item">
+                              <img src="img/misc/preloader.svg" alt="" class="preloader">
+                            </a>
+                          </picture>
+                          <!-- /.modal__picture -->
+
+                          <picture class="modal__picture lazy">
+                            <a href="img/section/portfolio/modal/1.jpg">
+                              <img data-src="img/section/portfolio/modal/1.jpg" alt="" class="modal__image image image--cover lazy__item">
+                              <img src="img/misc/preloader.svg" alt="" class="preloader">
+                            </a>
+                          </picture>
+                          <!-- /.modal__picture -->
+
+                          <picture class="modal__picture lazy">
+                            <a href="img/section/portfolio/modal/3.jpg">
+                              <img data-src="img/section/portfolio/modal/3.jpg" alt="" class="modal__image image image--cover lazy__item">
+                              <img src="img/misc/preloader.svg" alt="" class="preloader">
+                            </a>
+                          </picture>
+                          <!-- /.modal__picture -->
+                        </div>
+                        <!-- /.portfolio-item__gallery -->
+                      </div>
+                      <!-- /.portfolio-item__hidden -->
                     </div>
                     <!-- /.portfolio-item__wrapper -->
                   </div>
@@ -164,7 +206,7 @@
               <!-- /.col-4 -->
 
               <div class="col-6 col-md-4">
-                <div data-mircomodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
+                <div data-micromodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
                   <div class="portfolio-item__picture lazy">
                     <img data-src="img/single/portfolio/2.jpg" alt="" class="portfolio-item__image image image--cover lazy__item">
                     <img src="img/misc/preloader.svg" alt="" class="preloader">
@@ -181,6 +223,56 @@
                       <!-- /.portfolio-item__info -->
 
                       <img class="portfolio-item__dots" src="img/single/portfolio/dots.svg" alt="">
+
+                      <div class="portfolio-item__hidden">
+                        <div class="portfolio-item__category">Брендинг</div>
+
+                        <p class="portfolio-item__description">
+                          Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
+                        </p>
+
+                        <ul class="portfolio-item__list list list--info">
+                          <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                          <li class="list__item">Срок изготовления: <span>1 рабочий день</span></li>
+                          <li class="list__item">Гарантия: <span>6 месяцев</span></li>
+                        </ul>
+
+                        <div class="portfolio-item__gallery">
+                          <picture class="modal__picture lazy">
+                            <a href="img/section/portfolio/modal/1.jpg">
+                              <img data-src="img/section/portfolio/modal/1.jpg" alt="" class="modal__image image image--cover lazy__item">
+                              <img src="img/misc/preloader.svg" alt="" class="preloader">
+                            </a>
+                          </picture>
+                          <!-- /.modal__picture -->
+
+                          <picture class="modal__picture lazy">
+                            <a href="img/section/portfolio/modal/2.jpg">
+                              <img data-src="img/section/portfolio/modal/2.jpg" alt="" class="modal__image image image--cover lazy__item">
+                              <img src="img/misc/preloader.svg" alt="" class="preloader">
+                            </a>
+                          </picture>
+                          <!-- /.modal__picture -->
+
+                          <picture class="modal__picture lazy">
+                            <a href="img/section/portfolio/modal/3.jpg">
+                              <img data-src="img/section/portfolio/modal/3.jpg" alt="" class="modal__image image image--cover lazy__item">
+                              <img src="img/misc/preloader.svg" alt="" class="preloader">
+                            </a>
+                          </picture>
+                          <!-- /.modal__picture -->
+
+                          <picture class="modal__picture lazy">
+                            <a href="img/section/portfolio/modal/4.jpg">
+                              <img data-src="img/section/portfolio/modal/4.jpg" alt="" class="modal__image image image--cover lazy__item">
+                              <img src="img/misc/preloader.svg" alt="" class="preloader">
+                            </a>
+                          </picture>
+                          <!-- /.modal__picture -->
+                        </div>
+                        <!-- /.portfolio-item__gallery -->
+                      </div>
+                      <!-- /.portfolio-item__hidden -->
                     </div>
                     <!-- /.portfolio-item__wrapper -->
                   </div>
@@ -191,7 +283,7 @@
               <!-- /.col-4 -->
 
               <div class="col-6 col-md-4">
-                <div data-mircomodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
+                <div data-micromodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
                   <div class="portfolio-item__picture lazy">
                     <img data-src="img/single/portfolio/3.jpg" alt="" class="portfolio-item__image image image--cover lazy__item">
                     <img src="img/misc/preloader.svg" alt="" class="preloader">
@@ -218,7 +310,7 @@
               <!-- /.col-4 -->
 
               <div class="col-6 col-md-4">
-                <div data-mircomodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
+                <div data-micromodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
                   <div class="portfolio-item__picture lazy">
                     <img data-src="img/single/portfolio/1.jpg" alt="" class="portfolio-item__image image image--cover lazy__item">
                     <img src="img/misc/preloader.svg" alt="" class="preloader">
@@ -245,7 +337,7 @@
               <!-- /.col-4 -->
 
               <div class="col-6 col-md-4">
-                <div data-mircomodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
+                <div data-micromodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
                   <div class="portfolio-item__picture lazy">
                     <img data-src="img/single/portfolio/2.jpg" alt="" class="portfolio-item__image image image--cover lazy__item">
                     <img src="img/misc/preloader.svg" alt="" class="preloader">
@@ -272,7 +364,7 @@
               <!-- /.col-4 -->
 
               <div class="col-6 col-md-4">
-                <div data-mircomodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
+                <div data-micromodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
                   <div class="portfolio-item__picture lazy">
                     <img data-src="img/single/portfolio/3.jpg" alt="" class="portfolio-item__image image image--cover lazy__item">
                     <img src="img/misc/preloader.svg" alt="" class="preloader">
@@ -299,7 +391,7 @@
               <!-- /.col-4 -->
 
               <div class="col-6 col-md-4">
-                <div data-mircomodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
+                <div data-micromodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
                   <div class="portfolio-item__picture lazy">
                     <img data-src="img/single/portfolio/1.jpg" alt="" class="portfolio-item__image image image--cover lazy__item">
                     <img src="img/misc/preloader.svg" alt="" class="preloader">
@@ -326,7 +418,7 @@
               <!-- /.col-4 -->
 
               <div class="col-6 col-md-4">
-                <div data-mircomodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
+                <div data-micromodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
                   <div class="portfolio-item__picture lazy">
                     <img data-src="img/single/portfolio/2.jpg" alt="" class="portfolio-item__image image image--cover lazy__item">
                     <img src="img/misc/preloader.svg" alt="" class="preloader">
@@ -353,7 +445,7 @@
               <!-- /.col-4 -->
 
               <div class="col-6 col-md-4">
-                <div data-mircomodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
+                <div data-micromodal-trigger="modal-portfolio" class="portfolio-body__item portfolio-item">
                   <div class="portfolio-item__picture lazy">
                     <img data-src="img/single/portfolio/3.jpg" alt="" class="portfolio-item__image image image--cover lazy__item">
                     <img src="img/misc/preloader.svg" alt="" class="preloader">
@@ -398,6 +490,7 @@
     <!-- /.single-portfolio -->
 
   </section>
+  <?php include_once('layout/partials/modal/portfolio.php') ?>
 
   <?php include_once('layout/block/callback.php') ?>
 

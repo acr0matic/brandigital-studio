@@ -50,6 +50,34 @@
     }
   }
 
+  .swiper-pagination {
+    position: static;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+  }
+
+  .swiper-pagination-bullet {
+    flex-shrink: 0;
+
+    width: 12px;
+    height: 12px;
+
+    background-color: #ebebeb;
+    opacity: 1;
+
+    &-active {
+      background-color: $palette-orange;
+    }
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
   &--mobile {
     @include breakpoint($breakpoint-tablet) {
       flex-wrap: nowrap;
@@ -59,8 +87,15 @@
     .swiper-wrapper {
       @include breakpoint($breakpoint-tablet) {
         flex-wrap: nowrap;
+        width: 100%;
         margin: 0;
+
+        & > * {
+          margin-bottom: 0 !important;
+        }
       }
+
+      width: initial;
     }
 
     .swiper-slide {

@@ -1,4 +1,54 @@
 .modal {
+  &--window {
+    .modal__container {
+      padding: 0;
+    }
+
+    .modal__header {
+      @include breakpoint($breakpoint-tablet--large) {
+        padding: 15px 60px;
+      }
+
+      position: relative;
+
+      margin-bottom: 15px;
+      padding: 20px 60px;
+
+      background-color: $palette-orange;
+      color: $color-text__white;
+
+      text-align: center;
+    }
+
+    .modal__close {
+      right: 25px;
+
+      path {
+        @include breakpoint($breakpoint-tablet) {
+          stroke: $palette-orange;
+        }
+
+        stroke: $palette-white;
+      }
+    }
+
+    .modal__content {
+      @include breakpoint($breakpoint-laptop) {
+        padding: 0 50px 30px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        padding: 0 50px 20px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        padding: 0 30px 20px;
+      }
+
+      padding: 0 80px 60px;
+    }
+  }
+
   &__overlay {
     @include breakpoint($breakpoint-tablet) {
       align-items: flex-end;
@@ -33,13 +83,15 @@
     }
 
     @include breakpoint($breakpoint-tablet) {
-      padding-top: 30px;
+      max-width: 540px;
+      padding: 0;
 
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
     }
 
     @include breakpoint($breakpoint-mobile--large) {
+      max-width: 420px;
       margin: 0;
     }
 
@@ -49,6 +101,7 @@
     max-width: 1050px;
 
     margin: 0 10px;
+    padding: 0 35px 60px;
 
     border-radius: 25px;
 
@@ -56,28 +109,13 @@
   }
 
   &__header {
-    @include breakpoint($breakpoint-tablet--large) {
-      padding: 15px 60px;
-    }
-
     @include breakpoint($breakpoint-tablet) {
-      padding: 0 20px;
-      background-color: $palette-white;
-    }
-
-    @include breakpoint($breakpoint-mobile--large) {
-      padding-top: 20px;
+      padding: 50px 30px 0 !important;
+      background-color: $palette-white !important;
     }
 
     position: relative;
-
-    margin-bottom: 15px;
-    padding: 20px 60px;
-
-    background-color: $palette-orange;
-    color: $color-text__white;
-
-    text-align: center;
+    padding: 30px 0 25px;
   }
 
   &__title {
@@ -114,23 +152,20 @@
   }
 
   &__close {
-    @include breakpoint($breakpoint-tablet) {
-      path {
-        stroke: $palette-orange;
-      }
+    @include breakpoint($breakpoint-tablet--large) {
+      transform: scale(0.7) translateY(-70%);
     }
 
-    @include breakpoint($breakpoint-mobile--large) {
-      top: -20px;
-      right: 10px;
-
+    @include breakpoint($breakpoint-tablet) {
+      top: 5px;
+      right: 10px !important;
       transform: scale(0.7);
     }
 
     position: absolute;
     z-index: 3;
     top: 50%;
-    right: 25px;
+    right: 0;
 
     width: 35px;
     height: 35px;
@@ -151,23 +186,18 @@
         opacity: 0.5;
       }
     }
+
+    path {
+      @include breakpoint($breakpoint-tablet) {
+        stroke: $palette-orange;
+      }
+
+      stroke: $palette-black;
+    }
   }
 
   &__content {
-    @include breakpoint($breakpoint-laptop) {
-      padding: 0 50px 30px;
-    }
-
-    @include breakpoint($breakpoint-tablet--large) {
-      padding: 0 50px 20px;
-    }
-
-    @include breakpoint($breakpoint-tablet) {
-      padding: 0 30px 20px;
-    }
-
     position: relative;
-    padding: 0 80px 60px;
   }
 
   .input__field {

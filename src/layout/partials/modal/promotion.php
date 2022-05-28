@@ -1,4 +1,4 @@
-<div class="modal modal-promotion micromodal-slide" id="modal-promotion" aria-hidden="true">
+<div class="modal modal--window modal-promotion micromodal-slide" id="modal-promotion" aria-hidden="true">
   <div class="modal__overlay" data-micromodal-close>
     <div class="modal__container" role="dialog">
       <header class="modal__header">
