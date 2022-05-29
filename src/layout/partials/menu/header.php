@@ -46,9 +46,9 @@
       </span>
 
       <div class="dropdown__content">
-        <a class="dropdown__item dropdown__item--arrow" href="">Управление проектами</a>
-        <a class="dropdown__item" href="">Создание дизайна</a>
-        <a class="dropdown__item" href="">Гарантии</a>
+        <a class="dropdown__item dropdown__item--arrow" href="process-management.php">Управление проектами</a>
+        <a class="dropdown__item" href="process-design.php">Создание дизайна</a>
+        <a class="dropdown__item" href="process-warranty.php">Гарантии</a>
       </div>
       <!-- /.dropdown__content -->
     </li>

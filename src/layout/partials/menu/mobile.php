@@ -71,9 +71,9 @@
                 </div>
                 <div class="handorgel__content">
                   <div class="handorgel__content__inner">
-                    <a href="" class="nav__link nav__link--sub">Управление проектами</a>
-                    <a href="" class="nav__link nav__link--sub">Создание дизайна</a>
-                    <a href="" class="nav__link nav__link--sub">Гарантии</a>
+                    <a href="process-management.php" class="nav__link nav__link--sub">Управление проектами</a>
+                    <a href="process-design.php" class="nav__link nav__link--sub">Создание дизайна</a>
+                    <a href="process-warranty.php" class="nav__link nav__link--sub">Гарантии</a>
                   </div>
                   <!-- /.handorgel__content__inner -->
                 </div>

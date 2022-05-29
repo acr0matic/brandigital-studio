@@ -92,6 +92,82 @@
     }
 
     font-size: $font-size__text--large;
+
+    b {
+      color: $color-text__orange;
+      font-weight: $weight-Medium;
+    }
+  }
+
+  &__action {
+    @include breakpoint($breakpoint-tablet) {
+      text-align: center;
+    }
+
+    margin-top: 25px;
+  }
+
+  &__list {
+    .process-textblock__info {
+      margin-bottom: 10px;
+    }
+
+    li {
+      &:not(:last-child) {
+        @include breakpoint($breakpoint-laptop) {
+          margin-bottom: 5px;
+        }
+
+        margin-bottom: 10px;
+      }
+    }
+
+    .parameter {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $font-size__text--big;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        font-size: $font-size__text--regular;
+      }
+
+      font-size: $font-size__text--large;
+    }
+
+    .value {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $font-size__text--large;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        font-size: $font-size__text--big;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: $font-size__text--regular;
+      }
+
+      color: $color-text__orange;
+      font-weight: $weight-Medium;
+      font-size: $font-size__text--large + 4px;
+    }
+  }
+
+  &__info {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__text--large;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      margin-top: 15px;
+      font-size: $font-size__text--big;
+    }
+
+    margin-top: 25px;
+
+    color: $color-text__orange;
+    font-weight: $weight-Medium;
+    font-size: $font-size__text--large + 4px;
   }
 
   &__picture {
@@ -111,7 +187,24 @@
       margin-top: 30px;
     }
 
+    position: relative;
     width: 100%;
     height: 470px;
+  }
+
+  &__image {
+    transition: $transition ease;
+
+    &--top {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+    }
+
+    &--hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
   }
 }

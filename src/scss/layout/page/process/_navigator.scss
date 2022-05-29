@@ -1,0 +1,108 @@
+.process-navigator {
+  &__title {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__title--small - 5px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      margin-bottom: 25px;
+      font-size: $font-size__text--large;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 15px;
+    }
+
+    margin-bottom: 45px;
+    font-size: $font-size__title--small;
+  }
+
+  &__list {
+    @include breakpoint($breakpoint-laptop--medium) {
+      padding-left: 45px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      padding-left: 40px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      padding-left: 35px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding-left: 50px;
+    list-style-type: decimal;
+  }
+
+  &__item {
+    @include breakpoint($breakpoint-laptop--medium) {
+      font-size: $font-size__text--large;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--big;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--regular;
+    }
+
+    position: relative;
+
+    font-weight: $weight-Medium;
+    font-size: $font-size__text--large + 5px;
+
+    @media (hover: hover) {
+      &:hover::marker {
+        color: $color-text__orange;
+      }
+
+      &:hover::before {
+        background-color: $palette-orange;
+      }
+    }
+
+    &::before {
+      @include breakpoint($breakpoint-laptop--medium) {
+        left: -45px;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        left: -40px;
+        width: 5px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        left: -35px;
+        width: 5px;
+      }
+
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -50px;
+      width: 7px;
+      height: 100%;
+
+      background-color: #dedede;
+
+      pointer-events: none;
+      transform: translateY(-50%);
+      transition: $transition ease;
+    }
+
+    &::marker {
+      pointer-events: none;
+      transition: $transition ease;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 0;
+  }
+}
