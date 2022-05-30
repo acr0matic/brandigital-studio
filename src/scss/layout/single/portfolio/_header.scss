@@ -1,7 +1,15 @@
 section#single-portfolio {
   .portfolio-header {
     @include breakpoint($breakpoint-laptop--medium) {
+      margin-bottom: 180px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
       margin-bottom: 150px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 120px;
     }
 
     @include breakpoint($breakpoint-tablet) {

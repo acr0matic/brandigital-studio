@@ -1,6 +1,14 @@
 section#process-header {
+  @include breakpoint($breakpoint-laptop--medium) {
+    margin-bottom: 200px;
+  }
+
   @include breakpoint($breakpoint-laptop) {
     margin-bottom: 175px;
+  }
+
+  @include breakpoint($breakpoint-tablet--large) {
+    margin-bottom: 140px;
   }
 
   @include breakpoint($breakpoint-tablet) {
@@ -8,7 +16,7 @@ section#process-header {
   }
 
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 250px;
 
   background-color: $palette-black;
   color: $color-text__white;
@@ -30,6 +38,10 @@ section#process-header {
     color: $color-text__white;
 
     &__wrapper {
+      @include breakpoint($breakpoint-laptop--medium) {
+        padding-bottom: 85px;
+      }
+
       @include breakpoint($breakpoint-laptop) {
         padding-bottom: 50px;
       }
@@ -42,7 +54,7 @@ section#process-header {
         padding-bottom: 0;
       }
 
-      padding-bottom: 70px;
+      padding-bottom: 100px;
     }
 
     &__content {
