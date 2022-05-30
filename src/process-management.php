@@ -117,6 +117,11 @@
                       <br>
                       Дизайн мы разрабатываем по определенному алгоритму, с которым Вы можете ознакомиться по кнопке ниже.
                     </p>
+
+                    <div class="process-textblock__action">
+                      <a href="process-design.php" data-change-image class="process-textblock__button button button-primary">Как мы делаем дизайн</a>
+                    </div>
+                    <!-- /.process-textblock__action -->
                   </div>
                   <!-- /.process-textblock__content -->
                 </div>

@@ -77,15 +77,15 @@
               <!-- /.modal-info__header -->
 
               <div class="modal-info__body overflow overflow--laptop">
-                <div class="overflow__container">
+                <div class="overflow__container custom-scrollbar custom-scrollbar--gray">
                   <ul class="modal-info__list list list--info">
                     <li class="list__item">
-                      Срок реализации:
+                      <div>Срок реализации:</div>
                       <span>1 день</span>
                     </li>
 
                     <li class="list__item">
-                      Работало:
+                      <div>Работало:</div>
                       <span>3 специалиста</span>
                     </li>
                   </ul>

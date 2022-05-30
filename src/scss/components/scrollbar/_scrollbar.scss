@@ -32,6 +32,16 @@
     }
   }
 
+  &--gray {
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $palette-gray;
+    }
+  }
+
   &--white {
     &::-webkit-scrollbar-track {
       background: transparent;

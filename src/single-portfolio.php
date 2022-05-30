@@ -160,9 +160,20 @@
                         </p>
 
                         <ul class="portfolio-item__list list list--info">
-                          <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
-                          <li class="list__item">Срок изготовления: <span>1 рабочий день</span></li>
-                          <li class="list__item">Гарантия: <span>6 месяцев</span></li>
+                          <li class="list__item">
+                            <div>Cрок эксплуатации:</div>
+                            <span>до 3 лет</span>
+                          </li>
+
+                          <li class="list__item">
+                            <div>Срок изготовления:</div>
+                            <span>1 рабочий день</span>
+                          </li>
+
+                          <li class="list__item">
+                            <div>Гарантия:</div>
+                            <span>6 месяцев</span>
+                          </li>
                         </ul>
 
                         <div class="portfolio-item__gallery">
@@ -229,9 +240,20 @@
                         </p>
 
                         <ul class="portfolio-item__list list list--info">
-                          <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
-                          <li class="list__item">Срок изготовления: <span>1 рабочий день</span></li>
-                          <li class="list__item">Гарантия: <span>6 месяцев</span></li>
+                          <li class="list__item">
+                            <div>Cрок эксплуатации:</div>
+                            <span>до 3 лет</span>
+                          </li>
+
+                          <li class="list__item">
+                            <div>Срок изготовления:</div>
+                            <span>1 рабочий день</span>
+                          </li>
+
+                          <li class="list__item">
+                            <div>Гарантия:</div>
+                            <span>6 месяцев</span>
+                          </li>
                         </ul>
 
                         <div class="portfolio-item__gallery">

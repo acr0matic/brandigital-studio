@@ -31,16 +31,28 @@
   .modal__title {
   }
 
-  .modal__text {
+  .overflow__container {
+    @include breakpoint($breakpoint-laptop--medium) {
+      max-height: 260px;
+    }
+
     @include breakpoint($breakpoint-tablet--large) {
       max-height: 230px;
-      padding-right: 15px;
 
       font-size: $font-size__text--regular;
     }
 
     @include breakpoint($breakpoint-mobile--large) {
       max-height: 150px;
+    }
+
+    max-height: 300px;
+    padding-right: 15px;
+  }
+
+  .modal__text {
+    @include breakpoint($breakpoint-tablet--large) {
+      font-size: $font-size__text--regular;
     }
   }
 

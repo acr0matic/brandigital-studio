@@ -13,10 +13,16 @@
         font-size: $font-size__text--small;
       }
 
-      color: $color-text__gray;
-
-      font-weight: $weight-Medium;
+      display: flex;
+      flex-wrap: wrap;
       font-size: $font-size__text--large;
+
+      div {
+        margin-right: 5px;
+
+        color: $color-text__gray;
+        font-weight: $weight-Medium;
+      }
 
       span {
         color: $color-text__orange;

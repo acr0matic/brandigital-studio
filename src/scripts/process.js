@@ -28,6 +28,7 @@ if (process) {
     const wrapper = button.closest('.process-textblock');
 
     if (button.hasAttribute('data-change-image')) {
+      const defaultText = button.innerHTML;
       const picture = wrapper.querySelector('.process-textblock__picture')
       const main = picture.querySelector('.process-textblock__image');
       const second = picture.querySelector('.process-textblock__image--top');
@@ -39,8 +40,11 @@ if (process) {
       }
 
       button.addEventListener('click', () => {
+        button.classList.toggle('button-primary--gray');
         main.classList.toggle('process-textblock__image--hidden');
         second.classList.toggle('process-textblock__image--hidden');
+
+        button.innerHTML = button.classList.contains('button-primary--gray') ? 'Назад' : defaultText;
       });
     }
   }

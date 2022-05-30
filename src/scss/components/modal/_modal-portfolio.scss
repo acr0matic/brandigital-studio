@@ -96,6 +96,7 @@
       }
 
       max-height: 250px;
+      padding-right: 10px;
     }
 
     &__title {
@@ -142,6 +143,9 @@
       margin-bottom: 30px;
 
       .list__item {
+        display: inline-flex;
+        flex-wrap: wrap;
+
         &:not(:last-child) {
           margin-bottom: 5px;
         }
