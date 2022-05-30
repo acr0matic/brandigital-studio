@@ -45,7 +45,7 @@
             Управление
             проектами
           </div>
-          <a class="stretched-link" href=""></a>
+          <a class="stretched-link" href="process-management.php"></a>
         </div>
         <!-- /.process-nav__item -->
 
@@ -59,7 +59,7 @@
           <!-- /.process-nav__icon -->
 
           <div class="process-nav__title">Дизайн</div>
-          <a class="stretched-link" href=""></a>
+          <a class="stretched-link" href="process-design.php"></a>
         </div>
         <!-- /.process-nav__item -->
 
@@ -78,7 +78,7 @@
           <!-- /.process-nav__icon -->
 
           <div class="process-nav__title">Гарантия</div>
-          <a class="stretched-link" href=""></a>
+          <a class="stretched-link" href="process-warranty.php"></a>
         </div>
         <!-- /.process-nav__item -->
       </div>

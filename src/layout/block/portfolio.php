@@ -2568,6 +2568,6 @@
     <!-- /.portfolio -->
   </div>
   <!-- /.container -->
-</section>
 
-<?php include_once(dirname(__DIR__) . '../partials/modal/portfolio.php') ?>
+  <?php include_once(dirname(__DIR__) . '/partials/modal/portfolio.php') ?>
+</section>
