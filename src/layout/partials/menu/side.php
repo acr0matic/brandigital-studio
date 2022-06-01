@@ -1,4 +1,4 @@
-<div id="side-menu" class="side-menu<?php echo $modify ? " side-menu--$modify" : "" ?>">
+<div id="side-menu" class="side-menu<?php echo isset($modify) ? " side-menu--$modify" : "" ?>">
   <div class="side-menu__overlay"></div>
 
   <div class="side-menu__container">

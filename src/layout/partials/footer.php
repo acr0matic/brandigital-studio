@@ -111,6 +111,7 @@
 <script src="scripts/libraries/popper.js"></script>
 <script src="scripts/libraries/tippy.js"></script>
 <script src="scripts/libraries/forms.js"></script>
+<script src="scripts/libraries/simpleParallax.js"></script>
 
 <script src="scripts/base.js"></script>
 <script src="scripts/init.js"></script>

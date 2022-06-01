@@ -116,8 +116,6 @@ if (portfolio) {
     });
   }
 
-
-
   /*
   --------------------------------------------------------
                 ОБРАБОТЧИК МОДАЛЬНОГО ОКНА
@@ -195,4 +193,14 @@ if (portfolio) {
       });
     }
   }
+
+  const images = document.querySelectorAll('.portfolio__picture .image');
+  _.forEach(images, (image) => {
+    new simpleParallax(image, {
+      orientation: image.dataset.direction,
+      delay: 1.5,
+      overflow: true
+    });
+  })
+
 }
