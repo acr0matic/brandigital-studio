@@ -33,16 +33,23 @@
     }
 
     .side-menu__button {
+      @include breakpoint($breakpoint-laptop--large) {
+        font-size: $font-size__text--large + 2px;
+      }
+
       @include breakpoint($breakpoint-laptop) {
         max-width: 260px;
       }
 
       @include breakpoint($breakpoint-tablet--large) {
         max-width: 220px;
+        font-size: $font-size__text--regular;
       }
 
       display: inline-flex;
-      max-width: 280px;
+      max-width: 360px;
+
+      font-size: $font-size__text--large + 6px;
     }
 
     .side-menu__social {
@@ -67,12 +74,34 @@
       display: block;
     }
 
-    .nav__link--sub {
+    .nav__link {
+      @include breakpoint($breakpoint-laptop--medium) {
+        font-size: $font-size__text--large + 2px;
+      }
+
       @include breakpoint($breakpoint-tablet--large) {
         font-size: $font-size__text--regular;
       }
+    }
 
-      font-size: $font-size__text--large;
+    .nav__link--sub {
+      @include breakpoint($breakpoint-tablet--large) {
+        text-transform: uppercase;
+      }
+
+      text-transform: none;
+    }
+
+    .handorgel__content__inner {
+      @include breakpoint($breakpoint-laptop--medium) {
+        padding-top: 20px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        padding-top: 15px;
+      }
+
+      padding-top: 30px;
     }
   }
 

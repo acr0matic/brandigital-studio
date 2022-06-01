@@ -75,48 +75,60 @@
         <div class="portfolio">
           <div class="portfolio__item">
             <picture class="portfolio__picture lazy">
-              <img data-direction="left" class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/1.jpg" src="img/page/portfolio/thumb/1.jpg" alt="">
-              <img src="img/misc/preloader.svg" alt="" class="preloader">
+              <a data-fslightbox href="img/page/portfolio/1.jpg">
+                <img data-direction="left" class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/1.jpg" src="img/page/portfolio/thumb/1.jpg" alt="">
+                <img src="img/misc/preloader--white.svg" alt="" class="preloader">
+              </a>
             </picture>
           </div>
           <!-- /.portfolio__item -->
 
           <div class="portfolio__item">
             <picture class="portfolio__picture lazy">
-              <img data-direction="right" class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/2.jpg" src="img/page/portfolio/thumb/2.jpg" alt="">
-              <img src="img/misc/preloader.svg" alt="" class="preloader">
+              <a data-fslightbox href="img/page/portfolio/2.jpg">
+                <img data-direction="right" class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/2.jpg" src="img/page/portfolio/thumb/2.jpg" alt="">
+                <img src="img/misc/preloader--white.svg" alt="" class="preloader">
+              </a>
             </picture>
           </div>
           <!-- /.portfolio__item -->
 
           <div class="portfolio__item">
             <picture class="portfolio__picture lazy">
-              <img data-direction="left" class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/3.jpg" src="img/page/portfolio/thumb/3.jpg" alt="">
-              <img src="img/misc/preloader.svg" alt="" class="preloader">
+              <a data-fslightbox href="img/page/portfolio/3.jpg">
+                <img data-direction="left" class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/3.jpg" src="img/page/portfolio/thumb/3.jpg" alt="">
+                <img src="img/misc/preloader--white.svg" alt="" class="preloader">
+              </a>
             </picture>
           </div>
           <!-- /.portfolio__item -->
 
           <div class="portfolio__item">
             <picture class="portfolio__picture lazy">
-              <img data-direction="right" class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/4.jpg" src="img/page/portfolio/thumb/4.jpg" alt="">
-              <img src="img/misc/preloader.svg" alt="" class="preloader">
+              <a data-fslightbox href="img/page/portfolio/4.jpg">
+                <img data-direction="right" class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/4.jpg" src="img/page/portfolio/thumb/4.jpg" alt="">
+                <img src="img/misc/preloader--white.svg" alt="" class="preloader">
+              </a>
             </picture>
           </div>
           <!-- /.portfolio__item -->
 
           <div class="portfolio__item">
             <picture class="portfolio__picture lazy">
-              <img data-direction="left" class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/5.jpg" src="img/page/portfolio/thumb/5.jpg" alt="">
-              <img src="img/misc/preloader.svg" alt="" class="preloader">
+              <a data-fslightbox href="img/page/portfolio/5.jpg">
+                <img data-direction="left" class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/5.jpg" src="img/page/portfolio/thumb/5.jpg" alt="">
+                <img src="img/misc/preloader--white.svg" alt="" class="preloader">
+              </a>
             </picture>
           </div>
           <!-- /.portfolio__item -->
 
           <div class="portfolio__item">
             <picture class="portfolio__picture lazy">
-              <img data-direction="right" class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/6.jpg" src="img/page/portfolio/thumb/6.jpg" alt="">
-              <img src="img/misc/preloader.svg" alt="" class="preloader">
+              <a data-fslightbox href="img/page/portfolio/6.jpg">
+                <img data-direction="right" class="portfolio__image image image--cover lazy__item lazy__item--blur" data-src="img/page/portfolio/6.jpg" src="img/page/portfolio/thumb/6.jpg" alt="">
+                <img src="img/misc/preloader--white.svg" alt="" class="preloader">
+              </a>
             </picture>
           </div>
           <!-- /.portfolio__item -->

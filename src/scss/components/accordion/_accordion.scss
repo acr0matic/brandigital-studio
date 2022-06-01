@@ -1,12 +1,19 @@
 .accordion {
   &--nav {
+    @include breakpoint($breakpoint-tablet) {
+      text-align: center;
+    }
+
     border: none;
+    text-align: right;
 
     &:not(:last-child) {
       margin-bottom: 15px;
     }
 
     .handorgel__header {
+      display: inline-block;
+
       &--opened {
         .handorgel__icon {
           transform: rotate(180deg);
@@ -55,12 +62,14 @@
 
     .handorgel__content__inner {
       @include breakpoint($breakpoint-tablet) {
+        align-items: center;
         padding: 15px 0 0;
         text-align: center;
       }
 
       display: flex;
       flex-direction: column;
+      align-items: flex-end;
 
       padding: 15px 22px 0 0;
       text-align: right;

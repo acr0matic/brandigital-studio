@@ -13,7 +13,7 @@
 
       <nav class="side-menu__nav nav nav--side custom-scrollbar custom-scrollbar--white">
         <ul class="nav__list">
-          <li class="nav__item"><a href="/" class="nav__link">Главная страница</a></li>
+          <li class="nav__item"><a href="index.php" class="nav__link">Главная страница</a></li>
 
           <li class="nav__item nav__item--mobile">
             <div class="handorgel accordion accordion--nav">
