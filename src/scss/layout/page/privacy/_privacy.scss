@@ -1,0 +1,29 @@
+section#privacy {
+}
+
+.privacy {
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  &__heading {
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__title {
+    @include breakpoint($breakpoint-laptop--medium) {
+      margin-bottom: 15px;
+    }
+
+    margin-bottom: 30px;
+  }
+
+  &__content {
+
+  }
+}
