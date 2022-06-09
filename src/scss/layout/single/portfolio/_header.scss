@@ -70,6 +70,10 @@ section#single-portfolio {
     }
 
     &__picture {
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+
       position: absolute;
       right: 0;
       bottom: 0;
@@ -93,7 +97,6 @@ section#single-portfolio {
       }
 
       @include breakpoint($breakpoint-tablet) {
-        display: none;
         position: static;
       }
 
