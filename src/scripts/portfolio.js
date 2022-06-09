@@ -126,7 +126,6 @@ if (portfolio) {
   --------------------------------------------------------
   */
 
-  console.log(portfolio.tagName);
   if (portfolio.tagName === 'MAIN') {
     const items = portfolio.querySelectorAll('.portfolio-item');
 
@@ -162,12 +161,14 @@ if (portfolio) {
   }
 
   else if (portfolio.tagName === 'BODY') {
-    const images = document.querySelectorAll('.portfolio__picture .image');
-    _.forEach(images, (image) => new simpleParallax(image, {
-      orientation: image.dataset.direction,
-      delay: 1.5,
-      overflow: true
-    }));
+    if (!isSmallTablet) {
+      const images = document.querySelectorAll('.portfolio__picture .image');
+      _.forEach(images, (image) => new simpleParallax(image, {
+        orientation: image.dataset.direction,
+        delay: 1.5,
+        overflow: true
+      }));
+    }
   }
 
   else {

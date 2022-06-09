@@ -50,12 +50,22 @@ body#portfolio {
         width: 85%;
       }
 
+      @include breakpoint($breakpoint-tablet) {
+        width: 100%;
+
+        margin: 0 !important;
+      }
+
       width: 135vh;
       max-width: 1560px;
     }
 
     &__image {
-      box-shadow: 0 0 40px 16px rgba(#8e8e8e, 0.1);
+      @include breakpoint($breakpoint-tablet) {
+        box-shadow: 0 0 20px 5px rgba(#8e8e8e, 0.07);
+      }
+
+      box-shadow: 0 0 30px 5px rgba(#8e8e8e, 0.07);
     }
   }
 }

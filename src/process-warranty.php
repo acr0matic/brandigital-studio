@@ -215,6 +215,66 @@
     <!-- /.container -->
   </section>
 
+  <section id="feedback" class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Отзывы</h2>
+      </div>
+      <!-- /.section__header -->
+
+      <div class="feedback process">
+        <div class="document__slider feedback__slider swiper swiper--mobile">
+          <div class="row swiper-wrapper">
+            <div class="col-3 swiper-slide">
+              <a data-fslightbox="feedback" href="img/page/process/warranty/feedback.jpg">
+                <picture class="process__document lazy">
+                  <img data-src="img/page/process/warranty/feedback.jpg" alt="" class="image image--contain lazy__item">
+                  <img src="img/misc/preloader.svg" alt="" class="preloader">
+                </picture>
+              </a>
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="col-3 swiper-slide">
+              <a data-fslightbox="feedback" href="img/page/process/warranty/feedback.jpg">
+                <picture class="process__document lazy">
+                  <img data-src="img/page/process/warranty/feedback.jpg" alt="" class="image image--contain lazy__item">
+                  <img src="img/misc/preloader.svg" alt="" class="preloader">
+                </picture>
+              </a>
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="col-3 swiper-slide">
+              <a data-fslightbox="feedback" href="img/page/process/warranty/feedback.jpg">
+                <picture class="process__document lazy">
+                  <img data-src="img/page/process/warranty/feedback.jpg" alt="" class="image image--contain lazy__item">
+                  <img src="img/misc/preloader.svg" alt="" class="preloader">
+                </picture>
+              </a>
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="col-3 swiper-slide">
+              <a data-fslightbox="feedback" href="img/page/process/warranty/feedback.jpg">
+                <picture class="process__document lazy">
+                  <img data-src="img/page/process/warranty/feedback.jpg" alt="" class="image image--contain lazy__item">
+                  <img src="img/misc/preloader.svg" alt="" class="preloader">
+                </picture>
+              </a>
+            </div>
+            <!-- /.swiper-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+        </div>
+        <!-- /.certificate__slider -->
+      </div>
+      <!-- /.certificate -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+
   <?php include_once('layout/block/callback.php') ?>
 
 </main>

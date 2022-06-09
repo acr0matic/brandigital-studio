@@ -19,6 +19,15 @@ if (process) {
         enabled: false,
       },
     });
+
+    new Swiper(process.querySelector('.feedback__slider'), {
+      slidesPerView: 'auto',
+      spaceBetween: 15,
+
+      a11y: {
+        enabled: false,
+      },
+    });
   }
 
   const container = process.querySelector('.process');

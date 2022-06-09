@@ -88,6 +88,10 @@ section#process-header {
     }
 
     &__picture {
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+
       position: absolute;
       right: 0;
       bottom: 0;
