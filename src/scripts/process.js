@@ -2,32 +2,18 @@ const process = document.getElementById('process');
 
 if (process) {
   if (isSmallTablet) {
-    new Swiper(process.querySelector('.recomendation__slider'), {
+    const params = {
       slidesPerView: 'auto',
       spaceBetween: 15,
 
       a11y: {
         enabled: false,
       },
-    });
+    }
 
-    new Swiper(process.querySelector('.certificate__slider'), {
-      slidesPerView: 'auto',
-      spaceBetween: 15,
-
-      a11y: {
-        enabled: false,
-      },
-    });
-
-    new Swiper(process.querySelector('.feedback__slider'), {
-      slidesPerView: 'auto',
-      spaceBetween: 15,
-
-      a11y: {
-        enabled: false,
-      },
-    });
+    new Swiper(process.querySelector('.recomendation__slider'), params);
+    new Swiper(process.querySelector('.certificate__slider'), params);
+    new Swiper(process.querySelector('.feedback__slider'), params);
   }
 
   const container = process.querySelector('.process');

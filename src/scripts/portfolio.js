@@ -163,11 +163,16 @@ if (portfolio) {
   else if (portfolio.tagName === 'BODY') {
     if (!isSmallTablet) {
       const images = document.querySelectorAll('.portfolio__picture .image');
-      _.forEach(images, (image) => new simpleParallax(image, {
-        orientation: image.dataset.direction,
-        delay: 1.5,
-        overflow: true
-      }));
+
+      _.forEach(images, (image) => {
+        const params = {
+          orientation: image.dataset.direction,
+          delay: 1.5,
+          overflow: true
+        };
+
+        new simpleParallax(image, params);
+      });
     }
   }
 

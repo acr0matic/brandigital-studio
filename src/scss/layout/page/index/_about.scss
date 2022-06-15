@@ -52,10 +52,15 @@ section#about {
     }
 
     overflow: hidden;
+
     width: 100%;
     height: 495px;
 
     border-radius: $border-radius--medium;
     background-color: #f4f4f4;
+
+    iframe {
+      clip-path: inset(0% 0% 0% 0% round 10px); // Фикс для сафари
+    }
   }
 }

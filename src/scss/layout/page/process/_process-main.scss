@@ -2,6 +2,8 @@ main#process {
   .process-main {
     &__title {
       @include breakpoint($breakpoint-tablet) {
+        margin-bottom: 15px;
+
         br {
           display: none;
         }
@@ -12,7 +14,7 @@ main#process {
 
     &__separator {
       @include breakpoint($breakpoint-laptop) {
-        margin: 15px 0 25px;
+        margin: 25px 0;
       }
 
       width: 100%;
