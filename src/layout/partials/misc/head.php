@@ -47,6 +47,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="#0f0f0f">
 
+  <!-- Убрать автоматическое определение номера телефона -->
+  <meta name="format-detection" content="telephone=no">
+
   <!-- Место для счетков и аналитики -->
 
   <!-- Место для счетков и аналитики -->
