@@ -14,15 +14,16 @@ if (promotion && promotionModal) {
   button.addEventListener('click', () => {
     button.parentNode.classList.add('modal__action--hidden');
     form.classList.add('modal__form--visible');
- });
+  });
 
   _.forEach(cards, (card) => {
     card.addEventListener('click', () => {
       const cloned = card.cloneNode(true);
 
       // Поля контента из карточки акции
-      const title = card.querySelector('.promotion-item__title').innerHTML;
-      const subtitle = card.querySelector('.promotion-item__subtitle').innerHTML;
+      const title = card.querySelector('.promotion-item__title').innerText;
+      const subtitle = card.querySelector('.promotion-item__subtitle').innerText;
+      const concat = `${title} ${subtitle}`;
       const text = card.querySelector('.promotion-item__text').innerHTML;
 
       // Клонруем и вставляем карточку акции в модалку
@@ -32,11 +33,12 @@ if (promotion && promotionModal) {
       inner.append(cloned);
 
       // Замена текста в модальном окне
-      header.innerHTML = `${title} ${subtitle}`;
+      header.innerHTML = concat;
       content.innerHTML = text;
 
       button.parentNode.classList.remove('modal__action--hidden');
       form.classList.remove('modal__form--visible');
+      form.dataset.additional = header.innerText;
     });
   })
 }

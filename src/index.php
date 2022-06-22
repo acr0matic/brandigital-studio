@@ -90,8 +90,8 @@
         <!-- /.section__header -->
 
         <div class="service__items">
-          <div class="service__card service-card">
-            <div class="service-card__wrapper">
+          <div class="service__card service-card" data-micromodal-trigger="modal-service" data-modal-image="img/misc/modal/success/picture.svg">
+            <div class=" service-card__wrapper">
               <h3 class="service-card__title">Брендирование</h3>
               <div class="service-card__price">от 50 000 р.</div>
             </div>
@@ -104,7 +104,7 @@
           </div>
           <!-- /.service__card service-card -->
 
-          <div class="service__card service-card">
+          <div class="service__card service-card" data-micromodal-trigger="modal-service" data-modal-image="img/misc/modal/callback/picture.svg">
             <div class="service-card__wrapper">
               <h3 class="service-card__title">Web-дизайн</h3>
               <div class="service-card__price">от 20 000 р.</div>
@@ -129,6 +129,8 @@
               <img data-src="img/page/index/service/3.png" alt="" class="service-card__image image image--contain lazy__item">
               <img src="img/misc/preloader.svg" alt="" class="preloader">
             </picture>
+
+            <a class="stretched-link" href=""></a>
           </div>
           <!-- /.service__card service-card -->
 
@@ -143,6 +145,8 @@
               <img data-src="img/page/index/service/4.png" alt="" class="service-card__image image image--contain lazy__item">
               <img src="img/misc/preloader.svg" alt="" class="preloader">
             </picture>
+
+            <a class="stretched-link" href=""></a>
           </div>
           <!-- /.service__card service-card -->
 
@@ -157,6 +161,8 @@
               <img data-src="img/page/index/service/5.png" alt="" class="service-card__image image image--contain lazy__item">
               <img src="img/misc/preloader.svg" alt="" class="preloader">
             </picture>
+
+            <a class="stretched-link" href=""></a>
           </div>
           <!-- /.service__card service-card -->
 
@@ -171,6 +177,8 @@
               <img data-src="img/page/index/service/6.png" alt="" class="service-card__image image image--contain lazy__item">
               <img src="img/misc/preloader.svg" alt="" class="preloader">
             </picture>
+
+            <a class="stretched-link" href=""></a>
           </div>
           <!-- /.service__card service-card -->
         </div>
@@ -465,6 +473,7 @@
     </div>
     <!-- /.container -->
 
+    <?php include_once('layout/partials/modal/service.php') ?>
     <?php include_once('layout/partials/modal/promotion.php') ?>
   </section>
 

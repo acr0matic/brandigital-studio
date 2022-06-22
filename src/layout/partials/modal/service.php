@@ -1,9 +1,9 @@
-<div class="modal modal--window modal-callback micromodal-slide" id="modal-callback" aria-hidden="true">
+<div class="modal modal--window modal-callback micromodal-slide" id="modal-service" aria-hidden="true">
   <div class="modal__overlay" data-micromodal-close>
     <div class="modal__container" role="dialog">
       <header class="modal__header">
         <h2 class="modal__title">
-          Предлагаем обсудить ваш проект
+          Давайте рассчитаем цену на ваш проект
         </h2>
 
         <svg class="modal__close" data-micromodal-close viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +17,7 @@
         </p>
 
         <div class="modal__wrapper">
-          <form novalidate action="php/mail.php" class="modal__form form form-modal" data-target="callback" data-subject="Запрос на обратный звонок">
+          <form novalidate action="php/mail.php" class="modal__form form form-modal" data-target="callback" data-subject="Рассчитать цену проекта" data-additional="">
             <div class="input mb-2 mb-lg-3">
               <input data-required placeholder="Имя" autocomplete="off" type="text" name="user_name" class="input__field input__field--modal input__field--required">
               <img data-tippy-content="Имя не указано или содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">

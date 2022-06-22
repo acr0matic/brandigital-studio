@@ -49,7 +49,7 @@
               </div>
               <!-- /.modal__action -->
 
-              <form novalidate class="modal__form form form-promotion mt-3" action="" data-target="promotion">
+              <form novalidate class="modal__form form form-promotion mt-3" action="" data-target="promotion" data-subject="Получить акцию или скидку" data-additional="">
                 <div class="input mb-2">
                   <input data-required placeholder="Имя" autocomplete="off" type="text" name="user_name" class="input__field input__field--modal input__field--required">
                   <img data-tippy-content="Имя не указано или содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
