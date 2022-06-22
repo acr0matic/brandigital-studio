@@ -26,7 +26,7 @@
     text-align: center;
 
     @media (hover: hover) {
-      &:hover:not(.process-nav__item--current) {
+      &:hover {
         .process-nav__background {
           width: 90%;
           height: 90%;

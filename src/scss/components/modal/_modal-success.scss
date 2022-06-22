@@ -6,14 +6,16 @@
 
     @include breakpoint($breakpoint-tablet) {
       max-width: 450px;
+      padding: 35px 0 0;
     }
 
     max-width: 830px;
+    padding: 0 35px;
   }
 
   .modal__content {
     @include breakpoint($breakpoint-laptop) {
-      padding: 65px 45px;
+      padding: 65px 15px;
     }
 
     @include breakpoint($breakpoint-tablet) {
@@ -21,7 +23,7 @@
       text-align: center;
     }
 
-    padding: 65px 70px;
+    padding: 65px 35px;
   }
 
   .modal__title {

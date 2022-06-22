@@ -5,9 +5,10 @@ section#about {
 
   padding: 45px 0;
 
-  background: url("../img/page/index/about/background.svg") no-repeat;
   background-color: #ffffff;
+  background-image: none;
   background-size: cover;
+  background-repeat: no-repeat;
 
   .section__header {
     @include breakpoint($breakpoint-tablet--large) {

@@ -407,7 +407,7 @@
 
   <?php include_once('layout/block/team.php') ?>
 
-  <section id="about" class="section">
+  <section style="background-image: url(img/page/index/about/background.svg)" id="about" class="section">
     <div class="container">
       <div class="about">
         <div class="row">
