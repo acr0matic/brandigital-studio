@@ -118,6 +118,7 @@
 <script src="scripts/header.js"></script>
 <script src="scripts/footer.js"></script>
 <script src="scripts/portfolio.js"></script>
+<script src="scripts/service.js"></script>
 <script src="scripts/promotion.js"></script>
 <script src="scripts/process.js"></script>
 <script src="scripts/video.js"></script>

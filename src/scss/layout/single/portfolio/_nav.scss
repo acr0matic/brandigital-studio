@@ -43,6 +43,19 @@ section#single-portfolio {
       color: $color-text__black;
       text-align: center;
 
+      @media (hover: hover) {
+        &:hover:not(.portfolio-nav__item--current) {
+          .portfolio-nav__background {
+            width: 90%;
+            height: 90%;
+          }
+
+          .portfolio-nav__title {
+            color: $color-text__orange;
+          }
+        }
+      }
+
       &:not(:last-child) {
         @include breakpoint($breakpoint-tablet) {
           margin-right: 10px;
@@ -116,6 +129,7 @@ section#single-portfolio {
 
       box-shadow: 5px 5px 6px rgba(#000000, 0.25);
       transform: translate(-50%, -50%);
+      transition: $transition ease;
     }
 
     &__icon {
@@ -160,6 +174,7 @@ section#single-portfolio {
 
       min-height: 65px;
       font-size: $font-size__title--small - 4px;
+      transition: $transition ease;
     }
   }
 }

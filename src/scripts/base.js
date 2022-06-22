@@ -1,3 +1,5 @@
+'use strict';
+
 const isMobile = window.matchMedia('(max-width: 576px)').matches;
 const isSmallTablet = window.matchMedia('(max-width: 768px)').matches;
 const isTablet = window.matchMedia('(max-width: 992px)').matches;
@@ -36,7 +38,6 @@ let currentModal = null;
 const scrollParams = {
   speed: 500,
   speedAsDuration: true,
-  updateURL: false,
   offset: -60,
   header: '#header',
 }

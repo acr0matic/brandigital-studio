@@ -61,12 +61,11 @@
   &__logo {
     @include breakpoint($breakpoint-laptop--medium) {
       width: 115px;
-      margin-right: 55px;
+      margin-right: 30px;
     }
 
     @include breakpoint($breakpoint-laptop) {
       width: 85px;
-      margin-right: 30px;
     }
 
     @include breakpoint($breakpoint-tablet) {

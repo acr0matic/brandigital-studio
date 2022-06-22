@@ -22,10 +22,6 @@ section#portfolio {
     }
 
     &__content {
-      @include breakpoint($breakpoint-laptop--medium) {
-        padding-top: 50px;
-      }
-
       @include breakpoint($breakpoint-laptop) {
         padding-top: 25px;
       }
@@ -34,7 +30,7 @@ section#portfolio {
         padding-top: 20px;
       }
 
-      padding-top: 90px;
+      padding-top: 35px;
 
       & > *:not(:last-child) {
         @include breakpoint($breakpoint-laptop) {

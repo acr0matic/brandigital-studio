@@ -89,7 +89,7 @@
         </div>
         <!-- /.section__header -->
 
-        <div class="service__items service__items--six">
+        <div class="service__items">
           <div class="service__card service-card">
             <div class="service-card__wrapper">
               <h3 class="service-card__title">Брендирование</h3>

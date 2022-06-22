@@ -1,5 +1,5 @@
-<section id="process-header" class="section" data-hero>
-  <div class="process-header__wrapper">
+<section id="process-header" class="section">
+  <div class="process-header__wrapper" data-hero>
     <div class="container">
       <div class="process-header__content">
         <h1 class="process-header__title page__title section__title">Процессы компании</h1>
@@ -43,6 +43,7 @@
 
           <div class="process-nav__title">
             Управление
+            <br>
             проектами
           </div>
           <a class="stretched-link" href="process-management.php"></a>

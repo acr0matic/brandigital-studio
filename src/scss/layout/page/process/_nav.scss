@@ -25,6 +25,19 @@
     color: $color-text__black;
     text-align: center;
 
+    @media (hover: hover) {
+      &:hover:not(.process-nav__item--current) {
+        .process-nav__background {
+          width: 90%;
+          height: 90%;
+        }
+
+        .process-nav__title {
+          color: $color-text__orange;
+        }
+      }
+    }
+
     &:not(:last-child) {
       @include breakpoint($breakpoint-laptop--medium) {
         margin-right: 90px;
@@ -95,7 +108,7 @@
     }
 
     position: relative;
-    width: 100%;
+    width: 160px;
     height: 160px;
 
     margin-bottom: 20px;
@@ -115,6 +128,7 @@
 
     box-shadow: 5px 5px 6px rgba(#000000, 0.25);
     transform: translate(-50%, -50%);
+    transition: $transition ease;
   }
 
   &__icon {
@@ -135,8 +149,11 @@
     }
 
     @include breakpoint($breakpoint-tablet--large) {
-      width: 100px;
       font-size: $font-size__text--regular;
+
+      br {
+        display: none;
+      }
     }
 
     @include breakpoint($breakpoint-tablet) {
@@ -157,8 +174,8 @@
       white-space: nowrap;
     }
 
-    width: 120px;
     min-height: 65px;
     font-size: $font-size__title--small - 4px;
+    transition: $transition ease;
   }
 }
