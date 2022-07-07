@@ -157,6 +157,7 @@ class Form {
     const additional = this.form.getAttribute('data-additional');
     const subject = this.form.getAttribute('data-subject');
 
+    data.append('page', document.title);
     data.append('target', target);
     if (additional) data.append('additional', additional);
     if (subject) data.append('subject', subject);
@@ -174,7 +175,7 @@ class Form {
       if (response.ok) {
         if (this.redirect) window.location.href = this.redirect;
 
-        MicroModal.close('modal-callback', modalParams);
+        if (currentModal) MicroModal.close(currentModal, modalParams);
         MicroModal.show('modal-success', modalParams);
 
         setTimeout(() => {

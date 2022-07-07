@@ -26,14 +26,14 @@ section#portfolio {
   }
 
   &__slider {
+  }
+
+  &__action {
     @include breakpoint($breakpoint-laptop--medium) {
       margin-bottom: 25px;
     }
 
-    margin-bottom: 45px;
-  }
-
-  &__action {
+    margin-top: 45px;
     text-align: center;
   }
 

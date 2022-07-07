@@ -473,10 +473,10 @@
     </div>
     <!-- /.container -->
 
-    <?php include_once('layout/partials/modal/service.php') ?>
     <?php include_once('layout/partials/modal/promotion.php') ?>
   </section>
 
+  <?php include_once('layout/partials/modal/service.php') ?>
   <?php include_once('layout/block/callback.php') ?>
 
 </main>
