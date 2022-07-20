@@ -63,7 +63,7 @@
     .handorgel__content__inner {
       @include breakpoint($breakpoint-tablet) {
         align-items: center;
-        padding: 15px 0 0;
+        padding: 10px 0 0;
         text-align: center;
       }
 
@@ -76,8 +76,8 @@
 
       & > * {
         &:not(:last-child) {
-          @include breakpoint($breakpoint-mobile--large) {
-            margin-bottom: 10px;
+          @include breakpoint($breakpoint-tablet) {
+            margin-bottom: 0;
           }
 
           margin-bottom: 15px;

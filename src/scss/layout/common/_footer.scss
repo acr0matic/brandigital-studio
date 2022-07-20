@@ -131,6 +131,12 @@
     justify-content: space-between;
 
     margin-top: 25px;
+
+    a {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
   }
 
   &__office {

@@ -246,14 +246,10 @@
     .social__link {
       &:not(:last-child) {
         @include breakpoint($breakpoint-tablet--large) {
-          margin-right: 60px;
-        }
-
-        @include breakpoint($breakpoint-tablet) {
           margin-right: 30px;
         }
 
-        margin-right: 65px;
+        margin-right: 45px;
       }
     }
   }

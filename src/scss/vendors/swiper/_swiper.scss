@@ -247,6 +247,9 @@
 .swiper-button-lock {
   display: none;
 }
+
+/* purgecss start ignore */
+
 .swiper-pagination {
   position: absolute;
   text-align: center;
@@ -413,6 +416,9 @@ button.swiper-pagination-bullet {
 .swiper-pagination-lock {
   display: none;
 }
+
+/* purgecss end ignore */
+
 .swiper-scrollbar {
   border-radius: 10px;
   position: relative;
@@ -516,6 +522,9 @@ button.swiper-pagination-bullet {
   flex-wrap: wrap;
   flex-direction: column;
 }
+
+/* purgecss start ignore */
+
 .swiper-fade.swiper-free-mode .swiper-slide {
   transition-timing-function: ease-out;
 }
@@ -530,6 +539,9 @@ button.swiper-pagination-bullet {
 .swiper-fade .swiper-slide-active .swiper-slide-active {
   pointer-events: auto;
 }
+
+/* purgecss end ignore */
+
 .swiper-cube {
   overflow: visible;
 }

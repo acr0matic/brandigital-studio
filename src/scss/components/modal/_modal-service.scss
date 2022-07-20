@@ -1,0 +1,94 @@
+.modal-service {
+  .modal__container {
+    background-color: $palette-black;
+  }
+
+  .modal__content {
+    position: relative;
+    padding: 30px 50px 40px;
+    font-size: $font-size__text--large;
+  }
+
+  .modal__circle {
+    position: absolute;
+    z-index: -1;
+    bottom: -30%;
+    left: -20%;
+
+    width: 568px;
+    height: 568px;
+
+    border-radius: 50%;
+
+    background-color: #424242;
+  }
+
+  .modal__picture {
+    position: absolute;
+    top: 15px;
+    left: 50px;
+
+    object-fit: contain;
+    width: 435px;
+    height: 370px;
+  }
+
+  .modal__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    margin-left: auto;
+  }
+
+  .modal__text {
+    display: -webkit-box;
+    overflow: auto;
+
+    padding-right: 15px;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+
+  .modal__list {
+    margin-top: 50px;
+
+    .list__item {
+      display: flex;
+      align-items: flex-start;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .icon {
+      margin-right: 25px;
+    }
+
+    .text {
+      margin-top: 3px;
+    }
+  }
+
+  .modal__form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin-top: 70px;
+
+    .form__label {
+      color: $color-text__orange;
+      font-size: $font-size__text--regular;
+    }
+  }
+
+  .modal__wrapper,
+  .modal__text,
+  .modal__form .input__field,
+  .modal__form .input__field::placeholder {
+    color: $color-text__white;
+  }
+}
