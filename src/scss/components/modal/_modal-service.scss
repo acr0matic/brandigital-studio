@@ -12,11 +12,11 @@
   .modal__circle {
     position: absolute;
     z-index: -1;
-    bottom: -30%;
+    bottom: -40%;
     left: -20%;
 
-    width: 568px;
-    height: 568px;
+    min-width: 568px;
+    min-height: 568px;
 
     border-radius: 50%;
 

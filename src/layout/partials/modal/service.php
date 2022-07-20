@@ -24,17 +24,17 @@
           <ul class="list modal__list">
             <li class="list__item">
               <img class="icon" src="img/icons/component/modal/service/time.svg" alt="">
-              <span class="text">2 недели</span>
+              <span class="text time">2 недели</span>
             </li>
 
             <li class="list__item">
               <img class="icon" src="img/icons/component/modal/service/ruble.svg" alt="">
-              <span class="text">15 000 руб.</span>
+              <span class="text price">15 000 руб.</span>
             </li>
 
             <li class="list__item">
               <img class="icon" src="img/icons/component/modal/service/team.svg" alt="">
-              <span class="text">
+              <span class="text team">
                 3D-designer
                 <br>
                 Middle-designer
