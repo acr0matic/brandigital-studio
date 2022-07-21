@@ -24,17 +24,17 @@
           <ul class="list modal__list">
             <li class="list__item">
               <img class="icon" src="img/icons/component/modal/service/time.svg" alt="">
-              <span class="text time">2 недели</span>
+              <span data-value="time" class="text">2 недели</span>
             </li>
 
             <li class="list__item">
               <img class="icon" src="img/icons/component/modal/service/ruble.svg" alt="">
-              <span class="text price">15 000 руб.</span>
+              <span data-value="price" class="text">15 000 руб.</span>
             </li>
 
             <li class="list__item">
               <img class="icon" src="img/icons/component/modal/service/team.svg" alt="">
-              <span class="text team">
+              <span data-value="team" class="text">
                 3D-designer
                 <br>
                 Middle-designer
@@ -45,7 +45,7 @@
         <!-- /.modal__wrapper -->
 
         <form novalidate action="php/mail.php" class="modal__form form form-modal" data-target="callback" data-subject="Рассчитать цену проекта" data-additional="">
-          <div class="form__wrapper me-5">
+          <div class="form__wrapper me-md-4 me-xxl-5">
             <div class="input">
               <input data-required placeholder="+7 ХХХ ХХХ-ХХ-ХХ" autocomplete="off" type="tel" name="user_phone" class="input__field input__field--modal input__field--required">
               <img data-tippy-content="Телефон не указан или содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">

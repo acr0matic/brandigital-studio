@@ -10,27 +10,30 @@ if (service) {
   if (modal) {
 
     // ТРЕКИНГ КУРСОРА И АНИМАЦИЯ КРУГА НА ФОНЕ
-    const circle = modal.querySelector('.modal__circle');
-    const container = modal.querySelector('.modal__container');
 
-    let circleWidth = circle.clientWidth;
-    let circleHeight = circle.clientHeight;
+    if (isTablet) {
+      const circle = modal.querySelector('.modal__circle');
+      const container = modal.querySelector('.modal__container');
 
-    container.onmousemove = (event) => {
-      const x = event.clientX - container.offsetLeft;
-      const y = event.clientY - container.offsetTop;
+      let circleWidth = circle.clientWidth;
+      let circleHeight = circle.clientHeight;
 
-      const value = (x + y) * 0.9 + 'px';
+      container.onmousemove = (event) => {
+        const x = event.clientX - container.offsetLeft;
+        const y = event.clientY - container.offsetTop;
 
-      circle.style.width = value;
-      circle.style.height = value;
-      circle.style.transition = 'all 0.2s ease';
-    }
+        const value = (x + y) * 0.9 + 'px';
 
-    document.onmouseout = (event) => {
-      circle.style.width = circleWidth + "px";
-      circle.style.height = circleHeight + "px";
-      circle.style.transition = 'all 1s ease';
+        circle.style.width = value;
+        circle.style.height = value;
+        circle.style.transition = 'all 0.2s ease';
+      }
+
+      document.onmouseout = (event) => {
+        circle.style.width = circleWidth + "px";
+        circle.style.height = circleHeight + "px";
+        circle.style.transition = 'all 1s ease';
+      }
     }
 
     // ------------------- //
@@ -41,27 +44,24 @@ if (service) {
     // TODO ОТРЕФАКТОРИТЬ ПОЛУЧЕНИЕ ДАННЫХ В МОДАЛКУ
     const modalTitle = modal.querySelector('.modal__title');
     const modalText = modal.querySelector('.modal__text');
-    const modalTime = modal.querySelector('.modal__list .time');
-    const modalPrice = modal.querySelector('.modal__list .price');
-    const modalTeam = modal.querySelector('.modal__list .team');
+    const modalParams = modal.querySelectorAll('.modal__list [data-value]');
     const modalPicture = modal.querySelector('.modal__image');
 
     _.forEach(cardsModal, (card) => {
       card.addEventListener('click', () => {
         const title = card.querySelector('.service-card__title').innerText;
         const text = card.querySelector('.service-card__content .text').innerHTML;
-        const time = card.querySelector('.service-card__content .time').innerHTML;
-        const price = card.querySelector('.service-card__content .price').innerHTML;
-        const team = card.querySelector('.service-card__content .team').innerHTML;
         const image = card.querySelector('.service-card__content .image').src;
 
         form.dataset.additional = title;
 
         modalTitle.innerHTML = title;
         modalText.innerHTML = text;
-        modalTime.innerHTML = time;
-        modalPrice.innerHTML = price;
-        modalTeam.innerHTML = team;
+
+        _.forEach(modalParams, (param) => {
+          const target = card.querySelector(`[data-value=${param.dataset.value}`);
+          param.innerHTML = target.innerHTML; }
+        );
 
         if (image) {
           modalPicture.src = '';

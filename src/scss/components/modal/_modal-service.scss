@@ -3,13 +3,57 @@
     background-color: $palette-black;
   }
 
+  .modal__header {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 0;
+      padding-top: 30px;
+      padding-bottom: 5px;
+      background-color: transparent;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      padding-bottom: 35px;
+    }
+  }
+
   .modal__content {
+    @include breakpoint($breakpoint-laptop) {
+      font-size: $font-size__text--regular;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      padding: 10px 40px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--regular - 1px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      padding: 10px 25px;
+    }
+
     position: relative;
     padding: 30px 50px 40px;
     font-size: $font-size__text--large;
   }
 
   .modal__circle {
+    @include breakpoint($breakpoint-tablet--large) {
+      bottom: -60%;
+      left: -30%;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      bottom: -70%;
+      left: -50%;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      bottom: -50%;
+      left: -80%;
+    }
+
     position: absolute;
     z-index: -1;
     bottom: -40%;
@@ -24,6 +68,37 @@
   }
 
   .modal__picture {
+    @include breakpoint($breakpoint-laptop) {
+      top: 75px;
+
+      width: 345px;
+      height: 295px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      top: 55px;
+      left: 40px;
+
+      width: 290px;
+      height: 245px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      top: 120px;
+      width: 40%;
+      height: auto;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      top: 130px;
+      left: 20px;
+      width: 45%;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      display: none;
+    }
+
     position: absolute;
     top: 15px;
     left: 50px;
@@ -34,6 +109,18 @@
   }
 
   .modal__wrapper {
+    @include breakpoint($breakpoint-laptop) {
+      width: 55%;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 50%;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      width: 100%;
+    }
+
     display: flex;
     flex-direction: column;
 
@@ -42,16 +129,38 @@
   }
 
   .modal__text {
-    display: -webkit-box;
+    @include breakpoint($breakpoint-laptop) {
+      max-height: 80px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      max-height: 75px;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      max-height: 70px;
+    }
+
     overflow: auto;
-
+    max-height: 100px;
     padding-right: 15px;
-
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
   }
 
   .modal__list {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-top: 30px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      width: 44%;
+      margin-top: 50px;
+      margin-left: auto;
+    }
+
+    @include breakpoint($breakpoint-mobile--medium) {
+      width: 100%;
+    }
+
     margin-top: 50px;
 
     .list__item {
@@ -59,36 +168,129 @@
       align-items: flex-start;
 
       &:not(:last-child) {
+        @include breakpoint($breakpoint-tablet) {
+          margin-bottom: 15px;
+        }
+
         margin-bottom: 20px;
       }
     }
 
     .icon {
+      @include breakpoint($breakpoint-tablet--large) {
+        width: 26px;
+        margin-right: 15px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        width: 20px;
+      }
+
       margin-right: 25px;
     }
 
     .text {
+      @include breakpoint($breakpoint-tablet) {
+        margin-top: 0;
+      }
+
       margin-top: 3px;
     }
   }
 
   .modal__form {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-top: 40px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      justify-content: space-between;
+      width: 100%;
+
+      margin-top: 80px;
+      padding-bottom: 30px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      flex-direction: column;
+      align-items: center;
+
+      margin-top: 60px;
+    }
+
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-end;
 
     margin-top: 70px;
 
+    .form__wrapper {
+      @include breakpoint($breakpoint-tablet--large) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        align-items: flex-start;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        align-items: center;
+        text-align: center;
+      }
+    }
+
     .form__label {
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: $font-size__text--small;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+
+        transform: translateX(-50%);
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        position: static;
+        margin-bottom: 20px;
+        transform: none;
+      }
+
       color: $color-text__orange;
       font-size: $font-size__text--regular;
+    }
+
+    .input__field {
+      @include breakpoint($breakpoint-tablet--large) {
+        width: 225px;
+      }
+
+      &::placeholder {
+        color: $color-text__gray;
+      }
+    }
+
+    .modal__button {
+      @include breakpoint($breakpoint-tablet) {
+        width: 200px;
+        height: 40px;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        width: 140px;
+      }
+
+      font-weight: $weight-Medium;
     }
   }
 
   .modal__wrapper,
   .modal__text,
-  .modal__form .input__field,
-  .modal__form .input__field::placeholder {
+  .modal__form .input__field {
     color: $color-text__white;
   }
 }

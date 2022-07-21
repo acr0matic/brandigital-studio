@@ -110,8 +110,8 @@
 
   &__header {
     @include breakpoint($breakpoint-tablet) {
-      padding: 50px 30px 0 !important;
-      background-color: $palette-white !important;
+      padding: 50px 30px 0;
+      background-color: $palette-white;
     }
 
     position: relative;

@@ -91,9 +91,9 @@
 
         <div class="service__items">
           <div class="service__card service-card" data-micromodal-trigger="modal-service">
-            <div class=" service-card__wrapper">
+            <div class="service-card__wrapper">
               <h3 class="service-card__title">Брендирование</h3>
-              <div class="service-card__price">от 50 000 р.</div>
+              <div data-value="price" class="service-card__price">от 50 000 р.</div>
             </div>
             <!-- /.service-card__wrapper -->
 
@@ -107,13 +107,8 @@
                 Лендинг (от англ. landing page — «посадочная страница») — это одностраничный сайт с краткой информацией о товаре, услуге или мероприятии. Его задача — превращать посетителей в клиентов.
               </p>
 
-              <div class="time">2 недели</div>
-              <div class="price">15 000 руб.</div>
-              <div class="team">
-                3D-designer
-                <br>
-                Middle-designer
-              </div>
+              <div data-value="time">2 недели</div>
+              <div data-value="team">Middle-designer<br>2D-designer</div>
 
               <img class="image" src="img/misc/modal/service/picture.png" alt="">
             </div>
@@ -124,7 +119,7 @@
           <div class="service__card service-card" data-micromodal-trigger="modal-service" data-modal-image="img/misc/modal/callback/picture.svg">
             <div class="service-card__wrapper">
               <h3 class="service-card__title">Web-дизайн</h3>
-              <div class="service-card__price">от 20 000 р.</div>
+              <div data-value="price" class="service-card__price">от 20 000 р.</div>
             </div>
             <!-- /.service-card__wrapper -->
 
@@ -138,13 +133,8 @@
                 Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. О строчка послушавшись маленький раз образ предупредила рекламных, переулка однажды.
               </p>
 
-              <div class="time">1 неделя</div>
-              <div class="price">35 000 руб.</div>
-              <div class="team">
-                Middle-designer
-                <br>
-                3D-designer
-              </div>
+              <div data-value="time">1 неделя</div>
+              <div data-value="team">Middle-designer<br>3D-designer</div>
 
               <img class="image" src="img/misc/modal/service/picture.png" alt="">
             </div>
