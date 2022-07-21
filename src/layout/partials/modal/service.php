@@ -12,8 +12,9 @@
       </header>
 
       <main class="modal__content">
-        <picture class="modal__picture">
-          <img src="img/misc/modal/service/picture.png" alt="" class="modal__image image image--contain">
+        <picture class="modal__picture lazy">
+          <img data-src="img/misc/modal/service/picture.png" alt="" class="modal__image image image--contain lazy__item">
+          <img src="img/misc/preloader.svg" alt="" class="preloader">
         </picture>
 
         <div class="modal__wrapper">

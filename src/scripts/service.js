@@ -45,13 +45,13 @@ if (service) {
     const modalTitle = modal.querySelector('.modal__title');
     const modalText = modal.querySelector('.modal__text');
     const modalParams = modal.querySelectorAll('.modal__list [data-value]');
-    const modalPicture = modal.querySelector('.modal__image');
+    const modalPicture = modal.querySelector('.modal__picture');
 
     _.forEach(cardsModal, (card) => {
       card.addEventListener('click', () => {
         const title = card.querySelector('.service-card__title').innerText;
         const text = card.querySelector('.service-card__content .text').innerHTML;
-        const image = card.querySelector('.service-card__content .image').src;
+        const image = card.querySelector('.service-card__content .modal__picture');
 
         form.dataset.additional = title;
 
@@ -64,8 +64,8 @@ if (service) {
         );
 
         if (image) {
-          modalPicture.src = '';
-          modalPicture.src = image;
+          modalPicture.innerHTML = image.innerHTML;
+          lazyLoadInstance.update();
         }
       });
     })

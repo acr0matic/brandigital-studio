@@ -110,13 +110,17 @@
               <div data-value="time">2 недели</div>
               <div data-value="team">Middle-designer<br>2D-designer</div>
 
-              <img class="image" src="img/misc/modal/service/picture.png" alt="">
+              <picture class="modal__picture lazy">
+                <img data-src="img/misc/modal/service/picture.png" alt="" class="modal__image image image--cover lazy__item">
+                <img src="img/misc/preloader.svg" alt="" class="preloader">
+              </picture>
+              <!-- /.modal__picture -->
             </div>
             <!-- /.service-card__content -->
           </div>
           <!-- /.service__card service-card -->
 
-          <div class="service__card service-card" data-micromodal-trigger="modal-service" data-modal-image="img/misc/modal/callback/picture.svg">
+          <div class="service__card service-card" data-micromodal-trigger="modal-service">
             <div class="service-card__wrapper">
               <h3 class="service-card__title">Web-дизайн</h3>
               <div data-value="price" class="service-card__price">от 20 000 р.</div>
@@ -136,7 +140,11 @@
               <div data-value="time">1 неделя</div>
               <div data-value="team">Middle-designer<br>3D-designer</div>
 
-              <img class="image" src="img/misc/modal/service/picture.png" alt="">
+              <picture class="modal__picture lazy">
+                <img data-src="img/page/index/service/2.png" alt="" class="modal__image image image--cover lazy__item">
+                <img src="img/misc/preloader.svg" alt="" class="preloader">
+              </picture>
+              <!-- /.modal__picture -->
             </div>
             <!-- /.service-card__content -->
           </div>
