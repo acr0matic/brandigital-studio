@@ -15,7 +15,32 @@ section#portfolio {
     transition: $transition ease;
 
     &__picture {
+      @include breakpoint($breakpoint-laptop--medium) {
+        height: 115px;
+      }
+
+      @include breakpoint($breakpoint-laptop) {
+        height: 100px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        height: 160px;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        height: 120px;
+      }
+
+      @include breakpoint($breakpoint-mobile--medium) {
+        height: 100px;
+      }
+
+      @include breakpoint($breakpoint-mobile) {
+        height: 85px;
+      }
+
       overflow: hidden;
+      height: 130px;
       margin-bottom: 10px;
       border-radius: 8px;
     }
@@ -42,6 +67,8 @@ section#portfolio {
         font-size: 12px;
       }
 
+      display: flex;
+      flex-wrap: wrap;
       color: $color-text__gray;
 
       font-weight: $weight-Medium;

@@ -55,6 +55,16 @@
                                 <div>Гарантия:</div>
                                 <span>6 месяцев</span>
                               </li>
+
+                              <li class="list__item">
+                                <div>Гарантия:</div>
+                                <span>6 месяцев</span>
+                              </li>
+
+                              <li class="list__item">
+                                <div>Гарантия:</div>
+                                <span>6 месяцев</span>
+                              </li>
                             </ul>
                           </div>
                           <!-- /.portfolio-item__content -->
@@ -413,7 +423,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -427,7 +437,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -441,7 +451,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -455,7 +465,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -469,7 +479,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -483,7 +493,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -497,7 +507,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -914,7 +924,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -928,7 +938,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -942,7 +952,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -956,7 +966,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -970,7 +980,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -984,7 +994,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -998,7 +1008,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -1415,7 +1425,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -1429,7 +1439,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -1443,7 +1453,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -1457,7 +1467,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -1471,7 +1481,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -1485,7 +1495,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -1499,7 +1509,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -1916,7 +1926,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -1930,7 +1940,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -1944,7 +1954,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -1958,7 +1968,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -1972,7 +1982,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -1986,7 +1996,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -2000,7 +2010,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -2417,7 +2427,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -2431,7 +2441,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -2445,7 +2455,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -2459,7 +2469,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -2473,7 +2483,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -2487,7 +2497,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -2501,7 +2511,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -2918,7 +2928,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -2932,7 +2942,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -2946,7 +2956,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -2960,7 +2970,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -2974,7 +2984,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -2988,7 +2998,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>
@@ -3002,7 +3012,7 @@
                       </picture>
 
                       <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span>3 дня</span></div>
+                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
                     </div>
                     <!-- /.portfolio-thumbnail -->
                   </div>

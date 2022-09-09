@@ -11,7 +11,7 @@ if (service) {
 
     // ТРЕКИНГ КУРСОРА И АНИМАЦИЯ КРУГА НА ФОНЕ
 
-    if (isTablet) {
+    if (!isTablet) {
       const circle = modal.querySelector('.modal__circle');
       const container = modal.querySelector('.modal__container');
 

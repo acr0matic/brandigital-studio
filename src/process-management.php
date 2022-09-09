@@ -3,7 +3,7 @@
 <!-- Основной контент -->
 <main id="process">
   <?php $current = "management" ?>
-  <?php include_once('layout/partials/process/header.php') ?>
+  <?php include_once('layout/partials/heading/process.php') ?>
 
   <section id="management" class="section">
     <div class="container">

@@ -3,7 +3,7 @@
 <!-- Основной контент -->
 <main id="process">
   <?php $current = "warranty" ?>
-  <?php include_once('layout/partials/process/header.php') ?>
+  <?php include_once('layout/partials/heading/process.php') ?>
 
   <section id="warranty" class="section">
     <div class="container">

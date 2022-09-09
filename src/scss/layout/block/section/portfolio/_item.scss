@@ -23,14 +23,19 @@ section#portfolio {
 
     &__content {
       @include breakpoint($breakpoint-laptop) {
+        max-height: 270px;
         padding-top: 25px;
       }
 
       @include breakpoint($breakpoint-tablet--large) {
+        max-height: 205px;
         padding-top: 20px;
       }
 
+      overflow: auto;
+      max-height: 310px;
       padding-top: 35px;
+      padding-right: 15px;
 
       & > *:not(:last-child) {
         @include breakpoint($breakpoint-laptop) {
@@ -77,8 +82,4 @@ section#portfolio {
       font-size: $font-size__text--large;
     }
   }
-}
-
-.portfolio-item__hidden {
-  display: none;
 }
