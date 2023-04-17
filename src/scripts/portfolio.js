@@ -1,4 +1,4 @@
-const portfolio = document.querySelector('#portfolio, #single-portfolio');
+const portfolio = document.querySelector('#portfolio-block, #single-portfolio');
 
 if (portfolio) {
   const InnerHTML = (node, ref, value) => {
@@ -6,116 +6,37 @@ if (portfolio) {
     return node.querySelector(ref).innerHTML;
   }
 
-  let tabName = [];
-  const thumbnail = portfolio.querySelectorAll('.portfolio-thumbnail')
-  const sliderContainers = portfolio.querySelectorAll('[data-title]');
   const modal = document.getElementById('modal-portfolio');
   let modalSlider = null;
 
   if (portfolio.tagName !== 'BODY') {
-    const tab = new Swiper(portfolio.querySelector('.tab__slider'), {
+    let portfolioTab = [];
+    new Swiper('.slider-portfolio', {
       simulateTouch: false,
       allowTouchMove: false,
+      autoHeight: true,
 
       effect: 'fade',
       fadeEffect: {
         crossFade: true
       },
 
-      a11y: {
-        enabled: false,
-      },
-
       pagination: {
-        el: '#portfolio .swiper-pagination',
+        el: '.slider-portfolio-control .swiper-pagination',
         clickable: true,
 
         renderBullet(index, className) {
-          return `<span class="${className}">${tabName[index]}</span>`;
+          return `<span class="${className}">${portfolioTab[index]}</span>`;
         },
       },
 
       on: {
-        afterInit(instance) {
-          tabName = _.map(sliderContainers, 'dataset.title')
-
-          instance.pagination.render();
-          instance.pagination.update();
+        beforeInit(instance) {
+          const slides = instance.el.querySelectorAll(`[data-title]`);
+          portfolioTab = _.map(slides, "dataset.title")
         },
       },
     });
-
-    if (window.matchMedia('(min-width: 768px)').matches) {
-      _.forEach(sliderContainers, (item) => {
-
-        const inner = item.querySelector('.inner__slider');
-        const thumbnail = item.querySelector('.thumbnail__slider');
-
-        const thumbnailSlider = new Swiper(thumbnail, {
-          allowTouchMove: false,
-          nested: true,
-          speed: 500,
-          a11y: {
-            enabled: false,
-          },
-
-          spaceBetween: 10,
-          slidesPerView: 'auto',
-
-          slideToClickedSlide: true,
-
-          breakpoints: {
-            1200: {
-              spaceBetween: 20,
-            }
-          }
-        });
-
-        const innerSlider = new Swiper(inner, {
-          allowTouchMove: false,
-          nested: true,
-          speed: 500,
-          a11y: {
-            enabled: false,
-          },
-
-          simulateTouch: false,
-          spaceBetween: 30,
-
-          navigation: {
-            nextEl: inner.querySelector('.portfolio__next'),
-            prevEl: inner.querySelector('.portfolio__prev'),
-          },
-
-          thumbs: {
-            swiper: thumbnailSlider,
-            autoScrollOffset: 1,
-          },
-        });
-      });
-    }
-
-    else {
-      modalSlider = new Swiper(modal.querySelector('.modal__slider'), {
-        a11y: {
-          enabled: false,
-        },
-
-        spaceBetween: 10,
-        slidesPerView: 1,
-
-        pagination: {
-          el: '.modal__slider .swiper-pagination',
-          clickable: true,
-        },
-
-        breakpoints: {
-          540: {
-            slidesPerView: 2,
-          }
-        }
-      });
-    }
   }
 
 

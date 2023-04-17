@@ -1,5 +1,6 @@
 .input {
   position: relative;
+  display: block;
 
   &--placeholder {
     .input__placeholder {
@@ -25,6 +26,18 @@
     }
   }
 
+  &__label {
+    @include breakpoint($breakpoint-tablet) {
+      position: static;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    position: absolute;
+    top: -30px;
+    left: 0;
+  }
+
   &__field {
     @include breakpoint($breakpoint-laptop--medium) {
       padding: 15px 20px;
@@ -42,7 +55,7 @@
 
     width: 100%;
 
-    padding: 15px 30px;
+    padding: 14px 20px;
 
     border: 1px solid $palette-gray;
     border-radius: $border-radius--small;
@@ -51,9 +64,14 @@
     background-color: transparent;
 
     font-weight: $weight-Medium;
-    font-size: 25px;
+    font-size: $font-size__text--big;
 
     transition: 0.2s ease;
+
+    &--big {
+      padding: 15px 30px;
+      font-size: 25px;
+    }
 
     &--required {
       border-color: $palette-orange;

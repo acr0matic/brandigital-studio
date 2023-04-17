@@ -47,10 +47,10 @@
         }
       }
 
-      width: 18px;
-      height: 18px;
+      width: 24px;
+      height: 24px;
 
-      margin-left: 10px;
+      margin-left: 16px;
 
       transition: $transition ease;
     }
@@ -71,8 +71,13 @@
       flex-direction: column;
       align-items: flex-end;
 
-      padding: 15px 22px 0 0;
+      padding: 15px 0 0;
       text-align: right;
+
+      .nav__link {
+        margin-bottom: 0 !important;
+        text-transform: none;
+      }
 
       & > * {
         &:not(:last-child) {

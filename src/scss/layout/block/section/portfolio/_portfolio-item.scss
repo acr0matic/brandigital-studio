@@ -1,0 +1,232 @@
+.portfolio-block {
+  .row > *:last-child {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
+    }
+  }
+
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      .portfolio-item__picture::after,
+      .portfolio-item__content {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .portfolio-item__label {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+
+    &__picture::after,
+    &__content {
+      @include breakpoint($breakpoint-tablet) {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      opacity: 0;
+      visibility: hidden;
+
+      transition: 0.2s ease;
+    }
+
+    &__picture {
+      @include breakpoint($breakpoint-laptop--large) {
+        height: 260px;
+      }
+
+      @include breakpoint($breakpoint-laptop--medium) {
+        height: 300px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        border-radius: 10px;
+        height: 180px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        height: 140px;
+        margin-bottom: 10px;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        height: 120px;
+        border-radius: 6px;
+      }
+
+      @include breakpoint(max-width 360px) {
+        height: 160px;
+      }
+
+      position: relative;
+
+      height: 300px;
+
+      border-radius: $border-radius--large;
+      overflow: hidden;
+
+      &::after {
+        @include breakpoint($breakpoint-tablet) {
+          display: none;
+        }
+
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.9),
+          rgba(0, 0, 0, 0.9)
+        );
+
+        transition: 0.2s ease;
+      }
+    }
+
+    &__content {
+      @include breakpoint($breakpoint-laptop--large) {
+        padding-left: 30px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        max-height: calc(var(--max-height) - 30px);
+        margin: 15px 15px 15px 0;
+        padding-left: 15px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        position: static;
+        margin: 0;
+        margin-top: 12px;
+        padding-left: 0;
+
+        color: $color-text__black;
+      }
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      max-height: calc(var(--max-height) - 60px);
+      overflow: auto;
+
+      margin: 30px 15px 30px 0;
+      padding-left: 40px;
+
+      color: $color-text__white;
+    }
+
+    &__title {
+      @include breakpoint($breakpoint-tablet) {
+        margin-bottom: 0;
+        font-size: 16px;
+      }
+
+      margin-bottom: 16px;
+      font-size: 20px;
+    }
+
+    &__info {
+      @include breakpoint($breakpoint-tablet) {
+        display: flex;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: 10px;
+      }
+
+      display: none;
+      flex-wrap: wrap;
+      color: $color-text__gray;
+
+      font-weight: $weight-Medium;
+      font-size: 14px;
+
+      line-height: 150%;
+
+      span {
+        color: $color-text__orange;
+        font-weight: $weight-Bold;
+      }
+    }
+
+    &__wrapper {
+      overflow: auto;
+      padding-right: 20px;
+
+      @include breakpoint($breakpoint-tablet) {
+        display: none;
+      }
+    }
+
+    &__description {
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    &__list .list__item {
+      color: $color-text__white;
+      font-size: 14px;
+
+      &:not(:last-child) {
+        margin-bottom: 4px;
+      }
+    }
+
+    &__label {
+      @include breakpoint($breakpoint-laptop--large) {
+        padding: 4px 10px;
+        font-size: 14px;
+      }
+
+      @include breakpoint($breakpoint-tablet) {
+        top: 15px;
+        right: 15px;
+        bottom: initial;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        font-size: 12px;
+      }
+
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+
+      padding: 6px 18px;
+      border-radius: 4px;
+      background-color: #c4c4c4;
+
+      font-weight: $weight-Medium;
+      font-size: $font-size__text--large - 3px;
+      color: $palette-white;
+
+      transition: 0.2s ease;
+
+      &--blue {
+        background-color: #7590f8;
+      }
+
+      &--green {
+        background-color: #18a565;
+      }
+
+      &--purple {
+        background-color: #c068f8;
+      }
+
+      &--orange {
+        background-color: #ff8025;
+      }
+    }
+  }
+}

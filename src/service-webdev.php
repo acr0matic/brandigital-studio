@@ -1,7 +1,7 @@
 <?php include_once('layout/partials/header.php') ?>
 
 <!-- Основной контент -->
-<main id="index">
+<main id="webdev">
   <section id="hero" class="section">
     <div class="hero">
       <div data-hero class="hero__row hero__row--main">
@@ -24,7 +24,7 @@
             </p>
 
             <div class="hero__action">
-              <button data-micromodal-trigger="modal-callback" class="button button-primary me-2 me-xl-3 me-xxl-4">Начать проект</button>
+              <button data-micromodal-trigger="modal-callback" class="button button-primary me-2 me-xl-3 me-xxl-4">Оставить заявку</button>
               <a href="#portfolio" class="button button-outline button-outline--orange button-outline--hover__gray">Портфолио</a>
             </div>
             <!-- /.hero__action -->
@@ -85,7 +85,7 @@
     <div class="container">
       <div class="service">
         <div class="section__header text-center">
-          <h2 class="section__title service__title">Какой дизайн мы делаем</h2>
+          <h2 class="section__title service__title">Мы делаем</h2>
         </div>
         <!-- /.section__header -->
 
@@ -93,7 +93,7 @@
           <div class="service__card service-card" data-micromodal-trigger="modal-service">
             <div class="service-card__wrapper">
               <h3 class="service-card__title">Брендирование</h3>
-              <div data-value="price" class="service-card__price">от 50 000 р.</div>
+              <div data-value="price" class="service-card__price">Подробнее</div>
             </div>
             <!-- /.service-card__wrapper -->
 
@@ -123,7 +123,7 @@
           <div class="service__card service-card" data-micromodal-trigger="modal-service">
             <div class="service-card__wrapper">
               <h3 class="service-card__title">Web-дизайн</h3>
-              <div data-value="price" class="service-card__price">от 20 000 р.</div>
+              <div data-value="price" class="service-card__price">Подробнее</div>
             </div>
             <!-- /.service-card__wrapper -->
 
@@ -153,7 +153,7 @@
           <div class="service__card service-card">
             <div class="service-card__wrapper">
               <h3 class="service-card__title">Дизайн авто</h3>
-              <div class="service-card__price">от 15 000 р.</div>
+              <div class="service-card__price">Подробнее</div>
             </div>
             <!-- /.service-card__wrapper -->
 
@@ -169,7 +169,7 @@
           <div class="service__card service-card">
             <div class="service-card__wrapper">
               <h3 class="service-card__title">Логотип</h3>
-              <div class="service-card__price">от 9 000 р.</div>
+              <div class="service-card__price">Подробнее</div>
             </div>
             <!-- /.service-card__wrapper -->
 
@@ -185,7 +185,7 @@
           <div class="service__card service-card">
             <div class="service-card__wrapper">
               <h3 class="service-card__title">Иллюстрация / motion</h3>
-              <div class="service-card__price">от 15 000 р.</div>
+              <div class="service-card__price">Подробнее</div>
             </div>
             <!-- /.service-card__wrapper -->
 
@@ -201,7 +201,7 @@
           <div class="service__card service-card">
             <div class="service-card__wrapper">
               <h3 class="service-card__title">Упаковка</h3>
-              <div class="service-card__price">от 12 000 р.</div>
+              <div class="service-card__price">Подробнее</div>
             </div>
             <!-- /.service-card__wrapper -->
 
@@ -379,18 +379,60 @@
 
   <?php include_once('layout/block/about.php') ?>
 
-  <section id="promotion" class="section">
+  <section id="promotion-action" class="section">
     <div class="container">
-      <div class="section__header text-center">
-        <h2 class="section__title">Акции и скидки</h2>
-      </div>
-      <!-- /.section__header -->
+      <div class="promotion-action">
+        <h2 class="section__title">
+          Закажите оклейку от 3-х авто
+          <br>
+          и получите <span>СКИДКУ 15%</span>
+        </h2>
 
-      <?php include_once('layout/block/promotion.php') ?>
+        <p class="section__text">Акция действует на единовременный заказ услуги</p>
+
+        <div class="row">
+          <div class="col-12 col-lg-9 col-xl-7">
+            <form novalidate="" action="php/mail.php" class="modal__form form form-modal" data-target="callback">
+              <div class="row">
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                  <label class="input">
+                    <span class="input__label">Телефон*</span>
+                    <input data-required placeholder="Ваш номер телефона" autocomplete="off" type="tel" name="user_phone" class="input__field input__field--required">
+                    <img data-tippy-content="Телефон не указан или содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
+                  </label>
+                  <!-- /.input -->
+                </div>
+                <!-- /.col-2 -->
+
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                  <label class="input">
+                    <span class="input__label">E-mail</span>
+                    <input placeholder="Ваша почта" autocomplete="off" type="email" name="user_email" class="input__field input__field--required">
+                    <img data-tippy-content="Почта не указана или содержит ошибки" class="input__warning" src="img/icons/warning.svg" alt="">
+                  </label>
+                  <!-- /.input -->
+                </div>
+                <!-- /.col-2 -->
+
+                <div class="col-12 col-md-4">
+                  <button data-sending="Отправка..." class="modal__button form__button button button-primary" type="submit">Оставить заявку</button>
+                </div>
+                <!-- /.col-2 -->
+              </div>
+              <!-- /.row -->
+
+              <p class="form__privacy mt-3">*Нажимая на кнопку вы соглашаетесь с <a class="link link--underline link--orange" href="">политикой обработки персональных даннных</a></p>
+            </form>
+          </div>
+          <!-- /.col-6 -->
+        </div>
+        <!-- /.row -->
+
+        <img class="promotion-action__background" src="img/page/service/promotion/illustration.svg" alt="">
+      </div>
+      <!-- /.promotion-action -->
     </div>
     <!-- /.container -->
-
-    <?php include_once('layout/partials/modal/promotion.php') ?>
   </section>
 
   <?php include_once('layout/partials/modal/service.php') ?>

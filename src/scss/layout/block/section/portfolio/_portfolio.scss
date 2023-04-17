@@ -1,42 +1,39 @@
-section#portfolio {
-  overflow: hidden;
-  margin-bottom: -20px;
-  padding-top: 10px;
-  padding-bottom: 20px;
-
-  .tab__slider {
+#portfolio-block {
+  .section__header {
+    margin-bottom: 30px;
   }
 
-  .inner__slider {
-    @include breakpoint($breakpoint-tablet) {
-      display: none;
+  .col-6 {
+    @include breakpoint(max-width 360px) {
+      width: 100% !important;
     }
   }
 }
 
-.portfolio {
-  &__tab {
-    position: relative;
-    display: flex;
-    overflow: auto;
-
-    margin-bottom: 20px;
-
-    text-align: center;
-  }
-
-  &__slider {
-  }
-
+.portfolio-block {
   &__action {
-    @include breakpoint($breakpoint-laptop--medium) {
-      margin-bottom: 25px;
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-top: 5px;
     }
 
-    margin-top: 45px;
+    margin-top: 20px;
     text-align: center;
-  }
 
-  &__button {
+    a {
+      font-size: 18px;
+      color: $color-text__orange;
+
+      svg {
+        transition: 0.2s ease;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          svg {
+            transform: translateX(10px);
+          }
+        }
+      }
+    }
   }
 }

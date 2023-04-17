@@ -91,18 +91,6 @@
 
       text-transform: none;
     }
-
-    .handorgel__content__inner {
-      @include breakpoint($breakpoint-laptop--medium) {
-        padding-top: 20px;
-      }
-
-      @include breakpoint($breakpoint-tablet--large) {
-        padding-top: 15px;
-      }
-
-      padding-top: 30px;
-    }
   }
 
   &__overlay {

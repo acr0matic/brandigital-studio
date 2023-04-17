@@ -17,7 +17,7 @@
           <form action="php/mail.php" class="callback__form form form-callback">
             <div class="form__wrapper">
               <div class="input me-md-3 mb-2 mb-md-0">
-                <input data-required data-error="Телефон не указан или содержит ошибки" class="input__field input__field--required" placeholder="+7 XXX XXX-XX-XX" autocomplete="off" type="tel" name="user_phone">
+                <input data-required data-error="Телефон не указан или содержит ошибки" class="input__field input__field--big input__field--required" placeholder="+7 XXX XXX-XX-XX" autocomplete="off" type="tel" name="user_phone">
               </div>
               <!-- /.input -->
 

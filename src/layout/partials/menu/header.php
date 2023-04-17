@@ -38,19 +38,5 @@
     <li class="nav__item">
       <a href="price.php" class="nav__link link">Цены и акции</a>
     </li>
-
-    <li class="nav__item dropdown">
-      <span class="dropdown__header">
-        <span class="nav__link link">Наши процессы</span>
-        <img class="dropdown__icon" src="img/icons/component/dropdown/arrow__dropdown.svg" alt="">
-      </span>
-
-      <div class="dropdown__content">
-        <a class="dropdown__item dropdown__item--arrow" href="process-management.php">Управление проектами</a>
-        <a class="dropdown__item" href="process-design.php">Создание дизайна</a>
-        <a class="dropdown__item" href="process-warranty.php">Гарантии</a>
-      </div>
-      <!-- /.dropdown__content -->
-    </li>
   </ul>
 </nav>

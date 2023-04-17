@@ -43,7 +43,7 @@
         <!-- /.header__callback -->
 
         <div class="header__action">
-          <button data-micromodal-trigger="modal-callback" class="header__button button button-outline button-outline--orange">Связаться с нами</button>
+          <button data-micromodal-trigger="modal-callback" class="header__button button button-outline button-outline--orange">Заказать консультацию</button>
         </div>
         <!-- /.header__action -->
 

@@ -1,0 +1,96 @@
+.slider-portfolio {
+  overflow: visible;
+}
+
+/* purgecss start ignore */
+
+.slider-portfolio-control {
+  @include breakpoint($breakpoint-tablet--large) {
+    margin-bottom: 15px;
+  }
+
+  overflow: auto;
+  text-align: center;
+
+  .swiper-pagination {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 15px;
+    }
+
+    position: initial;
+    display: inline-flex;
+    justify-content: center;
+
+    width: initial;
+    margin: 0 auto 30px;
+
+    border-bottom: 2px solid rgba(#000000, 0.1);
+
+    &-bullet {
+      @include breakpoint($breakpoint-laptop--large) {
+        width: 120px;
+      }
+
+      @include breakpoint($breakpoint-tablet--large) {
+        width: 100px;
+        height: 35px;
+
+        border-width: 3px;
+
+        font-size: 18px;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        width: 80px;
+        font-size: 16px;
+      }
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 140px;
+      height: 50px;
+
+      margin: 0 0 -2px !important;
+
+      border-bottom: 5px solid transparent;
+      border-radius: 0;
+      outline: none;
+
+      background-color: transparent;
+      color: $color-text__black;
+
+      font-weight: $weight-Medium;
+      font-size: 22px;
+
+      opacity: 1;
+      transition: 0.15s ease;
+
+      &:not(:last-child) {
+        @include breakpoint($breakpoint-tablet--large) {
+          margin-right: 10px !important;
+        }
+
+        margin-right: 30px !important;
+      }
+
+      &:hover {
+        @media (hover: hover) {
+          color: $color-text__orange;
+        }
+      }
+
+      &-active {
+        @include breakpoint($breakpoint-tablet--large) {
+          border-width: 3px;
+        }
+
+        border-bottom: 5px solid $palette-orange;
+        color: $color-text__orange;
+      }
+    }
+  }
+}
+
+/* purgecss end ignore */

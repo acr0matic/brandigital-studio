@@ -15,6 +15,7 @@
         <ul class="nav__list">
           <li class="nav__item"><a href="index.php" class="nav__link">Главная страница</a></li>
 
+
           <li class="nav__item nav__item--mobile">
             <div class="handorgel accordion accordion--nav">
               <div class="handorgel__header">
@@ -42,7 +43,7 @@
             <!-- /.handorgel -->
           </li>
 
-          <li class="nav__item nav__item--mobile">
+          <li class="nav__item">
             <div class="handorgel accordion accordion--nav">
               <div class="handorgel__header">
                 <button class="handorgel__header__button nav__link">

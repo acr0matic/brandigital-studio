@@ -1,3043 +1,759 @@
-<section id="portfolio" class="section">
+<section id="portfolio-block" class="section">
   <div class="container">
-    <div class="section__header text-center">
-      <h2 class="section__title">Наши работы</h2>
+    <div class="section__header">
+      <h2 class="section__title text-center">
+        Портфолио
+      </h2>
     </div>
     <!-- /.section__header -->
 
-    <div class="portfolio">
-      <div class="portfolio__slider swiper tab__slider">
-        <div class="portfolio__tab custom-scrollbar--hide">
-          <div class="swiper-pagination"></div>
-        </div>
-        <!-- /.portfolio__tab -->
+    <div class="portfolio-block">
+      <div class="slider-portfolio-control">
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- /.slider-portfolio__control -->
 
+      <div class="swiper slider-portfolio">
         <div class="swiper-wrapper">
-          <div data-index="0" data-title="Брендинг" class="swiper-slide">
-            <div class="position-relative">
-              <div class="swiper inner__slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div data-id="1" class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                              <img src="img/misc/preloader.svg" alt="" class="preloader">
-                            </a>
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
+          <div data-title="Разработка" class="swiper-slide">
+            <div class="row">
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
 
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
 
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
                     </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
 
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
 
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
+                      <ul class="list list--feature portfolio-item__list mb-3">
+                        <li class="list__item">Cтоимость работ: <span>22 710 р.</span></li>
+                        <li class="list__item">Цена: <span>50 000 руб.</span></li>
+                      </ul>
 
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
                     </div>
-                    <!-- /.portfolio-item -->
+                    <!-- /.portfolio-item__wrapper -->
                   </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
+                  <!-- /.portfolio-item__content -->
                 </div>
-                <!-- /.swiper-wrapper -->
-
-                <div class="swiper-control">
-                  <div class="swiper-button-prev portfolio__prev">
-                    <img src="img/icons/component/slider/arrow__prev.svg" alt="">
-                  </div>
-
-                  <div class="swiper-button-next portfolio__next">
-                    <img src="img/icons/component/slider/arrow__next.svg" alt="">
-                  </div>
-                </div>
-                <!-- /.swiper-control -->
+                <!-- /.portfolio__item portfolio-item -->
               </div>
-              <!-- /.swiper -->
-            </div>
-            <!-- /.position-relavite -->
+              <!-- /.col-6 -->
 
-            <div class="position-relative">
-              <div class="swiper thumbnail__slider">
-                <div class="swiper-wrapper row">
-                  <div class="swiper-slide col-6">
-                    <div data-id="1" class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
 
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
+
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
                     </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
 
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
 
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
                     </div>
-                    <!-- /.portfolio-thumbnail -->
+                    <!-- /.portfolio-item__wrapper -->
                   </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
+                  <!-- /.portfolio-item__content -->
                 </div>
-                <!-- /.swiper-wrapper -->
+                <!-- /.portfolio__item portfolio-item -->
               </div>
-              <!-- /.swiper thumbnail__slider -->
+              <!-- /.col-6 -->
+
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
+
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
+
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
+                    </div>
+
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
+
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
+                    </div>
+                    <!-- /.portfolio-item__wrapper -->
+                  </div>
+                  <!-- /.portfolio-item__content -->
+                </div>
+                <!-- /.portfolio__item portfolio-item -->
+              </div>
+              <!-- /.col-6 -->
+
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
+
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
+
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
+                    </div>
+
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
+
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
+                    </div>
+                    <!-- /.portfolio-item__wrapper -->
+                  </div>
+                  <!-- /.portfolio-item__content -->
+                </div>
+                <!-- /.portfolio__item portfolio-item -->
+              </div>
+              <!-- /.col-6 -->
+
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
+
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
+
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
+                    </div>
+
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
+
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
+                    </div>
+                    <!-- /.portfolio-item__wrapper -->
+                  </div>
+                  <!-- /.portfolio-item__content -->
+                </div>
+                <!-- /.portfolio__item portfolio-item -->
+              </div>
+              <!-- /.col-6 -->
+
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
+
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
+
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
+                    </div>
+
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
+
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
+                    </div>
+                    <!-- /.portfolio-item__wrapper -->
+                  </div>
+                  <!-- /.portfolio-item__content -->
+                </div>
+                <!-- /.portfolio__item portfolio-item -->
+              </div>
+              <!-- /.col-6 -->
             </div>
-            <!-- /.position-relative -->
+            <!-- /.row -->
           </div>
           <!-- /.swiper-slide -->
 
-          <div data-index="1" data-title="Web" class="swiper-slide">
-            <div class="position-relative">
-              <div class="swiper inner__slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
+          <div data-title="Брендирование" class="swiper-slide">
+            <div class="row">
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
 
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
 
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
                     </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
 
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
 
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
                     </div>
-                    <!-- /.portfolio-item -->
+                    <!-- /.portfolio-item__wrapper -->
                   </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
+                  <!-- /.portfolio-item__content -->
                 </div>
-                <!-- /.swiper-wrapper -->
-
-                <div class="swiper-control">
-                  <div class="swiper-button-prev portfolio__prev">
-                    <img src="img/icons/component/slider/arrow__prev.svg" alt="">
-                  </div>
-
-                  <div class="swiper-button-next portfolio__next">
-                    <img src="img/icons/component/slider/arrow__next.svg" alt="">
-                  </div>
-                </div>
-                <!-- /.swiper-control -->
+                <!-- /.portfolio__item portfolio-item -->
               </div>
-              <!-- /.swiper -->
-            </div>
-            <!-- /.position-relavite -->
+              <!-- /.col-6 -->
 
-            <div class="position-relative">
-              <div class="swiper thumbnail__slider">
-                <div class="swiper-wrapper row">
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
 
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
+
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
                     </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
 
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
 
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
                     </div>
-                    <!-- /.portfolio-thumbnail -->
+                    <!-- /.portfolio-item__wrapper -->
                   </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
+                  <!-- /.portfolio-item__content -->
                 </div>
-                <!-- /.swiper-wrapper -->
+                <!-- /.portfolio__item portfolio-item -->
               </div>
-              <!-- /.swiper thumbnail__slider -->
+              <!-- /.col-6 -->
+
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
+
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
+
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
+                    </div>
+
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
+
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
+                    </div>
+                    <!-- /.portfolio-item__wrapper -->
+                  </div>
+                  <!-- /.portfolio-item__content -->
+                </div>
+                <!-- /.portfolio__item portfolio-item -->
+              </div>
+              <!-- /.col-6 -->
+
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
+
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
+
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
+                    </div>
+
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
+
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
+                    </div>
+                    <!-- /.portfolio-item__wrapper -->
+                  </div>
+                  <!-- /.portfolio-item__content -->
+                </div>
+                <!-- /.portfolio__item portfolio-item -->
+              </div>
+              <!-- /.col-6 -->
+
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
+
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
+
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
+                    </div>
+
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
+
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
+                    </div>
+                    <!-- /.portfolio-item__wrapper -->
+                  </div>
+                  <!-- /.portfolio-item__content -->
+                </div>
+                <!-- /.portfolio__item portfolio-item -->
+              </div>
+              <!-- /.col-6 -->
+
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
+
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
+
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
+                    </div>
+
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
+
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
+                    </div>
+                    <!-- /.portfolio-item__wrapper -->
+                  </div>
+                  <!-- /.portfolio-item__content -->
+                </div>
+                <!-- /.portfolio__item portfolio-item -->
+              </div>
+              <!-- /.col-6 -->
             </div>
-            <!-- /.position-relative -->
+            <!-- /.row -->
           </div>
           <!-- /.swiper-slide -->
 
-          <div data-index="2" data-title="Авто" class="swiper-slide">
-            <div class="position-relative">
-              <div class="swiper inner__slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
+          <div data-title="Дизайн" class="swiper-slide">
+            <div class="row">
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
 
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
 
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
                     </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
 
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
 
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
                     </div>
-                    <!-- /.portfolio-item -->
+                    <!-- /.portfolio-item__wrapper -->
                   </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
+                  <!-- /.portfolio-item__content -->
                 </div>
-                <!-- /.swiper-wrapper -->
-
-                <div class="swiper-control">
-                  <div class="swiper-button-prev portfolio__prev">
-                    <img src="img/icons/component/slider/arrow__prev.svg" alt="">
-                  </div>
-
-                  <div class="swiper-button-next portfolio__next">
-                    <img src="img/icons/component/slider/arrow__next.svg" alt="">
-                  </div>
-                </div>
-                <!-- /.swiper-control -->
+                <!-- /.portfolio__item portfolio-item -->
               </div>
-              <!-- /.swiper -->
-            </div>
-            <!-- /.position-relavite -->
+              <!-- /.col-6 -->
 
-            <div class="position-relative">
-              <div class="swiper thumbnail__slider">
-                <div class="swiper-wrapper row">
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
 
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
+
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
                     </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
 
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
 
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
                     </div>
-                    <!-- /.portfolio-thumbnail -->
+                    <!-- /.portfolio-item__wrapper -->
                   </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
+                  <!-- /.portfolio-item__content -->
                 </div>
-                <!-- /.swiper-wrapper -->
+                <!-- /.portfolio__item portfolio-item -->
               </div>
-              <!-- /.swiper thumbnail__slider -->
-            </div>
-            <!-- /.position-relative -->
-          </div>
-          <!-- /.swiper-slide -->
+              <!-- /.col-6 -->
 
-          <div data-index="3" data-title="Лого" class="swiper-slide">
-            <div class="position-relative">
-              <div class="swiper inner__slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
 
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
 
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
                     </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
 
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
 
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
                     </div>
-                    <!-- /.portfolio-item -->
+                    <!-- /.portfolio-item__wrapper -->
                   </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
+                  <!-- /.portfolio-item__content -->
                 </div>
-                <!-- /.swiper-wrapper -->
-
-                <div class="swiper-control">
-                  <div class="swiper-button-prev portfolio__prev">
-                    <img src="img/icons/component/slider/arrow__prev.svg" alt="">
-                  </div>
-
-                  <div class="swiper-button-next portfolio__next">
-                    <img src="img/icons/component/slider/arrow__next.svg" alt="">
-                  </div>
-                </div>
-                <!-- /.swiper-control -->
+                <!-- /.portfolio__item portfolio-item -->
               </div>
-              <!-- /.swiper -->
-            </div>
-            <!-- /.position-relavite -->
+              <!-- /.col-6 -->
 
-            <div class="position-relative">
-              <div class="swiper thumbnail__slider">
-                <div class="swiper-wrapper row">
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
 
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
+
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
                     </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
 
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
 
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
                     </div>
-                    <!-- /.portfolio-thumbnail -->
+                    <!-- /.portfolio-item__wrapper -->
                   </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
+                  <!-- /.portfolio-item__content -->
                 </div>
-                <!-- /.swiper-wrapper -->
+                <!-- /.portfolio__item portfolio-item -->
               </div>
-              <!-- /.swiper thumbnail__slider -->
-            </div>
-            <!-- /.position-relative -->
-          </div>
-          <!-- /.swiper-slide -->
+              <!-- /.col-6 -->
 
-          <div data-index="4" data-title="Упаковка" class="swiper-slide">
-            <div class="position-relative">
-              <div class="swiper inner__slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
 
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
 
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
                     </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
 
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
 
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
                     </div>
-                    <!-- /.portfolio-item -->
+                    <!-- /.portfolio-item__wrapper -->
                   </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
+                  <!-- /.portfolio-item__content -->
                 </div>
-                <!-- /.swiper-wrapper -->
-
-                <div class="swiper-control">
-                  <div class="swiper-button-prev portfolio__prev">
-                    <img src="img/icons/component/slider/arrow__prev.svg" alt="">
-                  </div>
-
-                  <div class="swiper-button-next portfolio__next">
-                    <img src="img/icons/component/slider/arrow__next.svg" alt="">
-                  </div>
-                </div>
-                <!-- /.swiper-control -->
+                <!-- /.portfolio__item portfolio-item -->
               </div>
-              <!-- /.swiper -->
-            </div>
-            <!-- /.position-relavite -->
+              <!-- /.col-6 -->
 
-            <div class="position-relative">
-              <div class="swiper thumbnail__slider">
-                <div class="swiper-wrapper row">
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
+              <div class="col-6 col-xl-4 mb-4">
+                <div class="portfolio-item">
+                  <picture class="portfolio-item__picture lazy">
+                    <img class="preloader" src="/img/misc/preloader.svg" alt="">
+                    <img class="portfolio-item__image image image--cover lazy__item" data-src="img/section/portfolio/1.jpg" alt="">
+                  </picture>
+                  <!-- /.portfolio-item__picture -->
 
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
+                  <div class="portfolio-item__content custom-scrollbar custom-scrollbar--white">
+                    <h3 class="portfolio-item__title">
+                      Название проекта
+                    </h3>
+
+                    <div class="portfolio-item__info">
+                      Cтоимость работ:&nbsp;
+                      <span>22 710 р.</span>
                     </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
 
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
+                    <div class="portfolio-item__wrapper">
+                      <p class="portfolio-item__description">
+                        Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+                      </p>
 
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
+                      <ul class="list list--feature portfolio-item__list">
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                        <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+                      </ul>
                     </div>
-                    <!-- /.portfolio-thumbnail -->
+                    <!-- /.portfolio-item__wrapper -->
                   </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
+                  <!-- /.portfolio-item__content -->
                 </div>
-                <!-- /.swiper-wrapper -->
+                <!-- /.portfolio__item portfolio-item -->
               </div>
-              <!-- /.swiper thumbnail__slider -->
+              <!-- /.col-6 -->
             </div>
-            <!-- /.position-relative -->
-          </div>
-          <!-- /.swiper-slide -->
-
-          <div data-index="5" data-title="Иллюстрация" class="swiper-slide">
-            <div class="position-relative">
-              <div class="swiper inner__slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide">
-                    <div class="portfolio-item">
-                      <div class="row">
-                        <div class="col-7 pe-4 pe-xl-5">
-                          <picture class="portfolio-item__picture lazy">
-                            <a data-fslightbox href="img/section/portfolio/1.jpg">
-                              <img data-src="img/section/portfolio/1.jpg" src="" alt="" class="portfolio-item__image image image--clickable image--cover lazy__item">
-                            </a>
-
-                            <img src="img/misc/preloader.svg" alt="" class="preloader">
-                          </picture>
-                        </div>
-                        <!-- /.col-8 -->
-
-                        <div class="col-5">
-                          <div class="portfolio-item__content">
-                            <h3 class="portfolio-item__title">
-                              Название проекта дизайна
-                            </h3>
-
-                            <div class="portfolio-item__category"></div>
-
-                            <p class="portfolio-item__description">
-                              Дизайн автомобиля разработан для компании Кристанваль. Работа учитывает все тонкости дальнейшей оклейки и соответсвует требования и ожиданиям клиента
-                            </p>
-
-                            <ul class="portfolio-item__list list list--info">
-                              <li class="list__item">
-                                <div>Срок эксплуатации:</div>
-                                <span>до 3 лет</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Срок изготовления:</div>
-                                <span>1 рабочий день</span>
-                              </li>
-
-                              <li class="list__item">
-                                <div>Гарантия:</div>
-                                <span>6 месяцев</span>
-                              </li>
-                            </ul>
-                          </div>
-                          <!-- /.portfolio-item__content -->
-                        </div>
-                        <!-- /.col-4 -->
-                      </div>
-                      <!-- /.row -->
-                    </div>
-                    <!-- /.portfolio-item -->
-                  </div>
-                  <!-- /.swiper-slide -->
-                </div>
-                <!-- /.swiper-wrapper -->
-
-                <div class="swiper-control">
-                  <div class="swiper-button-prev portfolio__prev">
-                    <img src="img/icons/component/slider/arrow__prev.svg" alt="">
-                  </div>
-
-                  <div class="swiper-button-next portfolio__next">
-                    <img src="img/icons/component/slider/arrow__next.svg" alt="">
-                  </div>
-                </div>
-                <!-- /.swiper-control -->
-              </div>
-              <!-- /.swiper -->
-            </div>
-            <!-- /.position-relavite -->
-
-            <div class="position-relative">
-              <div class="swiper thumbnail__slider">
-                <div class="swiper-wrapper row">
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-
-                  <div class="swiper-slide col-6">
-                    <div class="portfolio-thumbnail">
-                      <picture class="portfolio-thumbnail__picture lazy">
-                        <img data-src="img/section/portfolio/thumbnail/1.jpg" class="portfolio-thumbnail__image image image--cover image--clickable lazy__item" alt="">
-                        <img src="img/misc/preloader.svg" alt="" class="preloader">
-                      </picture>
-
-                      <h4 class="portfolio-thumbnail__title">Название проекта</h4>
-                      <div class="portfolio-thumbnail__deadline">Срок исполнения: <span class="ms-1">3 дня</span></div>
-                    </div>
-                    <!-- /.portfolio-thumbnail -->
-                  </div>
-                  <!-- /.swiper-slide -->
-                </div>
-                <!-- /.swiper-wrapper -->
-              </div>
-              <!-- /.swiper thumbnail__slider -->
-            </div>
-            <!-- /.position-relative -->
+            <!-- /.row -->
           </div>
           <!-- /.swiper-slide -->
         </div>
         <!-- /.swiper-wrapper -->
       </div>
-      <!-- /.swiper portfolio__slider -->
+      <!-- /.swiper -->
 
-      <div class="portfolio__action">
-        <button class="portfolio__button button button-primary">Смотреть все работы</button>
+      <div class="portfolio-block__action">
+        <a class="link link--main link--orange" href="">
+          Смотреть все работы
+          <svg class="ms-2" width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.82813 6.6875C1.27584 6.6875 0.828125 7.13522 0.828125 7.6875C0.828125 8.23978 1.27584 8.6875 1.82812 8.6875L20.8281 8.6875C21.3804 8.6875 21.8281 8.23978 21.8281 7.6875C21.8281 7.13522 21.3804 6.6875 20.8281 6.6875L1.82813 6.6875Z" fill="#FF8025" />
+            <path d="M16.9532 1.64657C16.5606 1.25812 15.9258 1.25979 15.5352 1.65031C15.1447 2.04084 15.1464 2.67233 15.539 3.06079L20.5148 7.98434C20.9073 8.3728 21.5422 8.37112 21.9327 7.9806C22.3232 7.59008 22.3216 6.95859 21.929 6.57013L16.9532 1.64657Z" fill="#FF8025" />
+            <path d="M16.9532 13.3983C16.5606 13.7868 15.9258 13.7851 15.5352 13.3946C15.1447 13.0041 15.1464 12.3726 15.539 11.9841L20.5148 7.06058C20.9073 6.67212 21.5422 6.6738 21.9327 7.06432C22.3232 7.45485 22.3216 8.08634 21.929 8.47479L16.9532 13.3983Z" fill="#FF8025" />
+          </svg>
+        </a>
       </div>
-      <!-- /.portfolio__action -->
+      <!-- /.portfolio-block__action -->
     </div>
-    <!-- /.portfolio -->
+    <!-- /.portfolio-block -->
   </div>
   <!-- /.container -->
 
-  <?php include_once(dirname(__DIR__) . '/partials/modal/portfolio.php') ?>
+  <div class="modal modal-portfolio micromodal-slide" id="modal-portfolio" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog">
+        <header class="modal__header">
+          <svg class="modal__close" data-micromodal-close viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path data-micromodal-close d="M2 2L34 33M34 2L2 33" stroke="white" stroke-width="4" />
+          </svg>
+        </header>
+
+        <main class="modal__content">
+          <div class="modal__picture">
+            <img class="modal__preloader preloader preloader--center" src="img/misc/preloader.svg" alt="">
+            <img src="" data-src="img/section/portfolio/thumb.jpg" alt="" class="modal__image cms-image lazy">
+          </div>
+
+          <h2 class="modal__title">
+            Название проекта
+          </h2>
+
+          <p class="modal__text">
+            Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
+          </p>
+
+          <ul class="modal__list list list--feature">
+            <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+            <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+            <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
+          </ul>
+        </main>
+      </div>
+    </div>
+  </div>
 </section>
