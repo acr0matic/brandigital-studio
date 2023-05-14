@@ -1,3 +1,18 @@
+const gallerySlider = (isTablet) ? new Swiper('.slider-portfolio-gallery', {
+  speed: 500,
+  a11y: {
+    enabled: false,
+  },
+
+  spaceBetween: 16,
+
+  pagination: {
+    el: '.slider-portfolio-gallery .swiper-pagination',
+    clickable: true,
+  },
+}) : undefined;
+
+
 const portfolio = document.querySelector('#portfolio-block, #single-portfolio');
 
 if (portfolio) {
@@ -47,89 +62,90 @@ if (portfolio) {
   --------------------------------------------------------
   */
 
-  if (portfolio.tagName === 'MAIN') {
-    const items = portfolio.querySelectorAll('.portfolio-item');
 
-    _.forEach(items, (item) => {
-      item.addEventListener('click', () => {
-        const gallery = item.querySelectorAll('.portfolio-item__gallery .modal__picture');
-        const slides = modal.querySelectorAll('.swiper-slide');
-        const title = InnerHTML(item, '.portfolio-item__title');
-        const category = InnerHTML(item, '.portfolio-item__category');
-        const desc = InnerHTML(item, '.portfolio-item__description');
-        const list = InnerHTML(item, '.portfolio-item__list');
 
-        _.forEach(slides, (slide, index) => {
-          if (gallery[index]) {
-            slide.innerHTML = gallery[index].outerHTML
-            slide.querySelector('a').dataset.fslightbox = 'modal';
-            slide.style.removeProperty('display');
-          }
+  const modalPortfolio = document.getElementById('modal-portfolio');
 
-          else slide.style.display = 'none';
+  if (modalPortfolio) {
+    const title = modalPortfolio.querySelector('.modal-portfolio__content h3');
+    const list = modalPortfolio.querySelector('.modal-portfolio__content .list');
+    const text = modalPortfolio.querySelector('.modal-portfolio__content p');
+    const gallery = modalPortfolio.querySelectorAll('.modal-portfolio__gallery .swiper-slide');
+
+    if (portfolio.id === "portfolio-block" && isTablet) {
+      const cards = document.querySelectorAll('.portfolio-item')
+
+      _.forEach(cards, card => {
+        const cardTitle = card.querySelector('.portfolio-item__title').textContent;
+        const cardText = card.querySelector('.portfolio-item__description').textContent;
+        const cardList = card.querySelector('.portfolio-item__list').innerHTML;
+        const cardPicture = card.querySelectorAll('.portfolio-item__picture .image');
+
+        card.addEventListener('click', () => {
+          title.innerHTML = cardTitle;
+          list.innerHTML = cardList;
+          text.innerHTML = cardText;
+
+          _.forEach(gallery, (item, index) => {
+            const image = item.querySelector('.image');
+            const link = item.querySelector('a');
+
+            if (cardPicture[index]) {
+              const href = cardPicture[index].src;
+
+              image.dataset.src = href;
+              link.href = href;
+
+              item.style.removeProperty('display')
+              LazyLoad.resetStatus(image)
+              lazyLoadInstance.update();
+              refreshFsLightbox();
+            }
+
+            else {
+              item.style.display = 'none'
+            }
+          });
+
+          MicroModal.show('modal-portfolio', modalParams)
         });
-
-        if (modalSlider) modalSlider.slideTo(0, 0);
-        lazyLoadInstance.update();
-        refreshFsLightbox();
-
-        InnerHTML(modal, '.modal-info__title', title);
-        InnerHTML(modal, '.modal-info__category', category);
-        InnerHTML(modal, '.modal-info__description', desc);
-        InnerHTML(modal, '.modal-info__list', list);
-      });
-    });
-  }
-
-  else if (portfolio.tagName === 'BODY') {
-    if (!isSmallTablet) {
-      const images = document.querySelectorAll('.portfolio__picture .image');
-
-      _.forEach(images, (image) => {
-        const params = {
-          orientation: image.dataset.direction,
-          delay: 1.5,
-          overflow: true
-        };
-
-        new simpleParallax(image, params);
       });
     }
-  }
 
-  else {
-    if (isSmallTablet) {
-      // Привязываем модалку на мобильной версии
-      _.forEach(thumbnail, (thumb) => thumb.dataset.micromodalTrigger = 'modal-portfolio');
-      MicroModal.init(modalParams);
+    else if (portfolio.id === "single-portfolio") {
+      const cards = document.querySelectorAll('.card-portfolio')
 
-      _.forEach(thumbnail, (thumb) => {
-        thumb.addEventListener('click', () => {
-          const index = thumb.closest('[data-index]').dataset.index;
-          const ref = sliderContainers[index].querySelector(`.portfolio-item[data-id="${thumb.dataset.id}"]`);
+      _.forEach(cards, card => {
+        const cardTitle = card.querySelector('h3').textContent;
+        const cardList = card.querySelector('.content ul').innerHTML;
+        const cardText = card.querySelector('.content p').innerHTML;
+        const cardGallery = card.querySelectorAll('.content .gallery a');
 
-          if (ref) {
-            const picture = InnerHTML(ref, '.portfolio-item__picture');
-            const title = InnerHTML(ref, '.portfolio-item__title');
-            const category = InnerHTML(ref, '.portfolio-item__category');
-            const desc = InnerHTML(ref, '.portfolio-item__description');
-            const list = InnerHTML(ref, '.portfolio-item__list');
+        card.addEventListener('click', () => {
+          title.innerHTML = cardTitle;
+          list.innerHTML = cardList;
+          text.innerHTML = cardText;
 
-            InnerHTML(modal, '.swiper-wrapper',
-              `<div class="swiper-slide">
-              <picture class="modal__picture lazy">
-                ${picture}
-              </picture>
-            </div>`);
+          _.forEach(gallery, (item, index) => {
+            const image = item.querySelector('.image');
+            const link = item.querySelector('a');
 
-            lazyLoadInstance.update();
-            refreshFsLightbox();
+            if (cardGallery[index]) {
+              const href = cardGallery[index].href;
 
-            InnerHTML(modal, '.modal-info__title', title);
-            InnerHTML(modal, '.modal-info__category', category);
-            InnerHTML(modal, '.modal-info__description', desc);
-            InnerHTML(modal, '.modal-info__list', list);
-          }
+              image.dataset.src = href;
+              link.href = href;
+
+              item.style.removeProperty('display')
+              LazyLoad.resetStatus(image)
+              lazyLoadInstance.update();
+              refreshFsLightbox();
+            }
+
+            else {
+              item.style.display = 'none'
+            }
+          });
         });
       });
     }

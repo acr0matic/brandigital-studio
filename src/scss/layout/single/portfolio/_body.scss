@@ -4,11 +4,7 @@ section#single-portfolio {
 
     &__portfolio {
       @include breakpoint($breakpoint-laptop) {
-        margin-bottom: 10px;
-      }
-
-      @include breakpoint($breakpoint-tablet) {
-        margin-bottom: 0;
+        margin-bottom: 24px;
       }
 
       margin-bottom: 20px;

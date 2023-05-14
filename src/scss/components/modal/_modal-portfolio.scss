@@ -1,167 +1,131 @@
 .modal-portfolio {
-  .modal__content {
+  .modal__header {
     @include breakpoint($breakpoint-tablet) {
-      padding: 0 20px;
-    }
-  }
+      align-items: center;
+      justify-content: space-between;
 
-  .modal__title {
-    @include breakpoint($breakpoint-tablet) {
-      display: none;
-    }
-  }
-
-  .modal__gallery .row {
-    @include breakpoint($breakpoint-tablet) {
-      margin: 0;
-    }
-  }
-
-  .modal__picture {
-    @include breakpoint($breakpoint-laptop) {
-      height: 150px;
+      margin-bottom: 24px;
+      margin-left: 0;
+      padding: 0;
     }
 
-    @include breakpoint($breakpoint-tablet--large) {
-      height: 125px;
-    }
+    display: flex;
+    margin-left: 5px;
 
-    @include breakpoint($breakpoint-tablet) {
-      height: 180px;
-    }
-
-    @include breakpoint($breakpoint-mobile--large) {
-      height: 200px;
-    }
-
-    overflow: hidden;
-
-    width: 100%;
-    height: 180px;
-    border-radius: 10px;
-
-    transition: $transition ease;
-
-    @media (hover: hover) {
-      &:hover {
-        opacity: 0.6;
+    .modal__close {
+      @include breakpoint($breakpoint-tablet) {
+        position: static;
       }
     }
   }
 
-  .modal__info,
-  .modal__info::after {
+  .modal__container {
     @include breakpoint($breakpoint-tablet) {
-      background-color: $palette-white;
+      padding: 16px;
     }
+  }
+
+  &__picture {
+    overflow: hidden;
 
     width: 100%;
     height: 100%;
 
-    background-color: $palette-gray--light;
+    border-radius: 10px;
   }
 
-  .modal__info {
+  &__content {
+    @include breakpoint($breakpoint-laptop--medium) {
+      padding-bottom: 16px;
+      padding-left: 16px;
+    }
+
     @include breakpoint($breakpoint-tablet) {
-      padding: 0;
+      padding-left: 0;
+      background-color: $palette-white;
     }
 
     position: relative;
+    height: calc(100% - 5px);
 
-    padding: 25px 0 25px 20px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+
+    border-radius: 10px 0 0 10px;
+    background-color: #f4f4f5;
 
     &::after {
+      @include breakpoint($breakpoint-tablet) {
+        background-color: $palette-white;
+      }
+
       content: "";
       position: absolute;
       top: 0;
       left: 100%;
-      display: block;
-    }
-  }
 
-  .modal-info {
-    .overflow::after {
-      background: linear-gradient(
-        0deg,
-        $palette-gray--light 30%,
-        rgba(#ffffff, 0) 100%
-      );
+      width: 100%;
+      height: 100%;
+
+      background-color: #f4f4f5;
     }
 
-    .overflow__container {
-      @include breakpoint($breakpoint-tablet) {
-        max-height: 200px;
-      }
-
-      max-height: 250px;
-      padding-right: 10px;
-    }
-
-    &__title {
+    h3 {
       @include breakpoint($breakpoint-laptop--medium) {
-        font-size: $font-size__text--large;
+        margin-bottom: 16px;
+        padding-top: 16px;
       }
 
-      @include breakpoint($breakpoint-laptop) {
-        font-size: $font-size__text--big;
-      }
-
-      margin-bottom: 5px;
-
-      font-weight: $weight-SemiBold;
-      font-size: $font-size__text--large + 2px;
+      margin-bottom: 24px;
+      padding-top: 24px;
     }
 
-    &__category {
+    p,
+    ul {
       @include breakpoint($breakpoint-laptop--medium) {
-        font-size: $font-size__text--big;
+        font-size: $font-size__text--regular - 2px;
       }
 
-      @include breakpoint($breakpoint-laptop) {
-        font-size: $font-size__text--regular;
-      }
-
-      color: $color-text__gray;
-      font-size: $font-size__text--large;
+      font-size: $font-size__text--regular;
     }
 
-    &__header {
-      @include breakpoint($breakpoint-tablet) {
-        margin-bottom: 15px;
+    ul {
+      @include breakpoint($breakpoint-laptop--medium) {
+        margin-bottom: 24px;
       }
 
-      margin-bottom: 25px;
-    }
-
-    &__list {
       @include breakpoint($breakpoint-tablet) {
-        margin-bottom: 20px;
+        display: none;
       }
 
-      margin-bottom: 30px;
+      margin-bottom: 32px;
 
-      .list__item {
-        display: inline-flex;
-        flex-wrap: wrap;
+      li {
+        color: $color-text__gray;
+        font-weight: $weight-Medium;
+
+        span {
+          color: $color-text__orange;
+        }
 
         &:not(:last-child) {
-          margin-bottom: 5px;
+          margin-bottom: 2px;
         }
+      }
+
+      span {
+        color: $color-text__black;
       }
     }
 
-    &__description {
+    p {
       @include breakpoint($breakpoint-laptop--medium) {
-        font-size: $font-size__text--big;
+        max-height: 150px;
       }
 
-      @include breakpoint($breakpoint-laptop) {
-        font-size: $font-size__text--regular;
-      }
-
-      font-size: $font-size__text--large;
+      overflow: auto;
+      max-height: 165px;
+      padding-right: 16px;
     }
   }
 }

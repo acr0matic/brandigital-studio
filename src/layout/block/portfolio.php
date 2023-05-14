@@ -723,37 +723,6 @@
     <!-- /.portfolio-block -->
   </div>
   <!-- /.container -->
-
-  <div class="modal modal-portfolio micromodal-slide" id="modal-portfolio" aria-hidden="true">
-    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-      <div class="modal__container" role="dialog">
-        <header class="modal__header">
-          <svg class="modal__close" data-micromodal-close viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path data-micromodal-close d="M2 2L34 33M34 2L2 33" stroke="white" stroke-width="4" />
-          </svg>
-        </header>
-
-        <main class="modal__content">
-          <div class="modal__picture">
-            <img class="modal__preloader preloader preloader--center" src="img/misc/preloader.svg" alt="">
-            <img src="" data-src="img/section/portfolio/thumb.jpg" alt="" class="modal__image cms-image lazy">
-          </div>
-
-          <h2 class="modal__title">
-            Название проекта
-          </h2>
-
-          <p class="modal__text">
-            Истринское РАЙПО ведет многоотраслевую хозяйственную деятельность: торговлю, общественное питание, заготовки.
-          </p>
-
-          <ul class="modal__list list list--feature">
-            <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
-            <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
-            <li class="list__item">Cрок эксплуатации: <span>до 3 лет</span></li>
-          </ul>
-        </main>
-      </div>
-    </div>
-  </div>
 </section>
+
+<?php include_once('layout/partials/modal/portfolio.php') ?>

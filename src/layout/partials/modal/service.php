@@ -19,8 +19,29 @@
 
         <div class="modal__wrapper">
           <p class="modal__text custom-scrollbar custom-scrollbar--white">
-            Лендинг (от англ. landing page — «посадочная страница») — это одностраничный сайт с краткой информацией о товаре, услуге или мероприятии. Его задача — превращать посетителей в клиентов.
+            Одностраничный сайт, создается с целью продажи узконаправленных товаров или услуг.
           </p>
+
+          <div class="modal__list">
+            <div>В базовый тариф входит:</div>
+            <ul class="list list--dotted">
+              <li class="list__item">
+                Анализ конкурентов и ниши бизнеса
+              </li>
+
+              <li class="list__item">
+                Разработка продающей структуры, дизайн </li>
+
+              <li class="list__item">
+                Внедрение форм для систем обратной связи
+              </li>
+
+              <li class="list__item">
+                Адаптивная верстка сайта, тестирование
+              </li>
+            </ul>
+          </div>
+          <!-- /.modal__list -->
 
           <ul class="list modal__list">
             <li class="list__item">
@@ -31,15 +52,6 @@
             <li class="list__item">
               <img class="icon" src="img/icons/component/modal/service/ruble.svg" alt="">
               <span data-value="price" class="text">15 000 руб.</span>
-            </li>
-
-            <li class="list__item">
-              <img class="icon" src="img/icons/component/modal/service/team.svg" alt="">
-              <span data-value="team" class="text">
-                3D-designer
-                <br>
-                Middle-designer
-              </span>
             </li>
           </ul>
         </div>

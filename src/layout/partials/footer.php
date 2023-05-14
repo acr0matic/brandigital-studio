@@ -122,6 +122,7 @@
 <script src="scripts/promotion.js"></script>
 <script src="scripts/process.js"></script>
 <script src="scripts/video.js"></script>
+<script src="scripts/quiz.js"></script>
 <!-- endbuild -->
 </body>
 

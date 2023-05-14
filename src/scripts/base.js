@@ -31,8 +31,15 @@ const StyleСlass = {
 const modalParams = {
   awaitCloseAnimation: true,
   disableFocus: true,
-}
+  onClose: modal => {
+    const overflowContainer = modal.querySelectorAll('.custom-scrollbar');
+    overflowContainer.forEach(container => container.scrollTop = 0);
 
+    if (modal.id = 'modal-portfolio') {
+      if (gallerySlider) gallerySlider.slideTo(0, 0);
+    }
+  }
+}
 let currentModal = null;
 
 const scrollParams = {

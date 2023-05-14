@@ -1,157 +1,98 @@
 section#single-portfolio {
-  .portfolio-item {
-    @include breakpoint($breakpoint-laptop--medium) {
-      padding: 15px;
-      border-radius: 15px;
-    }
-
-    @include breakpoint($breakpoint-laptop) {
-      padding: 12px;
-      border-radius: 12px;
-    }
-
-    @include breakpoint($breakpoint-tablet--large) {
-      padding: 8px;
-      border-radius: 10px;
-    }
-
+  .card-portfolio {
     @include breakpoint($breakpoint-tablet) {
-      padding: 0;
-      border-radius: 15px;
-
-      background-color: transparent;
+      padding: 8px;
     }
 
-    margin-bottom: 1.5rem;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
 
-    border-radius: 20px;
-    background-color: $palette-gray--light;
+    height: 100%;
+    padding: 18px;
+    border-radius: 10px;
+
+    background-color: $palette-white;
+    box-shadow: 7px 4px 22px rgba(#b4b4b4, 0.25);
 
     cursor: pointer;
 
     @media (hover: hover) {
       &:hover {
-        .portfolio-item__image {
+        .card-portfolio__picture img {
           transform: scale(1.05);
         }
       }
     }
 
+    &__hidden {
+      display: none;
+    }
+
     &__picture {
-      @include breakpoint($breakpoint-laptop--medium) {
-        height: 280px;
-        border-radius: 15px;
-      }
-
-      @include breakpoint($breakpoint-laptop) {
-        height: 220px;
-        margin-bottom: 10px;
-        border-radius: 12px;
-      }
-
-      @include breakpoint($breakpoint-tablet--large) {
-        height: 170px;
-        border-radius: 10px;
-      }
-
       @include breakpoint($breakpoint-tablet) {
-        height: 160px;
-        border-radius: 15px;
-      }
-
-      @include breakpoint($breakpoint-mobile--large) {
-        height: 120px;
-        border-radius: 10px;
+        margin-bottom: 8px;
       }
 
       overflow: hidden;
 
-      height: 360px;
-
+      width: 100%;
       margin-bottom: 20px;
-      border-radius: 20px;
+
+      border-radius: $border-radius--small;
+
+      aspect-ratio: 4 / 3;
     }
 
     &__title {
       @include breakpoint($breakpoint-laptop--medium) {
-        margin-bottom: 5px;
-        font-size: $font-size__text--large + 2px;
-      }
-
-      @include breakpoint($breakpoint-laptop) {
-        font-size: $font-size__text--big;
-      }
-
-      @include breakpoint($breakpoint-tablet--large) {
-        margin-bottom: 3px;
-        font-size: $font-size__text--small;
-      }
-
-      @include breakpoint($breakpoint-tablet) {
+        margin-bottom: 4px;
         font-size: $font-size__text--regular;
       }
 
-      @include breakpoint($breakpoint-mobile--large) {
+      @include breakpoint($breakpoint-tablet) {
         font-size: $font-size__text--small;
       }
 
-      margin-bottom: 10px;
-
-      font-weight: $weight-Bold;
-      font-size: $font-size__title--small - 4px;
+      margin-bottom: 8px;
+      font-size: $font-size__text--large;
     }
 
     &__wrapper {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      margin-top: auto;
     }
 
-    &__info {
+    &__list {
       @include breakpoint($breakpoint-laptop--medium) {
-        font-size: $font-size__text--regular;
-      }
-
-      @include breakpoint($breakpoint-tablet--large) {
-        font-size: $font-size__text--small - 2;
-      }
-
-      @include breakpoint($breakpoint-tablet) {
         font-size: $font-size__text--small;
       }
 
-      @include breakpoint($breakpoint-mobile--large) {
-        font-size: $font-size__text--small - 2;
+      @include breakpoint($breakpoint-tablet) {
+        font-size: $font-size__text--small - 2px;
+
+        li {
+          display: flex;
+          flex-wrap: wrap;
+        }
       }
 
-      color: $color-text__gray;
+      li {
+        color: $color-text__gray;
+        font-weight: $border-radius--medium;
 
-      font-weight: $weight-Medium;
-      font-size: $font-size__text--large;
-
-      span {
-        display: inline-block;
-
-        color: $color-text__orange;
-        font-weight: $weight-Bold;
+        span {
+          color: $color-text__orange;
+        }
       }
     }
 
-    &__dots {
-      @include breakpoint($breakpoint-laptop--medium) {
-        width: 30px;
-      }
-
-      @include breakpoint($breakpoint-tablet--large) {
-        width: 24px;
-      }
-
+    &__action {
       @include breakpoint($breakpoint-tablet) {
         display: none;
       }
-
-      width: 36px;
     }
   }
 }
