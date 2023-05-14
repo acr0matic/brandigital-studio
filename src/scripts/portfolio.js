@@ -118,7 +118,7 @@ if (portfolio) {
       _.forEach(cards, card => {
         const cardTitle = card.querySelector('h3').textContent;
         const cardList = card.querySelector('.content ul').innerHTML;
-        const cardText = card.querySelector('.content p').innerHTML;
+        const cardText = card.querySelector('.content .text').innerHTML;
         const cardGallery = card.querySelectorAll('.content .gallery a');
 
         card.addEventListener('click', () => {

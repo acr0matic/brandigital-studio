@@ -33,9 +33,22 @@ const modalParams = {
   disableFocus: true,
   onClose: modal => {
     const overflowContainer = modal.querySelectorAll('.custom-scrollbar');
-    overflowContainer.forEach(container => container.scrollTop = 0);
+    _.forEach(overflowContainer, container => container.scrollTop = 0)
 
     if (modal.id = 'modal-portfolio') {
+      const pictures = modal.querySelectorAll('.modal-portfolio__picture');
+
+      setTimeout(() => {
+        _.forEach(pictures, picture => {
+          const image = picture.querySelector('.image');
+          const preloader = picture.querySelector('.preloader');
+
+          image.classList.remove('loaded');
+          preloader.classList.remove('preloader--hide');
+        });
+      }, 200);
+
+
       if (gallerySlider) gallerySlider.slideTo(0, 0);
     }
   }
