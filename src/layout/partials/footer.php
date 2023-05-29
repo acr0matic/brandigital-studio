@@ -123,6 +123,7 @@
 <script src="scripts/process.js"></script>
 <script src="scripts/video.js"></script>
 <script src="scripts/quiz.js"></script>
+<script src="scripts/sliders.js"></script>
 <!-- endbuild -->
 </body>
 

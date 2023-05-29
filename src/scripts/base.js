@@ -33,7 +33,9 @@ const modalParams = {
   disableFocus: true,
   onClose: modal => {
     const overflowContainer = modal.querySelectorAll('.custom-scrollbar');
-    _.forEach(overflowContainer, container => container.scrollTop = 0)
+    _.forEach(overflowContainer, container => setTimeout(() => {
+      container.scrollTop = 0
+    }, 200));
 
     if (modal.id = 'modal-portfolio') {
       const pictures = modal.querySelectorAll('.modal-portfolio__picture');
@@ -53,6 +55,7 @@ const modalParams = {
     }
   }
 }
+
 let currentModal = null;
 
 const scrollParams = {

@@ -98,6 +98,14 @@ section#hero {
     color: $color-text__white;
   }
 
+  &__subtitle {
+    display: block;
+    margin-bottom: 24px;
+
+    font-weight: $weight-ExtraBold;
+    font-size: $font-size__text--large;
+  }
+
   &__title {
     @include breakpoint($breakpoint-laptop--medium) {
       margin-bottom: 20px;

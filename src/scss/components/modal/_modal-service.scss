@@ -84,18 +84,6 @@
     }
 
     @include breakpoint($breakpoint-tablet) {
-      top: 120px;
-      width: 40%;
-      height: auto;
-    }
-
-    @include breakpoint($breakpoint-mobile--large) {
-      top: 130px;
-      left: 20px;
-      width: 45%;
-    }
-
-    @include breakpoint($breakpoint-mobile--medium) {
       display: none;
     }
 
@@ -128,46 +116,41 @@
     margin-left: auto;
   }
 
-  .modal__text {
-    @include breakpoint($breakpoint-laptop) {
-      max-height: 80px;
-    }
-
+  .content {
     @include breakpoint($breakpoint-tablet) {
-      max-height: 75px;
+      max-height: 280px;
     }
 
-    @include breakpoint($breakpoint-mobile--medium) {
-      max-height: 70px;
-    }
+    max-height: 240px;
+    margin-bottom: 32px;
+    padding-bottom: 0;
+  }
 
-    overflow: auto;
-    max-height: 100px;
+  .modal__text {
     padding-right: 15px;
     font-weight: $weight-SemiBold;
   }
 
   .modal__list {
     @include breakpoint($breakpoint-tablet--large) {
-      margin-top: 30px;
-    }
-
-    @include breakpoint($breakpoint-tablet) {
-      width: 44%;
-      margin-top: 50px;
-      margin-left: auto;
-    }
-
-    @include breakpoint($breakpoint-mobile--medium) {
-      width: 100%;
+      margin-top: 24px;
     }
 
     margin-top: 32px;
 
     div {
-      margin-bottom: 16px;
+      margin-bottom: 8px;
       color: $color-text__orange;
       font-weight: $weight-SemiBold;
+    }
+  }
+
+  .modal__info {
+    @include breakpoint($breakpoint-tablet) {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      margin-top: 8px;
     }
 
     .list__item {
@@ -176,7 +159,7 @@
 
       &:not(:last-child) {
         @include breakpoint($breakpoint-tablet) {
-          margin-bottom: 12px;
+          margin-bottom: 0;
         }
 
         margin-bottom: 16px;
@@ -186,6 +169,7 @@
     .icon {
       @include breakpoint($breakpoint-tablet) {
         width: 20px;
+        margin-right: 8px;
       }
 
       width: 24px;
@@ -210,7 +194,7 @@
       flex-direction: column;
       align-items: center;
 
-      margin-top: 60px;
+      margin-top: 32px;
     }
 
     display: flex;

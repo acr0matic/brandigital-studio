@@ -18,32 +18,35 @@
         </picture>
 
         <div class="modal__wrapper">
-          <p class="modal__text custom-scrollbar custom-scrollbar--white">
-            Одностраничный сайт, создается с целью продажи узконаправленных товаров или услуг.
-          </p>
+          <div class="content overflow__container custom-scrollbar custom-scrollbar--white">
+            <p class="modal__text">
+              Одностраничный сайт, создается с целью продажи узконаправленных товаров или услуг.
+            </p>
 
-          <div class="modal__list">
-            <div>В базовый тариф входит:</div>
-            <ul class="list list--dotted">
-              <li class="list__item">
-                Анализ конкурентов и ниши бизнеса
-              </li>
+            <div class="modal__list">
+              <div>В базовый тариф входит:</div>
+              <ul class="list list--dotted">
+                <li class="list__item">
+                  Анализ конкурентов и ниши бизнеса
+                </li>
 
-              <li class="list__item">
-                Разработка продающей структуры, дизайн </li>
+                <li class="list__item">
+                  Разработка продающей структуры, дизайн </li>
 
-              <li class="list__item">
-                Внедрение форм для систем обратной связи
-              </li>
+                <li class="list__item">
+                  Внедрение форм для систем обратной связи
+                </li>
 
-              <li class="list__item">
-                Адаптивная верстка сайта, тестирование
-              </li>
-            </ul>
+                <li class="list__item">
+                  Адаптивная верстка сайта, тестирование
+                </li>
+              </ul>
+            </div>
+            <!-- /.modal__list -->
           </div>
-          <!-- /.modal__list -->
+          <!-- /.content -->
 
-          <ul class="list modal__list">
+          <ul class="list modal__info">
             <li class="list__item">
               <img class="icon" src="img/icons/component/modal/service/time.svg" alt="">
               <span data-value="time" class="text">2 недели</span>

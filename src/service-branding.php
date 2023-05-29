@@ -1,26 +1,23 @@
 <?php include_once('layout/partials/header.php') ?>
 
 <!-- Основной контент -->
-<main id="webdev">
+<main id="branding">
   <section id="hero" class="section">
     <div class="hero">
       <div data-hero class="hero__row hero__row--main">
         <div class="container">
           <div class="hero__content">
+            <span class="hero__subtitle">Брендирование</span>
             <h1 class="page__title section__title hero__title">
-              Студия дизайна
+              Создаем уникальный
               <br>
-              <span>B&D</span>
+              и целостный образ бренда
             </h1>
 
             <p class="page__description hero__description">
-              Разработка дизайна полного цикла. Не боимся
+              Решаем задачи визуального оформления, детально
               <br>
-              правок, работаем эффективно и быстро.
-              <br>
-              Делаем графический дизайн, web, анимации
-              <br>
-              и многое другое.
+              и комплексно: от логотипа до фирменного стиля под ключ
             </p>
 
             <div class="hero__action">
@@ -228,6 +225,173 @@
     <!-- /.container -->
   </section>
 
+  <section id="service-plan" class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title text-center">
+          Наши тарифы
+        </h2>
+      </div>
+      <!-- /.section__header -->
+
+      <div class="service-plan">
+        <div class="swiper slider-plan">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="service-plan__card">
+                <div class="service-plan__content">
+                  <h3 class="service-plan__title">Экономный</h3>
+                  <p class="service-plan__desc">
+                    быстрая разработка и дизайн
+                    для стартапа или малого/среднего бизнеса
+                  </p>
+
+                  <div class="service-plan__price">
+                    <div class="service-plan__discount">
+                      26 000 ₽
+                    </div>
+                    <!-- /.service-plan__discount -->
+
+                    <div class="service-plan__cost">
+                      18 000 ₽
+                    </div>
+                    <!-- /.service-plan__cost -->
+                  </div>
+                  <!-- /.service-plan__price -->
+
+                  <ul class="service-plan__list">
+                    <li class="checkmark"><strong>2 варианта</strong> разработки / редизайн логотипа</li>
+                    <li class="checkmark">Фирменный паттерн</li>
+                    <li class="checkmark">Фирменная цветовая палитра</li>
+                    <li class="checkmark">Анализ рынка/конкурентов</li>
+                    <li class="checkmark"><strong>3 пакета правок</strong></li>
+                    <li class="cross">Дизайн автопарка</li>
+                    <li class="cross">Регистрация торгового знака</li>
+                    <li class="cross">Дизайн полиграфии</li>
+                    <li class="cross">Дизайн деловой документации</li>
+                    <li class="cross">Мерчбук</li>
+                    <li class="cross">Стратегическая сессия</li>
+                  </ul>
+
+                  <div class="service-plan__deadline">Срок 1,5 недели</div>
+                </div>
+                <!-- /.service-plan__content -->
+
+                <div class="service-plan__action">
+                  <button class="button button-primary">Заказать</button>
+                </div>
+                <!-- /.service-plan__action -->
+              </div>
+              <!-- /.service-plan__card -->
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="swiper-slide">
+              <div class="service-plan__card service-plan__card--important">
+                <div class="service-plan__content">
+                  <h3 class="service-plan__title">Оптимальный</h3>
+                  <p class="service-plan__desc">
+                    Оптимальный пакет с разработкой или редизайном для любого уровня компании
+                  </p>
+
+                  <div class="service-plan__price">
+                    <div class="service-plan__discount">
+                      26 000 ₽
+                    </div>
+                    <!-- /.service-plan__discount -->
+
+                    <div class="service-plan__cost">
+                      18 000 ₽
+                    </div>
+                    <!-- /.service-plan__cost -->
+                  </div>
+                  <!-- /.service-plan__price -->
+
+                  <ul class="service-plan__list">
+                    <li class="checkmark"><strong>3 варианта</strong> разработки / редизайн логотипа</li>
+                    <li class="checkmark">Фирменный паттерн</li>
+                    <li class="checkmark">Фирменная цветовая палитра</li>
+                    <li class="checkmark">Анализ рынка/конкурентов</li>
+                    <li class="checkmark"><strong>5 пакета правок</strong></li>
+                    <li class="checkmark">Дизайн автопарка</li>
+                    <li class="checkmark">Дизайн полиграфии</li>
+                    <li class="checkmark">Стратегическая сессия</li>
+                    <li class="cross">Дизайн деловой документации</li>
+                    <li class="cross">Регистрация торгового знака</li>
+                    <li class="cross">Мерчбук</li>
+                  </ul>
+
+                  <div class="service-plan__deadline">Срок 1,5 недели</div>
+                </div>
+                <!-- /.service-plan__content -->
+
+                <div class="service-plan__action">
+                  <button class="button button-primary">Заказать</button>
+                </div>
+                <!-- /.service-plan__action -->
+              </div>
+              <!-- /.service-plan__card -->
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="swiper-slide">
+              <div class="service-plan__card">
+                <div class="service-plan__content">
+                  <h3 class="service-plan__title">Премиум</h3>
+                  <p class="service-plan__desc">
+                    быстрая разработка и дизайн
+                    для стартапа или малого/среднего бизнеса
+                  </p>
+
+                  <div class="service-plan__price">
+                    <div class="service-plan__discount">
+                      26 000 ₽
+                    </div>
+                    <!-- /.service-plan__discount -->
+
+                    <div class="service-plan__cost">
+                      18 000 ₽
+                    </div>
+                    <!-- /.service-plan__cost -->
+                  </div>
+                  <!-- /.service-plan__price -->
+
+                  <ul class="service-plan__list">
+                    <li class="checkmark"><strong>5 вариантов</strong> разработки / редизайн логотипа</li>
+                    <li class="checkmark">Фирменный паттерн</li>
+                    <li class="checkmark">Фирменная цветовая палитра</li>
+                    <li class="checkmark">Анализ рынка/конкурентов</li>
+                    <li class="checkmark"><strong>Неограниченный пакет правок</strong></li>
+                    <li class="checkmark">Дизайн автопарка</li>
+                    <li class="checkmark">Дизайн полиграфии</li>
+                    <li class="checkmark">Стратегическая сессия</li>
+                    <li class="checkmark">Дизайн деловой документации</li>
+                    <li class="checkmark">Регистрация торгового знака</li>
+                    <li class="checkmark">Мерчбук</li>
+                  </ul>
+
+                  <div class="service-plan__deadline">Срок 1,5 недели</div>
+                </div>
+                <!-- /.service-plan__content -->
+
+                <div class="service-plan__action">
+                  <button class="button button-primary">Заказать</button>
+                </div>
+                <!-- /.service-plan__action -->
+              </div>
+              <!-- /.service-plan__card -->
+            </div>
+            <!-- /.swiper-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+        </div>
+        <!-- /.slider-plan -->
+      </div>
+      <!-- /.service-plan -->
+    </div>
+    <!-- /.container -->
+  </section>
+
   <section id="assurance" class="section">
     <div class="container">
       <div class="assurance">
@@ -390,9 +554,9 @@
                 <div class="quiz__content">
                   <div class="section__header">
                     <h2 class="section__title">
-                      Давайте рассчитаем стоимость
+                      Не нашли подходящий тариф
                       <br>
-                      вашего сайта
+                      или услугу для вашего бизнеса?
                     </h2>
                   </div>
                   <!-- /.section__header -->
@@ -400,9 +564,14 @@
                   <div class="quiz__info">
                     <img src="img/section/quiz/gift.png" alt="">
                     <p>
+
                       Ответьте на 5 простых вопросов
                       <br>
-                      и получите <span>бесплатный анализ конкурентов</span>
+                      и наш менеджер с Вами свяжется,
+                      <br>
+                      предложит <span>индивидуальные условия</span>
+                      <br>
+                      реализации вашего проекта.
                     </p>
                   </div>
                   <!-- /.quiz__info -->
@@ -722,8 +891,6 @@
 
   <?php include_once('layout/block/seo.php') ?>
 
-  <?php include_once('layout/block/team.php') ?>
-
   <section id="promotion-action" class="section">
     <div class="container">
       <div class="promotion-action">
@@ -780,7 +947,7 @@
     <!-- /.container -->
   </section>
 
-  <?php include_once('layout/partials/modal/service-webdev.php') ?>
+  <?php include_once('layout/partials/modal/service.php') ?>
   <?php include_once('layout/block/callback.php') ?>
 
 </main>

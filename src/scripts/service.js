@@ -44,13 +44,15 @@ if (service) {
     // TODO ОТРЕФАКТОРИТЬ ПОЛУЧЕНИЕ ДАННЫХ В МОДАЛКУ
     const modalTitle = modal.querySelector('.modal__title');
     const modalText = modal.querySelector('.modal__text');
-    const modalParams = modal.querySelectorAll('.modal__list [data-value]');
+    const modalList = modal.querySelector('.modal__list .list');
+    const modalParams = modal.querySelectorAll('.modal__info [data-value]');
     const modalPicture = modal.querySelector('.modal__picture');
 
     _.forEach(cardsModal, (card) => {
       card.addEventListener('click', () => {
         const title = card.querySelector('.service-card__title').innerText;
         const text = card.querySelector('.service-card__content .text').innerHTML;
+        const list = card.querySelector('.service-card__content .list');
         const image = card.querySelector('.service-card__content .modal__picture');
 
         form.dataset.additional = title;
@@ -58,9 +60,19 @@ if (service) {
         modalTitle.innerHTML = title;
         modalText.innerHTML = text;
 
+        if (modalList) {
+          if (list) {
+            modalList.innerHTML = list.innerHTML;
+            modalList.parentNode.removeAttribute('style');
+          }
+
+          else modalList.parentNode.style.display = 'none';
+        }
+
         _.forEach(modalParams, (param) => {
           const target = card.querySelector(`[data-value=${param.dataset.value}`);
-          param.innerHTML = target.innerHTML; }
+          param.innerHTML = target.innerHTML;
+        }
         );
 
         if (image) {
